@@ -1,0 +1,17 @@
+/// resolve values of spritesheets
+/// @access private
+/// @return {Map|null}
+///
+@function _use-spritesheet-resolve-spritesheets() {
+  $spritesheets: null;
+
+  // resolve spritesheets value
+  @if function-exists("use-spritesheet-hook-resolve-spritesheets") {
+    $spritesheets: use-spritesheet-hook-resolve-spritesheets();
+  }
+  @else if global-variable-exists("sprites") {
+    $spritesheets: $sprites;
+  }
+
+  @return $spritesheets;
+}

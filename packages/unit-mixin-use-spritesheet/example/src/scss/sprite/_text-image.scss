@@ -1,0 +1,191 @@
+// define $sptites valiable in global if not defined.
+@if not global-variable-exists("sprites") {
+  $sprites: () !global;
+}
+
+// local scope
+@if global-variable-exists("sprites") {
+  $items: ();
+
+  // add each image data by image basename.
+  // + includes shape's sizes both elastic and fixed pixel
+  $items: map-merge(
+    $items,
+    (
+      "example-c--current": (
+        "width": 162px,
+        "height": 22px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": 0px,
+        "offset-y": 0px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-c--disabled": (
+        "width": 162px,
+        "height": 22px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": 0px,
+        "offset-y": -24px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-c--focus": (
+        "width": 162px,
+        "height": 22px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": 0px,
+        "offset-y": -48px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-c": (
+        "width": 162px,
+        "height": 22px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": 0px,
+        "offset-y": -72px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d--current--responsive": (
+        "width": 122px,
+        "height": 18px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": 0px,
+        "offset-y": -96px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d--current": (
+        "width": 82px,
+        "height": 12px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": -164px,
+        "offset-y": -20px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d--disabled--responsive": (
+        "width": 122px,
+        "height": 18px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": 0px,
+        "offset-y": -116px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d--disabled": (
+        "width": 82px,
+        "height": 12px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": -164px,
+        "offset-y": -34px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d--focus--responsive": (
+        "width": 122px,
+        "height": 18px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": 0px,
+        "offset-y": -136px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d--focus": (
+        "width": 82px,
+        "height": 12px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": -164px,
+        "offset-y": -48px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d--responsive": (
+        "width": 122px,
+        "height": 18px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": -164px,
+        "offset-y": 0px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+  $items: map-merge(
+    $items,
+    (
+      "example-d": (
+        "width": 82px,
+        "height": 12px,
+        "total-width": 286px,
+        "total-height": 154px,
+        "offset-x": -164px,
+        "offset-y": -62px,
+        "image": "../images/sprites/text-image.png"
+      )
+    )
+  );
+
+  // add spritesheet common data on spritesheet basename.
+  $sprites: map-merge(
+    $sprites,
+    (
+      "text-image": (
+        "image": "../images/sprites/text-image.png",
+        "items": $items
+      )
+    )
+  );
+}

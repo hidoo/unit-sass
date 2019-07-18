@@ -1,0 +1,82 @@
+/// define item
+/// @access private
+/// @param {String} $name name of spritesheet item
+/// @param {Map} $items [()] spritesheet items
+/// @param {Map} $options [()] options
+///
+@mixin _use-spritesheet-define($name, $items: (), $options: ()) {
+  @if not mixin-exists("on-focus") {
+    @error "@mixin _use-spritesheet-define: @mixin on-focus is required.";
+  }
+
+  @if not mixin-exists("on-current") {
+    @error "@mixin _use-spritesheet-define: @mixin on-current is required.";
+  }
+
+  @if not mixin-exists("on-disabled") {
+    @error "@mixin _use-spritesheet-define: @mixin on-disabled is required.";
+  }
+
+  @if not mixin-exists("_use-spritesheet-set-properties") {
+    @error "@mixin _use-spritesheet-define: @mixin _use-spritesheet-set-properties is required.";
+  }
+
+  @if map-has-key($items, $name) {
+    $up: map-get($items, $name);
+    $focus: map-get($items, "#{$name}--focus");
+    $current: map-get($items, "#{$name}--current");
+    $disabled: map-get($items, "#{$name}--disabled");
+    $use2x: map-get($options, "use2x");
+    $capturing-selectors: map-get($options, "capturing-selectors");
+
+    &-#{$name} {
+      @content;
+
+      @if $up {
+        @include _use-spritesheet-set-properties(
+          $values: $up,
+          $use2x: $use2x
+        );
+      }
+
+      @if $focus {
+        @include on-focus($capturing-selectors: $capturing-selectors) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($focus, "offset-x"),
+              "offset-y": map-get($focus, "offset-y")
+            ),
+            $use2x: $use2x
+          );
+        }
+      }
+
+      @if $current {
+        @include on-current($capturing-selectors: $capturing-selectors) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($current, "offset-x"),
+              "offset-y": map-get($current, "offset-y")
+            ),
+            $use2x: $use2x
+          );
+        }
+      }
+
+      @if $disabled {
+        @include on-disabled($capturing-selectors: $capturing-selectors) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($disabled, "offset-x"),
+              "offset-y": map-get($disabled, "offset-y")
+            ),
+            $use2x: $use2x
+          );
+        }
+      }
+    }
+  }
+  @else {
+    @warn "@mixin _use-spritesheet-define: Spritesheet '#{$name}' was not generate, because $name: '#{$name}' is not found.";
+  }
+}
