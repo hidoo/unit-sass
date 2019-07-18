@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "dev:test": "lerna exec 'yarn test --watch' --no-private",
+    "build": "lerna run build",
+    "dev:start": "lerna exec 'yarn start' --ignore @hidoo/unit-test-util",
+    "dev:test": "lerna exec 'yarn test --watch' --no-private --ignore @hidoo/unit-test-util",
     "test": "npm-run-all -s test:lint test:packages",
     "test:lint": "npm-run-all -p test:lint:*",
     "test:lint:js": "eslint .",
