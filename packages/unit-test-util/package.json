@@ -1,0 +1,11 @@
+{
+  "name": "@hidoo/unit-test-util",
+  "version": "0.0.0",
+  "description": "Test utilities for unit framework.",
+  "main": "src/index.js",
+  "author": "hidoo",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
