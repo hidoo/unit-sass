@@ -170,6 +170,66 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
     }, {outputStyle: 'expanded'});
   });
 
+  it('should out spritesheet settings by custom variable specified by hook if @function use-spritesheet-hook-resolve-spritesheets is defined.', async () => {
+    const cases = [
+      {
+        params: [
+          '"icon-image"',
+          '"logo"',
+          null,
+          `
+          $custom-spritesheets: (
+            "icon-image": (
+              "image": "path/to/sprite/icon-image.png",
+              "items": (
+                "logo": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                )
+              )
+            )
+          );
+          @function use-spritesheet-hook-resolve-spritesheets() {
+            @if global-variable-exists("custom-spritesheets") {
+              @return $custom-spritesheets;
+            }
+            @return null;
+          }
+          `
+        ],
+        expected:
+`.selector-logo {
+  overflow: hidden;
+  text-indent: -100%;
+  color: transparent;
+  background-image: url(path/to/sprite/icon-image.png);
+}
+
+.selector-logo {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}`
+      }
+    ];
+
+    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
+      if (error) {
+        return reject(error);
+      }
+
+      const actual = result.css.toString().trim();
+
+      assert(actual === expected);
+      return resolve();
+    }, {outputStyle: 'expanded'});
+  });
+
   it('should out 2x spritesheet settings if argument $options is ("use2x": true).', async () => {
     const cases = [
       {
