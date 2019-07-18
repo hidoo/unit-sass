@@ -61,6 +61,36 @@ $sprites: (
 );
 ```
 
+### Usage with custom variables
+
+```scss
+$custom-spritesheets: (
+  "icon-image": (
+    "image": "path/to/sprite/icon-image.png",
+    "items": (
+      "logo": (
+        "width": 10px,
+        "height": 10px,
+        "total-width": 30px,
+        "total-height": 30px,
+        "offset-x": -10px,
+        "offset-y": -10px
+      )
+    )
+  )
+);
+
+// define hook that change to use $custom-spritesheets
+@function use-spritesheet-hook-resolve-spritesheets() {
+  @if global-variable-exists("custom-spritesheets") {
+    @return $custom-spritesheets;
+  }
+
+  @return null;
+}
+```
+
+
 ## Test
 
 ```sh
