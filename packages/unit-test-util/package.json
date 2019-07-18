@@ -3,12 +3,18 @@
   "version": "0.0.0",
   "description": "Test utilities for unit framework.",
   "main": "src/index.js",
+  "files": [
+    "src/"
+  ],
   "keywords": [
     "sass",
     "scss",
     "test",
     "utility"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "hidoo",
   "license": "MIT",
   "devDependencies": {

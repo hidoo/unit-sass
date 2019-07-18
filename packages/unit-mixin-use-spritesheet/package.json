@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Mixin for using spritesheet in @hidoo/unit framework.",
   "main": "src/index.scss",
+  "files": [
+    "src/"
+  ],
   "scripts": {
     "start": "gulp",
     "build": "gulp build",
@@ -16,6 +19,9 @@
     "mixin",
     "spritesheet"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "hidoo",
   "license": "MIT",
   "devDependencies": {
