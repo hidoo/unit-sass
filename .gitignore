@@ -17,4 +17,4 @@ node_modules/
 packages/**/node_modules/
 
 # distribution files
-packages/**/dist/
+packages/**/example/build/
