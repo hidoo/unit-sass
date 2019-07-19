@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    './packages/stylelint-config/scss'
+    './src/base.js'
   ]
 };

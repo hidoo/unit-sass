@@ -6,7 +6,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "dev:start": "lerna exec 'yarn start' --ignore @hidoo/unit-test-util",
+    "dev:start": "lerna exec 'yarn start' --ignore @hidoo/unit-test-util --ignore @hidoo/stylelint-config",
     "dev:test": "lerna exec 'yarn test --watch' --no-private --ignore @hidoo/unit-test-util",
     "test": "npm-run-all -s test:lint test:packages",
     "test:lint": "npm-run-all -p test:lint:*",
@@ -27,12 +27,7 @@
     "lerna": "^3.15.0",
     "lint-staged": "^9.2.0",
     "npm-run-all": "^4.1.5",
-    "stylelint": "^10.1.0",
-    "stylelint-config-recommended": "^2.2.0",
-    "stylelint-config-standard": "^18.3.0",
-    "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
-    "stylelint-no-unsupported-browser-features": "^3.0.2",
-    "stylelint-scss": "^3.8.0"
+    "stylelint": "^10.1.0"
   },
   "workspaces": [
     "packages/*"
