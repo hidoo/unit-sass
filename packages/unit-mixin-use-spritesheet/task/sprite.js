@@ -45,16 +45,14 @@ const iconImage = buildImageSprite(buildOptions({
   src: `${config.path.srcSprite}/icon-assets/*.png`,
   imgName: 'icon-image.png',
   cssName: '_icon-image.scss',
-  evenize: true,
-  cssTemplate: `${config.path.srcSprite}/image.scss.hbs`
+  evenize: true
 }));
 
 const iconSvg = buildSvgSprite(buildOptions({
   name: 'sprite:icon:svg',
   src: `${config.path.srcSprite}/icon-assets/*.svg`,
   imgName: 'icon-svg.svg',
-  cssName: '_icon-svg.scss',
-  cssTemplate: `${config.path.srcSprite}/svg.scss.hbs`
+  cssName: '_icon-svg.scss'
 }));
 
 const textImage = buildImageSprite(buildOptions({
@@ -62,16 +60,14 @@ const textImage = buildImageSprite(buildOptions({
   src: `${config.path.srcSprite}/text-assets/*.png`,
   imgName: 'text-image.png',
   cssName: '_text-image.scss',
-  evenize: true,
-  cssTemplate: `${config.path.srcSprite}/image.scss.hbs`
+  evenize: true
 }));
 
 const textSvg = buildSvgSprite(buildOptions({
   name: 'sprite:text:svg',
   src: `${config.path.srcSprite}/text-assets/*.svg`,
   imgName: 'text-svg.svg',
-  cssName: '_text-svg.scss',
-  cssTemplate: `${config.path.srcSprite}/svg.scss.hbs`
+  cssName: '_text-svg.scss'
 }));
 
 // define main task
