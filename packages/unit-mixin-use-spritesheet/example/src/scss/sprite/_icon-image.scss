@@ -68,7 +68,7 @@
   $items: map-merge(
     $items,
     (
-      "example-d--current--responsive": (
+      "example-d--current--if-mobile": (
         "width": 26px,
         "height": 18px,
         "total-width": 98px,
@@ -96,7 +96,7 @@
   $items: map-merge(
     $items,
     (
-      "example-d--disabled--responsive": (
+      "example-d--disabled--if-mobile": (
         "width": 26px,
         "height": 18px,
         "total-width": 98px,
@@ -124,7 +124,7 @@
   $items: map-merge(
     $items,
     (
-      "example-d--focus--responsive": (
+      "example-d--focus--if-mobile": (
         "width": 26px,
         "height": 18px,
         "total-width": 98px,
@@ -152,7 +152,7 @@
   $items: map-merge(
     $items,
     (
-      "example-d--responsive": (
+      "example-d--if-mobile": (
         "width": 26px,
         "height": 18px,
         "total-width": 98px,

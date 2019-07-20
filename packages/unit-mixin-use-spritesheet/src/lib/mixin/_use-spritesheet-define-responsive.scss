@@ -30,10 +30,10 @@
     $focus: map-get($items, "#{$name}--focus");
     $current: map-get($items, "#{$name}--current");
     $disabled: map-get($items, "#{$name}--disabled");
-    $up-responsive: map-get($items, "#{$name}--responsive");
-    $focus-responsive: map-get($items, "#{$name}--focus--responsive");
-    $current-responsive: map-get($items, "#{$name}--current--responsive");
-    $disabled-responsive: map-get($items, "#{$name}--disabled--responsive");
+    $up-if-mobile: map-get($items, "#{$name}--if-mobile");
+    $focus-if-mobile: map-get($items, "#{$name}--focus--if-mobile");
+    $current-if-mobile: map-get($items, "#{$name}--current--if-mobile");
+    $disabled-if-mobile: map-get($items, "#{$name}--disabled--if-mobile");
     $use2x: map-get($options, "use2x");
     $capturing-selectors: map-get($options, "capturing-selectors");
 
@@ -46,10 +46,10 @@
           $use2x: false
         );
 
-        @if $up-responsive {
+        @if $up-if-mobile {
           @include define-breakpoint($until: "mobile") {
             @include _use-spritesheet-set-properties(
-              $values: $up-responsive,
+              $values: $up-if-mobile,
               $use2x: $use2x
             );
           }
@@ -67,13 +67,13 @@
           );
         }
 
-        @if $focus-responsive {
+        @if $focus-if-mobile {
           @include define-breakpoint($until: "mobile") {
             @include on-focus($capturing-selectors: $capturing-selectors) {
               @include _use-spritesheet-set-properties(
                 $values: (
-                  "offset-x": map-get($focus-responsive, "offset-x"),
-                  "offset-y": map-get($focus-responsive, "offset-y")
+                  "offset-x": map-get($focus-if-mobile, "offset-x"),
+                  "offset-y": map-get($focus-if-mobile, "offset-y")
                 ),
                 $use2x: $use2x
               );
@@ -93,13 +93,13 @@
           );
         }
 
-        @if $current-responsive {
+        @if $current-if-mobile {
           @include define-breakpoint($until: "mobile") {
             @include on-current($capturing-selectors: $capturing-selectors) {
               @include _use-spritesheet-set-properties(
                 $values: (
-                  "offset-x": map-get($current-responsive, "offset-x"),
-                  "offset-y": map-get($current-responsive, "offset-y")
+                  "offset-x": map-get($current-if-mobile, "offset-x"),
+                  "offset-y": map-get($current-if-mobile, "offset-y")
                 ),
                 $use2x: $use2x
               );
@@ -119,13 +119,13 @@
           );
         }
 
-        @if $disabled-responsive {
+        @if $disabled-if-mobile {
           @include define-breakpoint($until: "mobile") {
             @include on-disabled($capturing-selectors: $capturing-selectors) {
               @include _use-spritesheet-set-properties(
                 $values: (
-                  "offset-x": map-get($disabled-responsive, "offset-x"),
-                  "offset-y": map-get($disabled-responsive, "offset-y")
+                  "offset-x": map-get($disabled-if-mobile, "offset-x"),
+                  "offset-y": map-get($disabled-if-mobile, "offset-y")
                 ),
                 $use2x: $use2x
               );

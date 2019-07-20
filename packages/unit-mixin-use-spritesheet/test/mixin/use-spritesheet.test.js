@@ -304,7 +304,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -10px,
                   "offset-y": -10px
                 ),
-                "logo--responsive": (
+                "logo--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
@@ -376,7 +376,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -10px,
                   "offset-y": -10px
                 ),
-                "logo--responsive": (
+                "logo--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
@@ -593,7 +593,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
     }, {outputStyle: 'expanded'});
   });
 
-  it('should out responsive spritesheet settings with state if image like "#{$name}--focus--responsive" exists and argument $options is ("responsive": true).', async () => {
+  it('should out responsive spritesheet settings with state if image like "#{$name}--focus--if-mobile" exists and argument $options is ("responsive": true).', async () => {
     const cases = [
       {
         params: [
@@ -613,7 +613,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -10px,
                   "offset-y": -10px
                 ),
-                "logo--responsive": (
+                "logo--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
@@ -629,7 +629,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -20px,
                   "offset-y": -20px
                 ),
-                "logo--focus--responsive": (
+                "logo--focus--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
@@ -694,7 +694,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -10px,
                   "offset-y": -10px
                 ),
-                "logo--responsive": (
+                "logo--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
@@ -710,7 +710,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -20px,
                   "offset-y": -20px
                 ),
-                "logo--disabled--responsive": (
+                "logo--disabled--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
@@ -775,7 +775,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -10px,
                   "offset-y": -10px
                 ),
-                "logo--responsive": (
+                "logo--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
@@ -791,7 +791,7 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
                   "offset-x": -20px,
                   "offset-y": -20px
                 ),
-                "logo--current--responsive": (
+                "logo--current--if-mobile": (
                   "width": 20px,
                   "height": 20px,
                   "total-width": 30px,
