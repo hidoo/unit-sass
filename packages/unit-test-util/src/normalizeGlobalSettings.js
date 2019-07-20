@@ -13,7 +13,7 @@ const defaultOptions = {
   fontEnableOverride: 'true',
   fontFamily: 'sans-serif',
   fontFamilyMonospace: 'monospace',
-  fontEnableFeatureSettings: 'true',
+  fontEnableAdvancedSettings: 'true',
   fontEnableRelativeSize: 'true',
   fontBaseSize: '16px',
   fontSize: '14px',
@@ -35,7 +35,7 @@ const mappingKeyToSassVariable = new Map(
     ['fontEnableOverride', '$unit-font-enable-override'],
     ['fontFamily', '$unit-font-family'],
     ['fontFamilyMonospace', '$unit-font-family-monospace'],
-    ['fontEnableFeatureSettings', '$unit-font-enable-feature-settings'],
+    ['fontEnableAdvancedSettings', '$unit-font-enable-advanced-settings'],
     ['fontEnableRelativeSize', '$unit-font-enable-relative-size'],
     ['fontBaseSize', '$unit-font-base-size'],
     ['fontSize', '$unit-font-size'],
@@ -55,7 +55,7 @@ const mappingKeyToSassVariable = new Map(
  *   @param {String} options.fontEnableOverride value of $unit-font-enable-override
  *   @param {String} options.fontFamily value of $unit-font-family
  *   @param {String} options.fontFamilyMonospace value of $unit-font-family-monospace
- *   @param {String} options.fontEnableFeatureSettings value of $unit-font-enable-feature-settings
+ *   @param {String} options.fontEnableAdvancedSettings value of $unit-font-enable-advanced-settings
  *   @param {String} options.fontEnableRelativeSize value of $unit-font-enable-relative-size
  *   @param {String} options.fontBaseSize value of $unit-font-base-size
  *   @param {String} options.fontSize value of $unit-font-size
