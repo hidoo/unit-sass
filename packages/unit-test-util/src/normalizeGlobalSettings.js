@@ -5,6 +5,8 @@ const existOrEmptyString = require('./existOrEmptyString');
  * @type {Object}
  */
 const defaultOptions = {
+  prefix: 'unit',
+  utilPrefix: 'util',
   breakpoints: '("desktop": 1024px, "mobile": 667px)',
   stateSelectorsFocus: '(".is-focus")',
   stateSelectorsSelected: '(".is-selected")',
@@ -27,6 +29,8 @@ const defaultOptions = {
  */
 const mappingKeyToSassVariable = new Map(
   [
+    ['prefix', '$unit-prefix'],
+    ['utilPrefix', '$unit-util-prefix'],
     ['breakpoints', '$unit-breakpoints'],
     ['stateSelectorsFocus', '$unit-state-selectors-focus'],
     ['stateSelectorsSelected', '$unit-state-selectors-selected'],
@@ -47,6 +51,8 @@ const mappingKeyToSassVariable = new Map(
 /**
  * return global settings
  * @param {Object} options global settings
+ *   @param {String} options.prefix value of $unit-prefix
+ *   @param {String} options.utilPrefix value of $unit-util-prefix
  *   @param {String} options.breakpoints value of $unit-breakpoints
  *   @param {String} options.stateSelectorsFocus value of $unit-state-selectors-focus
  *   @param {String} options.stateSelectorsSelected value of $unit-state-selectors-selected
