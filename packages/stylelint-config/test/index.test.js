@@ -25,7 +25,7 @@ describe('@hidoo/stylint-config', () => {
     'plugin/selector-tag-no-without-class'
   ];
 
-  it('should error all rules in invalid.scss.', async () => {
+  it('should error all rules in invalid.css.', async () => {
     const results = stylelint.lint({
       code: invalidCss,
       config,
