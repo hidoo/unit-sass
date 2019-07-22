@@ -1,0 +1,133 @@
+/* stylelint-disable */
+
+// scss/at-each-key-value-single-line
+$at-each-key-value-single-line: ("key": "value") !default;
+
+@each $key in map-keys($at-each-key-value-single-line) {
+  $value: map-get($map, $key);
+}
+
+// scss/at-else-empty-line-before
+// scss/at-else-if-parentheses-space-before
+@if $at-else-empty-line-before {
+  // has no settings
+}
+@else if($at-else-if-parentheses-space-before) {
+  // has no settings
+}
+
+@else {
+  // has no settings
+}
+
+// scss/at-extend-no-missing-placeholder
+.at-extend-no-missing-placeholder {
+  font-size: 16px;
+}
+
+.at-extend-no-missing-placeholder-extender {
+  @extend .at-extend-no-missing-placeholder;
+}
+
+// scss/at-function-named-arguments
+.at-function-named-arguments {
+  color: darken($color: #fff, 30%);
+}
+
+// scss/at-import-no-partial-leading-underscore
+@import "_at-import-no-partial-leading-underscore";
+
+// scss/at-import-partial-extension-whitelist
+@import "at-import-partial-extension-whitelist.less";
+
+// scss/at-mixin-argumentless-call-parentheses
+@include at-mixin-argumentless-call-parentheses;
+
+// scss/at-mixin-named-arguments
+// @include at-mixin-named-arguments("hoge");
+// @include at-mixin-named-arguments($options: map-get($default-options, ("hoge", fuga);
+
+// scss/at-mixin-parentheses-space-before
+@mixin at-mixin-parentheses-space-before () {
+  // has no settings
+}
+
+// scss/at-rule-no-unknown
+@at-rule-no-unknown {
+  // has no settings
+}
+
+// scss/dollar-variable-colon-space-after
+$dollar-variable-colon-space-after:"invalid" !default;
+
+// scss/dollar-variable-colon-space-before
+$dollar-variable-colon-space-before : "invalid" !default;
+
+// scss/dollar-variable-default
+$dollar-variable-default: "invalid";
+
+// scss/dollar-variable-empty-line-before
+.dollar-variable-empty-line-before {
+  // has no settings
+}
+$dollar-variable-empty-line-before: "invalid" !default;
+
+// scss/double-slash-comment-empty-line-before
+.double-slash-comment-empty-line-before {
+  // has no settings
+}
+// invalid
+
+// scss/double-slash-comment-inline
+.double-slash-comment-inline {
+  width: 10px; // invalid
+}
+
+// scss/double-slash-comment-whitespace-inside
+.double-slash-comment-whitespace-inside {
+  //invalid
+}
+
+// scss/declaration-nested-properties
+// .declaration-nested-properties {
+//   border: {
+//     style: solid;
+//     color: #000;
+//   }
+// }
+
+// scss/function-quote-no-quoted-strings-inside
+.function-quote-no-quoted-strings-inside {
+  $invalid: quote("function-quote-no-quoted-strings-inside");
+}
+
+// scss/function-unquote-no-unquoted-strings-inside
+.function-unquote-no-unquoted-strings-inside {
+  $invalid: unquote(function-quote-no-quoted-strings-inside);
+}
+
+// scss/map-keys-quotes
+$map-keys-quotes: (invalid: "invalid", key: "value") !default;
+
+// scss/operator-no-newline-after
+$operator-no-newline-after: 1 +
+  2 !default;
+
+// operator-no-newline-before
+$operator-no-newline-after: 1
+  + 2 !default;
+
+// scss/operator-no-unspaced
+$operator-no-unspaced: 1px* 2px !default;
+
+// scss/selector-nest-combinators
+.selector-nest-combinators + .nested {
+  // has no settings
+}
+
+// scss/selector-no-redundant-nesting-selector
+.selector-no-redundant-nesting-selector {
+  & a {
+    $invalid: "selector-no-redundant-nesting-selector";
+  }
+}

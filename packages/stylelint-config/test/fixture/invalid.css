@@ -1,0 +1,93 @@
+/* stylelint-disable */
+
+/* at-rule-semicolon-space-before */
+@import "at-rule-semicolon-space-before.css" ;
+
+/* a11y/no-display-none */
+.no-display-none {
+  display: none;
+}
+
+/* a11y/no-obsolete-attribute */
+.no-obsolete-attribute[name] {
+  width: 0;
+}
+
+/* a11y/no-obsolete-element */
+blink.no-obsolete-element {
+  width: 5px;
+}
+
+/* a11y/no-outline-none */
+.no-outline-none {
+  outline: none;
+}
+
+/* a11y/no-text-align-justify */
+.no-text-align-justify {
+  text-align: justify;
+}
+
+/* a11y/selector-pseudo-class-focus */
+.selector-pseudo-class-focus:hover {
+  width: 10px;
+}
+
+/* order/properties-order */
+.properties-order::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  max-width: 0;
+  min-width: 0;
+  width: 0;
+  max-height: 0;
+  min-height: 0;
+  height: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+/* plugin/stylelint-group-selectors */
+.stylelint-group-selectors-b {
+  display: inline-block;
+  color: #111;
+}
+
+.stylelint-group-selectors-a {
+  display: inline-block;
+  color: #111;
+}
+
+/* plugin/no-low-performance-animation-properties */
+@keyframes myAnimation {
+  50% {
+    top: 5px;
+  }
+}
+
+/* plugin/stylelint-selector-no-empty */
+.stylelint-selector-no-empty-a,
+,
+.stylelint-selector-no-empty-b {
+  font-size: 16px;
+}
+
+/* plugin/selector-tag-no-without-class */
+div {
+  width: 15px;
+}
+
+span {
+  width: 20px;
+}
