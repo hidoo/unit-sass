@@ -1,5 +1,7 @@
 # unit
 
+[![Build Status](https://travis-ci.org/hidoo/unit-sass.svg?branch=master)](https://travis-ci.org/hidoo/unit-sass)
+
 > This is the monorepo for unit-sass packages.
 
 ## Packages
