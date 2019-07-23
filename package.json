@@ -6,8 +6,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "dev:start": "lerna exec 'yarn start' --ignore @hidoo/unit-test-util --ignore @hidoo/stylelint-config",
-    "dev:test": "lerna exec 'yarn test --watch' --no-private --ignore @hidoo/unit-test-util",
+    "dev:start": "lerna exec 'yarn start' --no-private --ignore @hidoo/stylelint-config",
+    "dev:test": "lerna exec 'yarn test --watch' --no-private",
     "lint": "npm-run-all -s lint:*",
     "lint:js": "eslint .",
     "lint:scss": "stylelint ./**/*.scss --syntax scss",
