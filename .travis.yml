@@ -4,6 +4,8 @@ node_js:
   - "12"
   - "10"
   - "8"
+before_install:
+  - npm install -g yarn
 install:
   - yarn
   - yarn bootstrap
