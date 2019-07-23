@@ -4,6 +4,7 @@
 /// @param {Map} $options [()] options
 ///   @param {Boolean} $options.use2x [false] use 2x image or not
 ///   @param {Boolean} $options.responsive [false] responsive or not
+///   @param {Boolean} $options.toggle [false] toggle or not
 ///   @param {List} $options.capturing-selectors [("a", "button")] capturing parent selectors
 ///
 /// @example scss
@@ -49,6 +50,7 @@
   $default-options: (
     "use2x": false,
     "responsive": false,
+    "toggle": false,
     "capturing-selectors": ()
   );
 
@@ -72,6 +74,10 @@
     @error "@mixin use-spritesheet: @mixin _use-spritesheet-define-responsive is required.";
   }
 
+  @if not mixin-exists("_use-spritesheet-define-toggle") {
+    @error "@mixin use-spritesheet: @mixin _use-spritesheet-define-toggle is required.";
+  }
+
   @if type-of($type) != "string" or $type == "" {
     @error "@mixin use-spritesheet: Argument $type must be valid string. (specified: #{inspect($type)})";
   }
@@ -93,29 +99,95 @@
       $image: map-get($sheet-by-type, "image");
       $items: map-get($sheet-by-type, "items");
 
-      @include define-placeholder($name: $type) {
-        overflow: hidden;
-        text-indent: -100%;
-        color: transparent;
-        background-image: url(#{$image});
-      }
+      @if map-get($options, "toggle") {
+        $type-field: "#{$type}-field";
+        $type-alt: "#{$type}-alt";
 
-      @if map-get($options, "responsive") {
-        @include _use-spritesheet-define-responsive(
-          $name: $name,
-          $items: $items,
-          $options: $options
-        ) {
-          @extend %#{$type};
+        @include define-placeholder($name: $type) {
+          overflow: hidden;
+          vertical-align: middle;
+        }
+
+        @include define-placeholder($name: $type-field) {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+
+        @include define-placeholder($name: $type-alt) {
+          display: block;
+          overflow: hidden;
+          z-index: 0;
+          text-indent: -100%;
+          vertical-align: middle;
+          color: transparent;
+          background-image: url(#{$image});
+        }
+
+        @if map-get($options, "responsive") {
+          @include _use-spritesheet-define-toggle-responsive(
+            $name: $name,
+            $items: $items,
+            $options: $options
+          ) {
+            @extend %#{$type};
+
+            > .#{$unit-prefix}-toggle__field {
+              @extend %#{$type-field};
+            }
+
+            > .#{$unit-prefix}-toggle__alt {
+              @extend %#{$type-alt};
+            }
+          }
+        }
+        @else {
+          @include _use-spritesheet-define-toggle(
+            $name: $name,
+            $items: $items,
+            $options: $options
+          ) {
+            @extend %#{$type};
+
+            > .#{$unit-prefix}-toggle__field {
+              @extend %#{$type-field};
+            }
+
+            > .#{$unit-prefix}-toggle__alt {
+              @extend %#{$type-alt};
+            }
+          }
         }
       }
       @else {
-        @include _use-spritesheet-define(
-          $name: $name,
-          $items: $items,
-          $options: $options
-        ) {
-          @extend %#{$type};
+        @include define-placeholder($name: $type) {
+          overflow: hidden;
+          text-indent: -100%;
+          color: transparent;
+          background-image: url(#{$image});
+        }
+
+        @if map-get($options, "responsive") {
+          @include _use-spritesheet-define-responsive(
+            $name: $name,
+            $items: $items,
+            $options: $options
+          ) {
+            @extend %#{$type};
+          }
+        }
+        @else {
+          @include _use-spritesheet-define(
+            $name: $name,
+            $items: $items,
+            $options: $options
+          ) {
+            @extend %#{$type};
+          }
         }
       }
     }

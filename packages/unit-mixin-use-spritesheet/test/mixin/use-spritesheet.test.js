@@ -1,4 +1,4 @@
-/* eslint max-len: 0, no-magic-numbers: 0 */
+/* eslint-disable max-len, no-magic-numbers, max-statements */
 
 import assert from 'assert';
 import {eachTestCases, existOrEmptyString, normalizeGlobalSettings} from '@hidoo/unit-test-util';
@@ -835,6 +835,778 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
 @media only screen and (max-width: 666px) {
   .selector-logo.is-current {
     background-position: -24px -24px;
+  }
+}`
+      }
+    ];
+
+    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
+      if (error) {
+        return reject(error);
+      }
+
+      const actual = result.css.toString().trim();
+
+      assert(actual === expected);
+      return resolve();
+    }, {outputStyle: 'expanded'});
+  });
+
+  it('should out spritesheet settings for toggle if argument $options is ("toggle": true).', async () => {
+    const cases = [
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}`
+      }
+    ];
+
+    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
+      if (error) {
+        return reject(error);
+      }
+
+      const actual = result.css.toString().trim();
+
+      assert(actual === expected);
+      return resolve();
+    }, {outputStyle: 'expanded'});
+  });
+
+  it('should out 2x spritesheet settings for toggle if argument $options is ("toggle": true, "use2x": true).', async () => {
+    const cases = [
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true, "use2x": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 5px;
+  height: 5px;
+  background-position: -5px -5px;
+  background-size: 15px 15px;
+}`
+      }
+    ];
+
+    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
+      if (error) {
+        return reject(error);
+      }
+
+      const actual = result.css.toString().trim();
+
+      assert(actual === expected);
+      return resolve();
+    }, {outputStyle: 'expanded'});
+  });
+
+  it('should out responsive spritesheet settings for toggle if argument $options is ("toggle": true, "responsive": true).', async () => {
+    const cases = [
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true, "responsive": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                ),
+                "radio--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -4px,
+                  "offset-y": -4px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field + .unit-toggle__alt {
+    width: 20px;
+    height: 20px;
+    background-position: -4px -4px;
+    background-size: 30px 30px;
+  }
+}`
+      }
+    ];
+
+    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
+      if (error) {
+        return reject(error);
+      }
+
+      const actual = result.css.toString().trim();
+
+      assert(actual === expected);
+      return resolve();
+    }, {outputStyle: 'expanded'});
+  });
+
+  it('should out responsive spritesheet settings for toggle if argument $options is ("toggle": true, "use2x": true, "responsive": true).', async () => {
+    const cases = [
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true, "use2x": true, "responsive": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                ),
+                "radio--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -4px,
+                  "offset-y": -4px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field + .unit-toggle__alt {
+    width: 10px;
+    height: 10px;
+    background-position: -2px -2px;
+    background-size: 15px 15px;
+  }
+}`
+      }
+    ];
+
+    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
+      if (error) {
+        return reject(error);
+      }
+
+      const actual = result.css.toString().trim();
+
+      assert(actual === expected);
+      return resolve();
+    }, {outputStyle: 'expanded'});
+  });
+
+  it('should out spritesheet settings for toggle with state if image like "#{$name}--focus" exists and argument $options is ("toggle": true).', async () => {
+    const cases = [
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                ),
+                "radio--focus": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -20px,
+                  "offset-y": -20px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}
+
+.selector-radio > .unit-toggle__field:hover + .unit-toggle__alt, .selector-radio > .unit-toggle__field:focus + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-focus + .unit-toggle__alt {
+  background-position: -20px -20px;
+}`
+      }
+    ];
+
+    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
+      if (error) {
+        return reject(error);
+      }
+
+      const actual = result.css.toString().trim();
+
+      assert(actual === expected);
+      return resolve();
+    }, {outputStyle: 'expanded'});
+  });
+
+
+  it('should out responsive spritesheet settings for toggle with state if image like "#{$name}--focus--if-mobile" exists and argument $options is ("toggle": true, "responsive": true).', async () => {
+    const cases = [
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true, "responsive": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                ),
+                "radio--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -4px,
+                  "offset-y": -4px
+                ),
+                "radio--focus": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -20px,
+                  "offset-y": -20px
+                ),
+                "radio--focus--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -24px,
+                  "offset-y": -24px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field + .unit-toggle__alt {
+    width: 20px;
+    height: 20px;
+    background-position: -4px -4px;
+    background-size: 30px 30px;
+  }
+}
+
+.selector-radio > .unit-toggle__field:hover + .unit-toggle__alt, .selector-radio > .unit-toggle__field:focus + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-focus + .unit-toggle__alt {
+  background-position: -20px -20px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field:hover + .unit-toggle__alt, .selector-radio > .unit-toggle__field:focus + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-focus + .unit-toggle__alt {
+    background-position: -24px -24px;
+  }
+}`
+      },
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true, "responsive": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                ),
+                "radio--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -4px,
+                  "offset-y": -4px
+                ),
+                "radio--disabled": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -20px,
+                  "offset-y": -20px
+                ),
+                "radio--disabled--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -24px,
+                  "offset-y": -24px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field + .unit-toggle__alt {
+    width: 20px;
+    height: 20px;
+    background-position: -4px -4px;
+    background-size: 30px 30px;
+  }
+}
+
+.selector-radio > .unit-toggle__field:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-disabled + .unit-toggle__alt {
+  background-position: -20px -20px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-disabled + .unit-toggle__alt {
+    background-position: -24px -24px;
+  }
+}`
+      },
+      {
+        params: [
+          '"radio-image"',
+          '"radio"',
+          '("toggle": true, "responsive": true)',
+          `
+          $sprites: (
+            "radio-image": (
+              "image": "path/to/sprite/radio-image.png",
+              "items": (
+                "radio": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -10px,
+                  "offset-y": -10px
+                ),
+                "radio--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -4px,
+                  "offset-y": -4px
+                ),
+                "radio--disabled": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -20px,
+                  "offset-y": -20px
+                ),
+                "radio--disabled--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 30px,
+                  "total-height": 30px,
+                  "offset-x": -24px,
+                  "offset-y": -24px
+                ),
+                "radio--selected": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 28px,
+                  "total-height": 28px,
+                  "offset-x": -28px,
+                  "offset-y": -28px
+                ),
+                "radio--selected--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 38px,
+                  "total-height": 38px,
+                  "offset-x": -38px,
+                  "offset-y": -38px
+                ),
+                "radio--selected--disabled": (
+                  "width": 10px,
+                  "height": 10px,
+                  "total-width": 40px,
+                  "total-height": 40px,
+                  "offset-x": -25px,
+                  "offset-y": -25px
+                ),
+                "radio--selected--disabled--if-mobile": (
+                  "width": 20px,
+                  "height": 20px,
+                  "total-width": 60px,
+                  "total-height": 60px,
+                  "offset-x": -36px,
+                  "offset-y": -36px
+                )
+              )
+            )
+          );
+          `
+        ],
+        expected:
+`.selector-radio {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+.selector-radio > .unit-toggle__field {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.selector-radio > .unit-toggle__alt {
+  display: block;
+  overflow: hidden;
+  z-index: 0;
+  text-indent: -100%;
+  vertical-align: middle;
+  color: transparent;
+  background-image: url(path/to/sprite/radio-image.png);
+}
+
+.selector-radio > .unit-toggle__field + .unit-toggle__alt {
+  width: 10px;
+  height: 10px;
+  background-position: -10px -10px;
+  background-size: 30px 30px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field + .unit-toggle__alt {
+    width: 20px;
+    height: 20px;
+    background-position: -4px -4px;
+    background-size: 30px 30px;
+  }
+}
+
+.selector-radio > .unit-toggle__field:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-disabled + .unit-toggle__alt {
+  background-position: -20px -20px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-disabled + .unit-toggle__alt {
+    background-position: -24px -24px;
+  }
+}
+
+.selector-radio > .unit-toggle__field:checked + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-selected + .unit-toggle__alt {
+  background-position: -28px -28px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field:checked + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-selected + .unit-toggle__alt {
+    background-position: -38px -38px;
+  }
+}
+
+.selector-radio > .unit-toggle__field:checked:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field:checked.is-disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-selected:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-selected.is-disabled + .unit-toggle__alt {
+  background-position: -25px -25px;
+}
+
+@media only screen and (max-width: 666px) {
+  .selector-radio > .unit-toggle__field:checked:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field:checked.is-disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-selected:disabled + .unit-toggle__alt, .selector-radio > .unit-toggle__field.is-selected.is-disabled + .unit-toggle__alt {
+    background-position: -36px -36px;
   }
 }`
       }

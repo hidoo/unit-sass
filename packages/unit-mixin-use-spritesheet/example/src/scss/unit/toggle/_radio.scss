@@ -1,0 +1,41 @@
+/*
+modifiers: radio
+
+builtin modifiers of radio for #{$unit-prefix}-toggle
+
+Weight: -99
+
+Markup: <!-- single -->
+<span class="#{$unit-prefix}-toggle  {{modifier_class}}">
+  <input class="#{$unit-prefix}-toggle__field" type="radio" name="{{modifier_class}}" value="1" />
+  <span class="#{$unit-prefix}-toggle__alt"></span>
+</span>
+<!-- single:disabled -->
+<span class="#{$unit-prefix}-toggle  {{modifier_class}}">
+  <input class="#{$unit-prefix}-toggle__field" type="radio" name="{{modifier_class}}" value="2" checked="checked" disabled="disabled" />
+  <span class="#{$unit-prefix}-toggle__alt"></span>
+</span>
+<!-- with label -->
+<label>
+  <span class="#{$unit-prefix}-toggle  {{modifier_class}}">
+    <input class="#{$unit-prefix}-toggle__field" type="radio" name="{{modifier_class}}" value="3" />
+    <span class="#{$unit-prefix}-toggle__alt"></span>
+  </span>
+  Lorem ipsum dolor sit amet.
+</label>
+
+#{$unit-prefix}-toggle--radio-example-a - radio example-a
+#{$unit-prefix}-toggle--radio-example-b - radio example-b
+#{$unit-prefix}-toggle--radio-example-c - radio example-c
+#{$unit-prefix}-toggle--radio-example-d - radio example-d
+
+Style guide: #{$unit-prefix}-toggle.radio.extends
+*/
+.#{$unit-prefix}-toggle--radio {
+  $options: ("toggle": true);
+
+  @include use-spritesheet($type: "radio-svg", $name: "example-a", $options: $options);
+  @include use-spritesheet($type: "radio-svg", $name: "example-b", $options: map-merge($options, ("responsive": true)));
+  @include use-spritesheet($type: "radio-image", $name: "example-c", $options: map-merge($options, ("use2x": true)));
+  @include use-spritesheet($type: "radio-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": true)));
+}

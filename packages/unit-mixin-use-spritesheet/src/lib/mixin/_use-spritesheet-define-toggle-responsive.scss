@@ -1,0 +1,241 @@
+/// define responsive toggle item
+/// @access private
+/// @param {String} $name name of spritesheet item
+/// @param {Map} $items [()] spritesheet items
+/// @param {Map} $options [()] options
+///
+@mixin _use-spritesheet-define-toggle-responsive($name, $items: (), $options: ()) {
+  @if not function-exists("merge-state-selectors") {
+    @error "@mixin _use-spritesheet-define-toggle-responsive: @function merge-state-selectors is required.";
+  }
+
+  @if not mixin-exists("_use-spritesheet-set-properties") {
+    @error "@mixin _use-spritesheet-define-toggle-responsive: @mixin _use-spritesheet-set-properties is required.";
+  }
+
+  $selectors-focus: merge-state-selectors("focus");
+  $selectors-disabled: merge-state-selectors("disabled");
+  $selectors-selected: merge-state-selectors("selected");
+
+  @if map-has-key($items, $name) {
+    $up: map-get($items, $name);
+    $focus: map-get($items, "#{$name}--focus");
+    $disabled: map-get($items, "#{$name}--disabled");
+    $selected: map-get($items, "#{$name}--selected");
+    $selected-focus: map-get($items, "#{$name}--selected--focus");
+    $selected-disabled: map-get($items, "#{$name}--selected--disabled");
+    $up-if-mobile: map-get($items, "#{$name}--if-mobile");
+    $focus-if-mobile: map-get($items, "#{$name}--focus--if-mobile");
+    $disabled-if-mobile: map-get($items, "#{$name}--disabled--if-mobile");
+    $selected-if-mobile: map-get($items, "#{$name}--selected--if-mobile");
+    $selected-focus-if-mobile: map-get($items, "#{$name}--selected--focus--if-mobile");
+    $selected-disabled-if-mobile: map-get($items, "#{$name}--selected--disabled--if-mobile");
+    $use2x: map-get($options, "use2x");
+
+    &-#{$name} {
+      @content;
+
+      @if $up {
+        > .#{$unit-prefix}-toggle__field {
+          + .#{$unit-prefix}-toggle__alt {
+            @include _use-spritesheet-set-properties(
+              $values: $up,
+              $use2x: false
+            );
+
+            @if $up-if-mobile {
+              @include define-breakpoint($until: "mobile") {
+                @include _use-spritesheet-set-properties(
+                  $values: $up-if-mobile,
+                  $use2x: $use2x
+                );
+              }
+            }
+          }
+        }
+      }
+
+      // when focus
+      @if $focus {
+        $selector: unique-id();
+
+        @include define-placeholder($name: $selector) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($focus, "offset-x"),
+              "offset-y": map-get($focus, "offset-y")
+            ),
+            $use2x: false
+          );
+
+          @if $focus-if-mobile {
+            @include define-breakpoint($until: "mobile") {
+              @include _use-spritesheet-set-properties(
+                $values: (
+                  "offset-x": map-get($focus-if-mobile, "offset-x"),
+                  "offset-y": map-get($focus-if-mobile, "offset-y")
+                ),
+                $use2x: $use2x
+              );
+            }
+          }
+        }
+
+        @each $state in $selectors-focus {
+          > .#{$unit-prefix}-toggle__field#{$state} {
+            + .#{$unit-prefix}-toggle__alt {
+              @extend %#{$selector};
+            }
+          }
+        }
+      }
+
+      // when disabled
+      @if $disabled {
+        $selector: unique-id();
+
+        @include define-placeholder($name: $selector) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($disabled, "offset-x"),
+              "offset-y": map-get($disabled, "offset-y")
+            ),
+            $use2x: false
+          );
+
+          @if $disabled-if-mobile {
+            @include define-breakpoint($until: "mobile") {
+              @include _use-spritesheet-set-properties(
+                $values: (
+                  "offset-x": map-get($disabled-if-mobile, "offset-x"),
+                  "offset-y": map-get($disabled-if-mobile, "offset-y")
+                ),
+                $use2x: $use2x
+              );
+            }
+          }
+        }
+
+        @each $state in $selectors-disabled {
+          > .#{$unit-prefix}-toggle__field#{$state} {
+            + .#{$unit-prefix}-toggle__alt {
+              @extend %#{$selector};
+            }
+          }
+        }
+      }
+
+      // when selected
+      @if $selected {
+        $selector: unique-id();
+
+        @include define-placeholder($name: $selector) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($selected, "offset-x"),
+              "offset-y": map-get($selected, "offset-y")
+            ),
+            $use2x: false
+          );
+
+          @if $selected-if-mobile {
+            @include define-breakpoint($until: "mobile") {
+              @include _use-spritesheet-set-properties(
+                $values: (
+                  "offset-x": map-get($selected-if-mobile, "offset-x"),
+                  "offset-y": map-get($selected-if-mobile, "offset-y")
+                ),
+                $use2x: $use2x
+              );
+            }
+          }
+        }
+
+        @each $state in $selectors-selected {
+          > .#{$unit-prefix}-toggle__field#{$state} {
+            + .#{$unit-prefix}-toggle__alt {
+              @extend %#{$selector};
+            }
+          }
+        }
+      }
+
+      // when selected and focus
+      @if $selected-focus {
+        $selector: unique-id();
+
+        @include define-placeholder($name: $selector) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($selected-focus, "offset-x"),
+              "offset-y": map-get($selected-focus, "offset-y")
+            ),
+            $use2x: false
+          );
+
+          @if $selected-focus-if-mobile {
+            @include define-breakpoint($until: "mobile") {
+              @include _use-spritesheet-set-properties(
+                $values: (
+                  "offset-x": map-get($selected-focus-if-mobile, "offset-x"),
+                  "offset-y": map-get($selected-focus-if-mobile, "offset-y")
+                ),
+                $use2x: $use2x
+              );
+            }
+          }
+        }
+
+        @each $state-selected in $selectors-selected {
+          @each $state in $selectors-focus {
+            > .#{$unit-prefix}-toggle__field#{$state-selected}#{$state} {
+              + .#{$unit-prefix}-toggle__alt {
+                @extend %#{$selector};
+              }
+            }
+          }
+        }
+      }
+
+      // when selected and disabled
+      @if $selected-disabled {
+        $selector: unique-id();
+
+        @include define-placeholder($name: $selector) {
+          @include _use-spritesheet-set-properties(
+            $values: (
+              "offset-x": map-get($selected-disabled, "offset-x"),
+              "offset-y": map-get($selected-disabled, "offset-y")
+            ),
+            $use2x: false
+          );
+
+          @if $selected-disabled-if-mobile {
+            @include define-breakpoint($until: "mobile") {
+              @include _use-spritesheet-set-properties(
+                $values: (
+                  "offset-x": map-get($selected-disabled-if-mobile, "offset-x"),
+                  "offset-y": map-get($selected-disabled-if-mobile, "offset-y")
+                ),
+                $use2x: $use2x
+              );
+            }
+          }
+        }
+
+        @each $state-selected in $selectors-selected {
+          @each $state in $selectors-disabled {
+            > .#{$unit-prefix}-toggle__field#{$state-selected}#{$state} {
+              + .#{$unit-prefix}-toggle__alt {
+                @extend %#{$selector};
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @else {
+    @warn "@mixin _use-spritesheet-define-toggle-responsive: Spritesheet '#{$name}' was not generate, because $name: '#{$name}' is not found.";
+  }
+}

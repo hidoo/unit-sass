@@ -1,0 +1,51 @@
+/*
+check
+
+check modifiers of #{$unit-prefix}-toggle
+
+Weight: -98
+
+Style guide: #{$unit-prefix}-toggle.check
+*/
+
+/*
+modifiers: check
+
+builtin modifiers of check for #{$unit-prefix}-toggle
+
+Weight: -100
+
+Markup: <!-- single -->
+<span class="#{$unit-prefix}-toggle  {{modifier_class}}">
+  <input class="#{$unit-prefix}-toggle__field" type="checkbox" name="{{modifier_class}}" value="1" />
+  <span class="#{$unit-prefix}-toggle__alt"></span>
+</span>
+<!-- single:disabled -->
+<span class="#{$unit-prefix}-toggle  {{modifier_class}}">
+  <input class="#{$unit-prefix}-toggle__field" type="checkbox" name="{{modifier_class}}" value="2" checked="checked" disabled="disabled" />
+  <span class="#{$unit-prefix}-toggle__alt"></span>
+</span>
+<!-- with label -->
+<label>
+  <span class="#{$unit-prefix}-toggle  {{modifier_class}}">
+    <input class="#{$unit-prefix}-toggle__field" type="checkbox" name="{{modifier_class}}" value="3" />
+    <span class="#{$unit-prefix}-toggle__alt"></span>
+  </span>
+  Lorem ipsum dolor sit amet.
+</label>
+
+#{$unit-prefix}-toggle--check-example-a - check example-a
+#{$unit-prefix}-toggle--check-example-b - check example-b
+#{$unit-prefix}-toggle--check-example-c - check example-c
+#{$unit-prefix}-toggle--check-example-d - check example-d
+
+Style guide: #{$unit-prefix}-toggle.check.extends
+*/
+.#{$unit-prefix}-toggle--check {
+  $options: ("toggle": true);
+
+  @include use-spritesheet($type: "check-svg", $name: "example-a", $options: $options);
+  @include use-spritesheet($type: "check-svg", $name: "example-b", $options: map-merge($options, ("responsive": true)));
+  @include use-spritesheet($type: "check-image", $name: "example-c", $options: map-merge($options, ("use2x": true)));
+  @include use-spritesheet($type: "check-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": true)));
+}

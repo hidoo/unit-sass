@@ -5,8 +5,7 @@
 @import "~@hidoo/unit/src/lib";
 @import "~@hidoo/unit/src/unit/icon/core";
 @import "~@hidoo/unit/src/unit/text/core";
-@import "~@hidoo/unit/src/unit/text/inline";
-@import "~@hidoo/unit/src/unit/toggle";
+@import "~@hidoo/unit/src/unit/toggle/core";
 @import "~@hidoo/unit/src/override";
 
 // import this package
@@ -18,3 +17,4 @@
 // import extended unit
 @import "unit/icon";
 @import "unit/text";
+@import "unit/toggle";
