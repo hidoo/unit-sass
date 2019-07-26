@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "Asia/Tokyo",
+  "labels": [
+    "renovate"
+  ],
+  "schedule": [
+    "every weekend"
+  ],
+  "patch": {
+    "automerge": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "packageRules": [
+    {
+      "sourceUrlPrefixes": [
+        "https://github.com/hidoo/gulp-project"
+      ],
+      "groupName": "gulp-project monorepo packages"
+    }
+  ]
+}
