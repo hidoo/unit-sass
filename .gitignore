@@ -18,3 +18,5 @@ packages/**/node_modules/
 
 # distribution files
 packages/**/example/build/
+packages/**/test/build/
+packages/**/lib/**/*.js
