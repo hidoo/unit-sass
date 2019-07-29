@@ -33,13 +33,13 @@
     "stylelint-selector-tag-no-without-class": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/register": "^7.4.4",
-    "babel-preset-power-assert": "^3.0.0",
-    "mocha": "^6.1.4",
-    "power-assert": "^1.6.1",
-    "stylelint": "^10.1.0"
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@babel/register": "7.4.4",
+    "babel-preset-power-assert": "3.0.0",
+    "mocha": "6.1.4",
+    "power-assert": "1.6.1",
+    "stylelint": "10.1.0"
   },
   "peerDependencies": {
     "stylelint": "^10.0.0"
