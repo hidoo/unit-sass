@@ -24,6 +24,8 @@ $ npm install @hidoo/unit @hidoo/unit-mixin-use-spritesheet
 
 ### Usage for this mixin
 
+SCSS
+
 ```scss
 // import spritesheet variables in advance
 @import "path/to/sprite/icon-image";
@@ -32,12 +34,19 @@ $ npm install @hidoo/unit @hidoo/unit-mixin-use-spritesheet
 .selector {
   @include use-spritesheet($type: "icon-image", $name: "logo");
 }
-// -> .selector-logo { ... }
+```
+
+CSS Outputs
+
+```css
+.selector-logo {
+  /* spritesheet settings */
+}
 ```
 
 ## Supported format of spritesheet
 
-This mixin is support following format of spritesheet.
+This mixin support following format of spritesheet.
 
 ```scss
 $sprites: (
