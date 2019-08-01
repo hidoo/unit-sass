@@ -35,7 +35,7 @@
       @if $up {
         @include _use-spritesheet-set-properties(
           $values: $up,
-          $use2x: $use2x
+          $use2x: $use2x == true
         );
       }
 
@@ -46,7 +46,7 @@
               "offset-x": map-get($focus, "offset-x"),
               "offset-y": map-get($focus, "offset-y")
             ),
-            $use2x: $use2x
+            $use2x: $use2x == true
           );
         }
       }
@@ -58,7 +58,7 @@
               "offset-x": map-get($current, "offset-x"),
               "offset-y": map-get($current, "offset-y")
             ),
-            $use2x: $use2x
+            $use2x: $use2x == true
           );
         }
       }
@@ -70,7 +70,7 @@
               "offset-x": map-get($disabled, "offset-x"),
               "offset-y": map-get($disabled, "offset-y")
             ),
-            $use2x: $use2x
+            $use2x: $use2x == true
           );
         }
       }

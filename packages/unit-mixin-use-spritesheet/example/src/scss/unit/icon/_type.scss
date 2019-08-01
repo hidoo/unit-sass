@@ -33,7 +33,7 @@ Markup: <!-- single -->
 #{$unit-prefix}-icon--type-example-a - type example-a (svg)
 #{$unit-prefix}-icon--type-example-b - type example-b (svg, responsive)
 #{$unit-prefix}-icon--type-example-c - type example-c (image, use2x)
-#{$unit-prefix}-icon--type-example-d - type example-d (image, responsive, use2x)
+#{$unit-prefix}-icon--type-example-d - type example-d (image, responsive, use2x - if mobile)
 
 Style guide: #{$unit-prefix}-icon.type.extend
 */
@@ -43,5 +43,5 @@ Style guide: #{$unit-prefix}-icon.type.extend
   @include use-spritesheet($type: "icon-svg", $name: "example-a", $options: $options);
   @include use-spritesheet($type: "icon-svg", $name: "example-b", $options: map-merge($options, ("responsive": true)));
   @include use-spritesheet($type: "icon-image", $name: "example-c", $options: map-merge($options, ("use2x": true)));
-  @include use-spritesheet($type: "icon-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": true)));
+  @include use-spritesheet($type: "icon-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": "if-mobile")));
 }

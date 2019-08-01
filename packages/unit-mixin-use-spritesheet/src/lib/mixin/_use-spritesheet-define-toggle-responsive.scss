@@ -40,14 +40,14 @@
           + .#{$unit-prefix}-toggle__alt {
             @include _use-spritesheet-set-properties(
               $values: $up,
-              $use2x: false
+              $use2x: $use2x == true
             );
 
             @if $up-if-mobile {
               @include define-breakpoint($until: "mobile") {
                 @include _use-spritesheet-set-properties(
                   $values: $up-if-mobile,
-                  $use2x: $use2x
+                  $use2x: $use2x == true or $use2x == "if-mobile"
                 );
               }
             }
@@ -65,7 +65,7 @@
               "offset-x": map-get($focus, "offset-x"),
               "offset-y": map-get($focus, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
 
           @if $focus-if-mobile {
@@ -75,7 +75,7 @@
                   "offset-x": map-get($focus-if-mobile, "offset-x"),
                   "offset-y": map-get($focus-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }
@@ -100,7 +100,7 @@
               "offset-x": map-get($disabled, "offset-x"),
               "offset-y": map-get($disabled, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
 
           @if $disabled-if-mobile {
@@ -110,7 +110,7 @@
                   "offset-x": map-get($disabled-if-mobile, "offset-x"),
                   "offset-y": map-get($disabled-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }
@@ -135,7 +135,7 @@
               "offset-x": map-get($selected, "offset-x"),
               "offset-y": map-get($selected, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
 
           @if $selected-if-mobile {
@@ -145,7 +145,7 @@
                   "offset-x": map-get($selected-if-mobile, "offset-x"),
                   "offset-y": map-get($selected-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }
@@ -170,7 +170,7 @@
               "offset-x": map-get($selected-focus, "offset-x"),
               "offset-y": map-get($selected-focus, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
 
           @if $selected-focus-if-mobile {
@@ -180,7 +180,7 @@
                   "offset-x": map-get($selected-focus-if-mobile, "offset-x"),
                   "offset-y": map-get($selected-focus-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }
@@ -207,7 +207,7 @@
               "offset-x": map-get($selected-disabled, "offset-x"),
               "offset-y": map-get($selected-disabled, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
 
           @if $selected-disabled-if-mobile {
@@ -217,7 +217,7 @@
                   "offset-x": map-get($selected-disabled-if-mobile, "offset-x"),
                   "offset-y": map-get($selected-disabled-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }

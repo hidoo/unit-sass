@@ -24,10 +24,10 @@ Markup: <!-- single -->
   Lorem ipsum dolor sit amet.
 </label>
 
-#{$unit-prefix}-toggle--radio-example-a - radio example-a
-#{$unit-prefix}-toggle--radio-example-b - radio example-b
-#{$unit-prefix}-toggle--radio-example-c - radio example-c
-#{$unit-prefix}-toggle--radio-example-d - radio example-d
+#{$unit-prefix}-toggle--radio-example-a - radio example-a (svg)
+#{$unit-prefix}-toggle--radio-example-b - radio example-b (svg, responsive)
+#{$unit-prefix}-toggle--radio-example-c - radio example-c (image, use2x)
+#{$unit-prefix}-toggle--radio-example-d - radio example-d (image, responsive, use2x - if mobile)
 
 Style guide: #{$unit-prefix}-toggle.radio.extends
 */
@@ -37,5 +37,5 @@ Style guide: #{$unit-prefix}-toggle.radio.extends
   @include use-spritesheet($type: "radio-svg", $name: "example-a", $options: $options);
   @include use-spritesheet($type: "radio-svg", $name: "example-b", $options: map-merge($options, ("responsive": true)));
   @include use-spritesheet($type: "radio-image", $name: "example-c", $options: map-merge($options, ("use2x": true)));
-  @include use-spritesheet($type: "radio-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": true)));
+  @include use-spritesheet($type: "radio-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": "if-mobile")));
 }

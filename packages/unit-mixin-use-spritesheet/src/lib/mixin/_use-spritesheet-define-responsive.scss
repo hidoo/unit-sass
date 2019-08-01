@@ -43,14 +43,14 @@
       @if $up {
         @include _use-spritesheet-set-properties(
           $values: $up,
-          $use2x: false
+          $use2x: $use2x == true
         );
 
         @if $up-if-mobile {
           @include define-breakpoint($until: "mobile") {
             @include _use-spritesheet-set-properties(
               $values: $up-if-mobile,
-              $use2x: $use2x
+              $use2x: $use2x == true or $use2x == "if-mobile"
             );
           }
         }
@@ -63,7 +63,7 @@
               "offset-x": map-get($focus, "offset-x"),
               "offset-y": map-get($focus, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
         }
 
@@ -75,7 +75,7 @@
                   "offset-x": map-get($focus-if-mobile, "offset-x"),
                   "offset-y": map-get($focus-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }
@@ -89,7 +89,7 @@
               "offset-x": map-get($current, "offset-x"),
               "offset-y": map-get($current, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
         }
 
@@ -101,7 +101,7 @@
                   "offset-x": map-get($current-if-mobile, "offset-x"),
                   "offset-y": map-get($current-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }
@@ -115,7 +115,7 @@
               "offset-x": map-get($disabled, "offset-x"),
               "offset-y": map-get($disabled, "offset-y")
             ),
-            $use2x: false
+            $use2x: $use2x == true
           );
         }
 
@@ -127,7 +127,7 @@
                   "offset-x": map-get($disabled-if-mobile, "offset-x"),
                   "offset-y": map-get($disabled-if-mobile, "offset-y")
                 ),
-                $use2x: $use2x
+                $use2x: $use2x == true or $use2x == "if-mobile"
               );
             }
           }

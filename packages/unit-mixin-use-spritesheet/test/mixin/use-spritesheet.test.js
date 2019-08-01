@@ -356,13 +356,13 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
   });
 
 
-  it('should out responsive spritesheet settings if argument $options is ("use2x": true, "responsive": true).', async () => {
+  it('should out responsive spritesheet settings if argument $options is ("use2x": "if-mobile", "responsive": true).', async () => {
     const cases = [
       {
         params: [
           '"icon-image"',
           '"logo"',
-          '("use2x": true, "responsive": true)',
+          '("use2x": if-mobile, "responsive": true)',
           `
           $sprites: (
             "icon-image": (
@@ -1085,13 +1085,13 @@ ${existOrEmptyString(spritesheets) ? spritesheets : ''}
     }, {outputStyle: 'expanded'});
   });
 
-  it('should out responsive spritesheet settings for toggle if argument $options is ("toggle": true, "use2x": true, "responsive": true).', async () => {
+  it('should out responsive spritesheet settings for toggle if argument $options is ("toggle": true, "use2x": "if-mobile", "responsive": true).', async () => {
     const cases = [
       {
         params: [
           '"radio-image"',
           '"radio"',
-          '("toggle": true, "use2x": true, "responsive": true)',
+          '("toggle": true, "use2x": "if-mobile", "responsive": true)',
           `
           $sprites: (
             "radio-image": (

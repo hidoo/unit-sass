@@ -34,10 +34,10 @@ Markup: <!-- single -->
   Lorem ipsum dolor sit amet.
 </label>
 
-#{$unit-prefix}-toggle--check-example-a - check example-a
-#{$unit-prefix}-toggle--check-example-b - check example-b
-#{$unit-prefix}-toggle--check-example-c - check example-c
-#{$unit-prefix}-toggle--check-example-d - check example-d
+#{$unit-prefix}-toggle--check-example-a - check example-a (svg)
+#{$unit-prefix}-toggle--check-example-b - check example-b (svg, responsive)
+#{$unit-prefix}-toggle--check-example-c - check example-c (image, use2x)
+#{$unit-prefix}-toggle--check-example-d - check example-d (image, responsive, use2x - if mobile)
 
 Style guide: #{$unit-prefix}-toggle.check.extends
 */
@@ -47,5 +47,5 @@ Style guide: #{$unit-prefix}-toggle.check.extends
   @include use-spritesheet($type: "check-svg", $name: "example-a", $options: $options);
   @include use-spritesheet($type: "check-svg", $name: "example-b", $options: map-merge($options, ("responsive": true)));
   @include use-spritesheet($type: "check-image", $name: "example-c", $options: map-merge($options, ("use2x": true)));
-  @include use-spritesheet($type: "check-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": true)));
+  @include use-spritesheet($type: "check-image", $name: "example-d", $options: map-merge($options, ("responsive": true, "use2x": "if-mobile")));
 }
