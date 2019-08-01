@@ -1,8 +1,16 @@
+////
+/// (c) hidoo | MIT Lisence
+/// @group spritesheets
+////
+
 /// define responsive toggle item
 /// @access private
 /// @param {String} $name name of spritesheet item
 /// @param {Map} $items [()] spritesheet items
 /// @param {Map} $options [()] options
+///
+/// @require {function} merge-state-selectors
+/// @require {mixin} _use-spritesheet-set-properties
 ///
 @mixin _use-spritesheet-define-toggle-responsive($name, $items: (), $options: ()) {
   @if not function-exists("merge-state-selectors") {

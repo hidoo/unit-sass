@@ -1,8 +1,18 @@
+////
+/// (c) hidoo | MIT Lisence
+/// @group spritesheets
+////
+
 /// define item
 /// @access private
 /// @param {String} $name name of spritesheet item
 /// @param {Map} $items [()] spritesheet items
 /// @param {Map} $options [()] options
+///
+/// @require {mixin} on-focus
+/// @require {mixin} on-current
+/// @require {mixin} on-disabled
+/// @require {mixin} _use-spritesheet-set-properties
 ///
 @mixin _use-spritesheet-define($name, $items: (), $options: ()) {
   @if not mixin-exists("on-focus") {

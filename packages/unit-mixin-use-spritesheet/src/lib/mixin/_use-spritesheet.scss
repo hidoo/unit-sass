@@ -1,13 +1,26 @@
+////
+/// (c) hidoo | MIT Lisence
+/// @group spritesheets
+////
+
 /// use spritesheet settings
 /// @param {String} $type type of spritesheet
 /// @param {String} $name name of spritesheet item
 /// @param {Map} $options [()] options
-///   @param {Boolean} $options.use2x [false] use 2x image or (one of true, false or "if-mobile")
-///   @param {Boolean} $options.responsive [false] responsive or not
-///   @param {Boolean} $options.toggle [false] toggle or not
-///   @param {List} $options.capturing-selectors [("a", "button")] capturing parent selectors
+/// @param {Boolean} $options.use2x [false] use 2x image or (one of `true`, `false` or `"if-mobile"`)
+/// @param {Boolean} $options.responsive [false] responsive or not
+/// @param {Boolean} $options.toggle [false] toggle or not
+/// @param {List} $options.capturing-selectors [("a", "button")] capturing parent selectors
 ///
-/// @example scss
+/// @require {function} _use-spritesheet-resolve-spritesheets
+/// @require {function} _use-spritesheet-get-sheet-by-type
+/// @require {mixin} define-placeholder
+/// @require {mixin} _use-spritesheet-define
+/// @require {mixin} _use-spritesheet-define-responsive
+/// @require {mixin} _use-spritesheet-define-toggle
+/// @require {mixin} _use-spritesheet-define-toggle-responsive
+///
+/// @example scss - scss inputs
 ///   // format of spritesheets values
 ///   $sprites: (
 ///      // output each by files of spritesheet
@@ -29,22 +42,24 @@
 ///     ...
 ///   );
 ///
-///    // use this
+///   // use this
 ///   .selector {
 ///     @include use-spritesheet($type: "icon-image", $name: "logo");
 ///   }
-///   // -> .selector-logo {
-///   //      overflow: hidden;
-///   //      text-indent: -100%;
-///   //      color: transparent;
-///   //      background-image: url(path/to/sprite/icon-image.png);
-///   //    }
-///   //    .selector-logo {
-///   //      width: 10px;
-///   //      height: 10px;
-///   //      background-position: -10px -10px;
-///   //      background-size: 30px 30px;
-///   //    }
+///
+/// @example css - css outputs
+///   .selector-logo {
+///     overflow: hidden;
+///     text-indent: -100%;
+///     color: transparent;
+///     background-image: url(path/to/sprite/icon-image.png);
+///   }
+///   .selector-logo {
+///     width: 10px;
+///     height: 10px;
+///     background-position: -10px -10px;
+///     background-size: 30px 30px;
+///   }
 ///
 @mixin use-spritesheet($type, $name, $options: ()) {
   $default-options: (
@@ -76,6 +91,10 @@
 
   @if not mixin-exists("_use-spritesheet-define-toggle") {
     @error "@mixin use-spritesheet: @mixin _use-spritesheet-define-toggle is required.";
+  }
+
+  @if not mixin-exists("_use-spritesheet-define-toggle-responsive") {
+    @error "@mixin use-spritesheet: @mixin _use-spritesheet-define-toggle-responsive is required.";
   }
 
   @if type-of($type) != "string" or $type == "" {
