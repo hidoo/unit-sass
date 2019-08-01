@@ -61,12 +61,6 @@ p {
 });
 ```
 
-## Test
-
-```sh
-$ yarn test
-```
-
 ## License
 
 MIT
