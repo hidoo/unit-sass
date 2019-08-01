@@ -1,2 +1,3 @@
 *.css
 packages/**/sprite/*.scss
+packages/**/test/fixture/**/*.md

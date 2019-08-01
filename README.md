@@ -6,6 +6,7 @@
 
 ## Packages
 
++ [@hidoo/sassdoc-to-markdown](./packages/sassdoc-to-markdown)
 + [@hidoo/stylelint-config](./packages/stylelint-config)
 + [@hidoo/unit](./packages/unit)
 + [@hidoo/unit-mixin-use-spritesheet](./packages/unit-mixin-use-spritesheet)
