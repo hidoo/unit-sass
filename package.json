@@ -6,6 +6,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
+    "build:document": "lerna run build:document",
     "dev:start": "lerna exec 'yarn start' --no-private --ignore @hidoo/stylelint-config --ignore @hidoo/sassdoc-to-markdown",
     "dev:test": "lerna exec 'yarn test --watch' --no-private",
     "lint": "npm-run-all -s lint:*",
