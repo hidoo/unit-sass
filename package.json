@@ -14,7 +14,10 @@
     "lint:scss": "stylelint ./**/*.scss --syntax scss",
     "pretest": "npm-run-all -s lint",
     "test": "npm-run-all -s test:packages",
-    "test:packages": "lerna run test --no-private"
+    "test:packages": "lerna run test --no-private",
+    "preversionup": "npm-run-all -s build test",
+    "versionup": "lerna version --no-push",
+    "release": "lerna publish from-package"
   },
   "author": "hidoo",
   "license": "MIT",
