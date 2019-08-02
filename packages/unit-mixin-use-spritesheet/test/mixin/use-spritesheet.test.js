@@ -1,7 +1,7 @@
 /* eslint-disable max-len, no-magic-numbers, max-statements */
 
 import assert from 'assert';
-import {eachTestCases, existOrEmptyString, normalizeGlobalSettings} from '@hidoo/unit-test-util';
+import {eachTestCases, existOrEmptyString, normalizeGlobalSettings} from 'test-util';
 
 describe('@mixin use-spritesheet($type, $name, $options)', () => {
 

@@ -1,18 +1,16 @@
-# @hidoo/unit-test-util
+# test-util
 
 > Test utilities for unit framework.
-
-## Installation
-
-```sh
-$ npm install --save-dev @hidoo/unit-test-util
-```
 
 ## Usage (with Mocha)
 
 ```js
 import assert from 'assert';
-import {eachTestCases, existOrEmptyString, normalizeGlobalSettings} from '@hidoo/unit-test-util';
+import {
+  eachTestCases,
+  existOrEmptyString,
+  normalizeGlobalSettings
+} from 'test-util';
 
 describe('@function hoge()', () => {
 
