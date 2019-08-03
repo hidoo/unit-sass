@@ -1041,10 +1041,10 @@
     marked "^0.6.2"
     path-browserify "^1.0.0"
 
-"@hidoo/util-fancy-print@0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/util-fancy-print/-/util-fancy-print-0.11.0.tgz#b801d2bd322b35b0a84154f4ef6f670da4874694"
-  integrity sha512-0SOXj05/MC/rqCA2+PxzdBRFlpD6pqhYfsHTEtV763QbxCEvyW8TxWecORYeusO/FysasLNhRATTvO1EgAmWmA==
+"@hidoo/util-fancy-print@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/util-fancy-print/-/util-fancy-print-0.12.0.tgz#bdad68a4fb4458a98450f2099af496bde29ac10a"
+  integrity sha512-+65PzoGjypiqYG2ZeeJjuddIzBU9shuZ1ImK8T3uOLEWRXflh0ZAg+CtYdT9bAoJOEMQ2oGAa3sKTYWWTzSLPA==
   dependencies:
     chalk "^2.4.2"
 
