@@ -1006,12 +1006,12 @@
     merge-stream "^2.0.0"
     vinyl-buffer "^1.0.1"
 
-"@hidoo/gulp-task-build-styleguide-kss@0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-styleguide-kss/-/gulp-task-build-styleguide-kss-0.11.0.tgz#9b35fabf9f60bf07978942ef34cfdee4e27b6fd8"
-  integrity sha512-22wl07b3HtdH9hptu19cxivoXFlpIbR6MmW24Uccn/m3adpNQ51Fsq48JVTmWnFngwkmcnxrj4U5A9ZW8/ZRKw==
+"@hidoo/gulp-task-build-styleguide-kss@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-styleguide-kss/-/gulp-task-build-styleguide-kss-0.12.0.tgz#be831a7309b9e11c54b04b60d9bb93e9e8ff3da2"
+  integrity sha512-usajhEc5PCKaDh5wlt7Qe7BipwnwseYGikyI5Wbd2aOI2xgz+S3E2uoObf0OX07UU2t2M6cQZWaoSVSe1Oj73A==
   dependencies:
-    "@hidoo/gulp-util-error-handler" "^0.11.0"
+    "@hidoo/gulp-util-error-handler" "^0.12.0"
     "@hidoo/handlebars-helpers" "^0.5.1"
     handlebars "^4.1.2"
     kss "3.0.0-beta.25"
@@ -1028,6 +1028,14 @@
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/@hidoo/gulp-util-error-handler/-/gulp-util-error-handler-0.11.0.tgz#927ff288e9ce6a906cd8a58db86d8e022a6fd49a"
   integrity sha512-CvhHgBSuWGs+5aA8+yaO+A4vSI10h1YVALV/h4cD95cso6HAjefx3v/fkSSzhXsjBYvWQPSpejOn6CsoJ34SZQ==
+  dependencies:
+    chalk "^2.4.2"
+    fancy-log "^1.3.3"
+
+"@hidoo/gulp-util-error-handler@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-util-error-handler/-/gulp-util-error-handler-0.12.0.tgz#c0bac4c6e5d3a11d414b5b121795307c2fff2434"
+  integrity sha512-3etwdgYY27a2RHhK8489i98SiCsUsvaGhp8jKyaNN4gLBGt+ixNbsmlnfqywe3vUuNmdf7imFutRsA90r5gkUg==
   dependencies:
     chalk "^2.4.2"
     fancy-log "^1.3.3"
