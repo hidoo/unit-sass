@@ -17,10 +17,18 @@
   },
   "packageRules": [
     {
-      "sourceUrlPrefixes": [
-        "https://github.com/hidoo/gulp-project"
+      "groupName": "gulp-project monorepo packages",
+      "groupSlug": "gulp-project",
+      "packagePatterns": [
+        "^@hidoo/gulp-plugin-",
+        "^@hidoo/gulp-project-",
+        "^@hidoo/gulp-task-",
+        "^@hidoo/gulp-util-",
+        "^@hidoo/util-fancy-print",
+        "^@hidoo/util-local-ip",
+        "^@hidoo/util-merge-babelrc"
       ],
-      "groupName": "gulp-project monorepo packages"
+      "automerge": true
     }
   ]
 }
