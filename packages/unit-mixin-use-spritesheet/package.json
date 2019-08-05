@@ -32,7 +32,7 @@
     "@babel/register": "7.5.5",
     "@hidoo/gulp-task-build-css-sass": "0.11.0",
     "@hidoo/gulp-task-build-sprite-image": "0.12.0",
-    "@hidoo/gulp-task-build-sprite-svg": "0.11.0",
+    "@hidoo/gulp-task-build-sprite-svg": "0.12.0",
     "@hidoo/gulp-task-build-styleguide-kss": "0.12.0",
     "@hidoo/gulp-task-copy": "0.11.0",
     "@hidoo/sassdoc-to-markdown": "^0.1.0",

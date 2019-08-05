@@ -923,10 +923,10 @@
     save-pixels "^2.3.4"
     through2 "^3.0.1"
 
-"@hidoo/gulp-plugin-svg-sprite@^0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-plugin-svg-sprite/-/gulp-plugin-svg-sprite-0.11.0.tgz#dd4f92fae3b999d2f509a759ec129d1f83515daa"
-  integrity sha512-Rh0riyv+XzqE3mO4IHP/+pU3hJd8RMAp1H5SccE6P7aHohSLhWkpM/SDn/3T3/AucPp4SwiQU/RotJStJJtBiw==
+"@hidoo/gulp-plugin-svg-sprite@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-plugin-svg-sprite/-/gulp-plugin-svg-sprite-0.12.0.tgz#4ddea1b2f8321d30ddcc2a9fb1b243ed4ebeeeb2"
+  integrity sha512-3BZ0+aHCSGRi+DW/tjqGM/28FS75RozQDLQMDi6sGOPmbdKP51BigIpQRLVMpNP4ukYV7eUY9dgCSgTK5mswpg==
   dependencies:
     cheerio "^1.0.0-rc.2"
     cssom "^0.4.1"
@@ -976,13 +976,13 @@
     merge-stream "^2.0.0"
     vinyl-buffer "^1.0.1"
 
-"@hidoo/gulp-task-build-sprite-svg@0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-sprite-svg/-/gulp-task-build-sprite-svg-0.11.0.tgz#0642d11ddadbf0a8150b8809b3a85244295193bd"
-  integrity sha512-uZqTzoLg9116xH9thUhFEU829ixavFiAoAJ6JGq48+YB6XePPn4QGbMk6oC+N3vJVpAnykJ1q2+x52NOugnPKQ==
+"@hidoo/gulp-task-build-sprite-svg@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-sprite-svg/-/gulp-task-build-sprite-svg-0.12.0.tgz#7e2d11fb2ce33125469860c29425f55946803889"
+  integrity sha512-3WRziNPey8aDKniVhDxO2an2kfyaweaEMKMwrTKpuVU8ZQPcdeKFofRuk1ld6W/d3ySUHrIolOJgDx0f/L+YLQ==
   dependencies:
-    "@hidoo/gulp-plugin-svg-sprite" "^0.11.0"
-    "@hidoo/gulp-util-error-handler" "^0.11.0"
+    "@hidoo/gulp-plugin-svg-sprite" "^0.12.0"
+    "@hidoo/gulp-util-error-handler" "^0.12.0"
     "@hidoo/handlebars-helpers" "^0.5.1"
     gulp-gzip "^1.4.2"
     gulp-if "^3.0.0"
