@@ -29,6 +29,15 @@
         "^@hidoo/util-merge-babelrc"
       ],
       "automerge": true
+    },
+    {
+      "groupName": "handlebars-lib monorepo packages",
+      "groupSlug": "handlebars-lib",
+      "packagePatterns": [
+        "@hidoo/express-engine-handlebars",
+        "^@hidoo/handlebars-"
+      ],
+      "automerge": true
     }
   ]
 }
