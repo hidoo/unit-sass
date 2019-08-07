@@ -45,14 +45,9 @@ Style guide: #{$unit-prefix}-input.core.base
     $white-space: null,
     $word-wrap: null
   );
-  @include use-font-base(
-    $feature-settings: true
-  );
+  @include use-font-base();
   @include use-font-size(
     $value: "medium"
-  );
-  @include use-font-family(
-    $value: "default"
   );
 
   width: 100%;

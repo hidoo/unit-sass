@@ -241,6 +241,22 @@ enable override font settings or not.
 
 + **@mixin use-font-family** use settings of `font-family`
 
+<a id="default-settings-variable-unit-font-override-targets"></a>
+
+### $unit-font-override-targets
+
+target units that override font settings.
+(default: `"icon", "text", "pict", "button", "table", "document", "input", "toggle", "select")`)
+
+this use if `$unit-font-enable-override` is `true`
+
++ **Group:** Default settings
++ **Access:** public
+
+#### Type
+
+**[List](https://sass-lang.com/documentation/values/lists)**
+
 <a id="default-settings-variable-unit-font-family"></a>
 
 ### $unit-font-family
@@ -1182,6 +1198,40 @@ css outputs
 }
 ```
 
+<a id="features-mixin-use-font-advanced-settings"></a>
+
+### @mixin use-font-advanced-settings
+
+use advanced settings of font
+
++ **Group:** Features
++ **Access:** public
+
+#### Parameters
+
+| Name                | Type                                                             | Description                         | Default  |
+| :------------------ | :--------------------------------------------------------------- | :---------------------------------- | :------- |
+| `$feature-settings` | **[String](https://sass-lang.com/documentation/values/strings)** | setting for `font-feature-settings` | `"palt"` |
+
+#### Examples
+
+scss inputs
+
+```scss
+.selector {
+  @include use-font-advanced-settings();
+}
+```
+
+css outputs
+
+```css
+.selector {
+  font-feature-settings: "palt";
+  -ms-font-feature-settings: normal;
+}
+```
+
 <a id="features-mixin-use-font-base"></a>
 
 ### @mixin use-font-base
@@ -1193,11 +1243,10 @@ use settings of initialized font
 
 #### Parameters
 
-| Name                | Type                                                                                                                               | Description                          | Default    |
-| :------------------ | :--------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------- | :--------- |
-| `$feature-settings` | **[Boolean](https://sass-lang.com/documentation/values/booleans)**                                                                 | enable `font-eature-settings` or not | `false`    |
-| `$style`            | **[String](https://sass-lang.com/documentation/values/strings)**                                                                   | setting for `font-style`             | `"normal"` |
-| `$weight`           | **[String](https://sass-lang.com/documentation/values/strings)**, **[Number](https://sass-lang.com/documentation/values/numbers)** | setting for `font-weight`            | `"normal"` |
+| Name      | Type                                                                                                                               | Description               | Default    |
+| :-------- | :--------------------------------------------------------------------------------------------------------------------------------- | :------------------------ | :--------- |
+| `$style`  | **[String](https://sass-lang.com/documentation/values/strings)**                                                                   | setting for `font-style`  | `"normal"` |
+| `$weight` | **[String](https://sass-lang.com/documentation/values/strings)**, **[Number](https://sass-lang.com/documentation/values/numbers)** | setting for `font-weight` | `"normal"` |
 
 #### Examples
 
@@ -1213,8 +1262,6 @@ css outputs
 
 ```css
 .selector {
-  font-feature-settings: "palt";
-  -ms-font-feature-settings: normal;
   font-style: normal;
   font-weight: normal;
 }

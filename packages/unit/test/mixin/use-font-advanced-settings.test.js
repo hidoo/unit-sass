@@ -3,28 +3,26 @@
 import assert from 'assert';
 import {eachTestCases, normalizeGlobalSettings} from 'test-util';
 
-describe('@mixin use-font-base(...)', () => {
+describe('@mixin use-font-advanced-settings(...)', () => {
 
   /**
    * wrapper
    * @param {Object} options options
-   *   @param {String|Null} options.style setting for font-style
-   *   @param {String|Null} options.weight setting for font-weight
+   *   @param {String|Null} options.featureSettings setting for font-feature-settings
    * @param {Object} globalSettings global settings
    * @return {String}
    */
   function wrapper(options = {}, globalSettings = {}) {
     const args = [
-      options.style || options.style === '' ? `$style: ${options.style}` : false,
-      options.weight || options.weight === '' ? `$weight: ${options.weight}` : false
+      options.featureSettings || options.featureSettings === '' ? `$feature-settings: ${options.featureSettings}` : false
     ];
 
     return `
 ${normalizeGlobalSettings(globalSettings)}
-@import "src/lib/mixin/use-font-base";
+@import "src/lib/mixin/use-font-advanced-settings";
 
 .selector {
-  @include use-font-base(${args.filter((arg) => arg !== false).join(', ')});
+  @include use-font-advanced-settings(${args.filter((arg) => arg !== false).join(', ')});
 }
     `;
   }
@@ -36,8 +34,8 @@ ${normalizeGlobalSettings(globalSettings)}
         expected:
 /* eslint-disable indent */
 `.selector {
-  font-style: normal;
-  font-weight: normal;
+  font-feature-settings: "palt";
+  -ms-font-feature-settings: normal;
 }`
 /* eslint-disable indent */
       }
@@ -59,14 +57,13 @@ ${normalizeGlobalSettings(globalSettings)}
     const cases = [
       {
         params: [{
-          style: 'italic',
-          weight: '600'
+          featureSettings: '"pkna"'
         }],
         expected:
 /* eslint-disable indent */
 `.selector {
-  font-style: italic;
-  font-weight: 600;
+  font-feature-settings: "pkna";
+  -ms-font-feature-settings: normal;
 }`
 /* eslint-disable indent */
       }
