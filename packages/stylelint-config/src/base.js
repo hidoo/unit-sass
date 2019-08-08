@@ -86,6 +86,7 @@ module.exports = {
         'text-indent',
         'vertical-align',
         'white-space',
+        'word-break',
         'word-wrap',
         'color',
         'background',
