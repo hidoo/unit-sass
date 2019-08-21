@@ -6,6 +6,7 @@
 
 ## Packages
 
++ [@hidoo/kss-builder](./packages/kss-builder)
 + [@hidoo/sassdoc-to-markdown](./packages/sassdoc-to-markdown)
 + [@hidoo/stylelint-config](./packages/stylelint-config)
 + [@hidoo/unit](./packages/unit)
