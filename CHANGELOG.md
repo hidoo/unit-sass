@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/hidoo/unit-sass/compare/v0.2.0...v0.3.0) (2019-08-21)
+
+
+### Bug Fixes
+
+* **kss-builder:** fix styling of code tag in kss-block-document ([a6e98de](https://github.com/hidoo/unit-sass/commit/a6e98de))
+* **unit:** fix typo ([50494d9](https://github.com/hidoo/unit-sass/commit/50494d9))
+* **unit:** remove text base settings from structure role units ([a5aec88](https://github.com/hidoo/unit-sass/commit/a5aec88))
+
+
+### Features
+
+* **kss-builder:** add custom builder for kss-node ([229914b](https://github.com/hidoo/unit-sass/commit/229914b))
+
+
+### BREAKING CHANGES
+
+* **unit:** rename unit-text--decoration-default to unit-text-text--decoration-false and unit-text--decoration-strikelike to unit-text---text--decoration-strikeline
+* **unit:** text styles no longer apply to internal text nodes
+
+
+
+
+
 # [0.2.0](https://github.com/hidoo/unit-sass/compare/v0.1.0...v0.2.0) (2019-08-14)
 
 
