@@ -283,8 +283,6 @@ Markup: <div class="#{$unit-prefix}-document">
   </pre>
 </div>
 
-#{$unit-prefix}-document - default style
-
 Style guide: #{$unit-prefix}-document.core.base
 */
 .#{$unit-prefix}-document {
@@ -299,7 +297,7 @@ Style guide: #{$unit-prefix}-document.core.base
   color: inherit;
   background-color: transparent;
 
-  /* stylelint-disable no-duplicate-selectors, selector-list-comma-newline-after, plugin/selector-tag-no-without-class */
+  // stylelint-disable no-duplicate-selectors, selector-list-comma-newline-after, plugin/selector-tag-no-without-class
 
   // ++++++++++++++++++++++++++++
   // reset default settings
@@ -622,5 +620,5 @@ Style guide: #{$unit-prefix}-document.core.base
       }
     }
   }
-  /* stylelint-enable no-duplicate-selectors, selector-list-comma-newline-after, plugin/selector-tag-no-without-class */
+  // stylelint-enable no-duplicate-selectors, selector-list-comma-newline-after, plugin/selector-tag-no-without-class
 }
