@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <title>Style Guide - @hidoo/unit (v0.3.0)</title>
+  <meta name="description" content="Sass based css framework." />
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="kss-assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="192x192" href="kss-assets/images/touchicon.png" />
+  <meta name="apple-mobile-web-app-title" content="@hidoo/unit" />
+
+  <link rel="stylesheet" href="kss-assets/css/main.min.css" />
+
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body class="kss-document  is-theme-light  is-example-theme-light">
+
+<div class="kss-layout-drawer-a-a  kss-unit-box  js-kss-styleguide-drawer">
+  <div class="kss-layout-drawer-a-a__container  kss-unit-box__container">
+    <div class="kss-layout-drawer-a-a__contents  kss-unit-box  kss-unit-box--theme-a-a-a  js-kss-styleguide-drawer-container">
+
+      <nav class="kss-block-bar-a-a  kss-unit-box  kss-unit-box--theme-a-a-a" rol="navigation" id="js-kss-tool-bar">
+        <div class="kss-block-bar-a-a__container  kss-unit-box__container">
+          <div class="kss-block-bar-a-a__grid  kss-unit-table-grid">
+            <div class="kss-block-bar-a-a__grid__button-drawer  kss-unit-table-grid__column">
+              <a class="kss-block-bar-a-a__button-drawer  kss-unit-button  js-kss-styleguide-drawer__toggle" href="javascript:;">
+                <span class="kss-unit-icon  kss-unit-icon--type-drawer"></span>
+              </a>
+            </div>
+            <div class="kss-block-bar-a-a__grid__tools  kss-unit-table-grid__column">
+      
+              <div class="kss-block-navi-b-a  kss-block-navi-b-a--inline-true  kss-unit-box  js-kss-theme-switcher">
+                <div class="kss-block-navi-b-a__container  kss-unit-box__container">
+                  <dl class="kss-block-navi-b-a__grid  kss-unit-table-grid">
+                    <dt class="kss-block-navi-b-a__grid__label  kss-unit-table-grid__column">
+                      <p class="kss-block-navi-b-a__label  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--truncate-true">THEME</p>
+                    </dt>
+                    <dd class="kss-block-navi-b-a__grid__list  kss-unit-table-grid__column">
+                      <ul class="kss-block-navi-b-a__list  kss-unit-table-grid">
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--light  kss-unit-button" href="javascript:;" data-kss-switch-theme="light">
+                            <span class="kss-unit-button__label  kss-unit-text">light</span>
+                          </a>
+                        </li>
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--dark  kss-unit-button" href="javascript:;" data-kss-switch-theme="dark">
+                            <span class="kss-unit-button__label  kss-unit-text">dark</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+      
+      
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="kss-layout-drawer-a-a__contents__drawer  kss-unit-box__container  js-kss-styleguide-drawer__drawer">
+
+        <header class="kss-block-heading-b-a  kss-unit-box  kss-util--padding-top-40 kss-util--padding-right-15 kss-util--padding-left-15">
+          <div class="kss-block-heading-b-a__container  kss-unit-box__container">
+            <h1 class="kss-block-heading-b-a__name  kss-unit-text  kss-unit-text--theme-a-a-e  kss-unit-text--truncate-true">@hidoo/unit</h1>
+            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.3.0</p>
+            <p class="kss-block-heading-b-a__description  kss-unit-text  kss-unit-text--theme-a-a-a">Sass based css framework.</p>
+          </div>
+        </header>
+
+<aside class="kss-block-section-b-a  kss-unit-box  kss-util--padding-top-40  kss-util--padding-horizontal-25">
+  <header class="kss-block-section-b-a__header  kss-unit-table-grid">
+    <div class="kss-block-section-b-a__header__label  kss-unit-text--theme-a-a-a  kss-unit-table-grid__column">
+      <h2 class="kss-block-section-b-a__label  kss-unit-text  kss-unit-text--truncate-true">OVERVIEW</h2>
+    </div>
+  </header>
+  <div class="kss-block-section-b-a__container  kss-unit-box__container">
+    
+                <nav class="kss-block-navi-a-a  kss-unit-box">
+                  <div class="kss-block-navi-a-a__container  kss-unit-box__container">
+                    <ul class="kss-block-navi-a-a__list  kss-unit-list">
+                      <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                        <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block  is-current">0</span>
+                        <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a" href="./index.html">README.md</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+    
+  </div>
+</aside>
+
+<aside class="kss-block-section-b-a  kss-unit-box  kss-util--padding-top-40  kss-util--padding-bottom-40  kss-util--padding-horizontal-25">
+  <header class="kss-block-section-b-a__header  kss-unit-table-grid">
+    <div class="kss-block-section-b-a__header__label  kss-unit-text--theme-a-a-a  kss-unit-table-grid__column">
+      <h2 class="kss-block-section-b-a__label  kss-unit-text  kss-unit-text--truncate-true">COMPONENTS</h2>
+    </div>
+  </header>
+  <div class="kss-block-section-b-a__container  kss-unit-box__container">
+    
+              <nav class="kss-block-navi-a-a  kss-unit-box  kss-util--padding-bottom-40">
+                <div class="kss-block-navi-a-a__container  kss-unit-box__container">
+                  <ul class="kss-block-navi-a-a__list  kss-unit-list">
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">1</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-icon.html">unit-icon</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">2</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-text.html">unit-text</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">3</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-list.html">unit-list</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">4</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-pict.html">unit-pict</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">5</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-button.html">unit-button</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">6</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-table.html">unit-table</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">7</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-document.html">unit-document</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">8</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-input.html">unit-input</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">9</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-toggle.html">unit-toggle</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">10</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-select.html">unit-select</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">11</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-box.html">unit-box</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">12</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-table-grid.html">unit-table-grid</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">13</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-flex-grid.html">unit-flex-grid</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">14</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-util.html">util</a>
+                      
+                      
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+    
+  </div>
+</aside>
+
+      </div>
+      <div class="kss-layout-drawer-a-a__contents__main  kss-unit-box__container">
+
+<article class="kss-block-document-a-a  kss-unit-box">
+  <div class="kss-block-document-a-a__container  kss-unit-box__container">
+    <div class="kss-block-document-a-a__body  kss-unit-document  kss-unit-document--theme-a-a-a">        <h1>@hidoo/unit</h1>
+<blockquote>
+<p>Sass based css framework.</p>
+</blockquote>
+<h2>Installation</h2>
+<pre class="hljs"><code class="language-sh">$ npm install @hidoo/unit
+</code></pre>
+<h2>Usage</h2>
+<pre class="hljs"><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/index.scss"</span>;
+</code></pre>
+<h3>Import with <a href="https://github.com/maoberlehner/node-sass-magic-importer">node-sass-magic-importer</a></h3>
+<pre class="hljs"><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">"~@hidoo/unit"</span>;
+</code></pre>
+<h3>Usage with custom settings</h3>
+<pre class="hljs"><code class="language-scss"><span class="hljs-comment">// import variables in advance</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"settings"</span>;
+
+<span class="hljs-comment">// import this package</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/index.scss"</span>;
+</code></pre>
+<h3>Usage only the required units</h3>
+<pre class="hljs"><code class="language-scss"><span class="hljs-comment">// import dependent files</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/settings"</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/lib"</span>;
+
+<span class="hljs-comment">// import all of text unit</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/text"</span>;
+
+<span class="hljs-comment">// import part of button unit</span>
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/button/core"</span>;
+@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/button/inline"</span>;
+</code></pre>
+<h3>Hook mixins</h3>
+<p>You can use some hook mixins that called if defined.<br>
+See <a href="./example/src/scss/main.scss">example</a>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Called timing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>@mixin hook-pre-import-lib</code></td>
+<td style="text-align:left">Before <code>@import &quot;lib&quot;;</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@mixin hook-pre-import-unit</code></td>
+<td style="text-align:left">Before <code>@import &quot;unit&quot;;</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@mixin hook-pre-import-util</code></td>
+<td style="text-align:left">Before <code>@import &quot;util&quot;;</code>.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>@mixin hook-pre-import-override</code></td>
+<td style="text-align:left">Before <code>@import &quot;override&quot;;</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2>API</h2>
+<p><a id="default-settings-variable-unit-prefix"></a></p>
+<h3>$unit-prefix</h3>
+<p>prefix of class name of components
+(default: <code>&quot;unit&quot;</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></p>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-variable">$unit-prefix</span>: <span class="hljs-string">"u"</span>;
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.u-icon</span> {
+  <span class="hljs-comment">/* settings */</span>
+}
+</code></pre>
+<p><a id="default-settings-variable-unit-util-prefix"></a></p>
+<h3>$unit-util-prefix</h3>
+<p>prefix of class name of util
+(default: <code>&quot;util&quot;</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></p>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-variable">$unit-util-prefix</span>: <span class="hljs-string">"h"</span>;
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.h--width-0</span> {
+  <span class="hljs-comment">/* settings */</span>
+}
+</code></pre>
+<p><a id="default-settings-variable-unit-breakpoints"></a></p>
+<h3>$unit-breakpoints</h3>
+<p>settings of breakpoints</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></p>
+<h4>Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>desktop</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">breakpoint for desktop</td>
+<td style="text-align:left"><code>1024px</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>mobile</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">breakpoint for desktop</td>
+<td style="text-align:left"><code>667px</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin define-breakpoint</strong> define breakepoint</li>
+</ul>
+<p><a id="default-settings-variable-unit-state-selectors-focus"></a></p>
+<h3>$unit-state-selectors-focus</h3>
+<p>settings of selector.
+for expressing of state like <code>:hover</code> or <code>:focus</code>.
+(default: <code>(&quot;.is-focus&quot;)</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<p><a id="default-settings-variable-unit-state-selectors-selected"></a></p>
+<h3>$unit-state-selectors-selected</h3>
+<p>settings of selector
+for expressing of state like <code>:checked</code>.
+(default: <code>(&quot;.is-selected&quot;)</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<p><a id="default-settings-variable-unit-state-selectors-disabled"></a></p>
+<h3>$unit-state-selectors-disabled</h3>
+<p>settings of selector.
+for expressing of state like <code>:disabled</code>.
+(default: <code>(&quot;.is-disabled&quot;)</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<p><a id="default-settings-variable-unit-state-selectors-current"></a></p>
+<h3>$unit-state-selectors-current</h3>
+<p>settings of selector.
+for expressing of state like <code>&quot;.is-current&quot;</code>
+(default: <code>(&quot;.is-current&quot;)</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<p><a id="default-settings-variable-unit-link-color"></a></p>
+<h3>$unit-link-color</h3>
+<p>default link color</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></p>
+<h4>Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>link</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/colors">Color</a></strong></td>
+<td style="text-align:left">color of <code>:link</code></td>
+<td style="text-align:left"><code>#37a5e4</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>focus</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/colors">Color</a></strong></td>
+<td style="text-align:left">color of <code>:focus</code></td>
+<td style="text-align:left"><code>lighten(#37a5e4, 15%)</code></td>
+</tr>
+</tbody>
+</table>
+<p><a id="default-settings-variable-unit-font-enable-override"></a></p>
+<h3>$unit-font-enable-override</h3>
+<p>enable override font settings or not.
+(default: <code>true</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/booleans">Boolean</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-font-family</strong> use settings of <code>font-family</code></li>
+</ul>
+<p><a id="default-settings-variable-unit-font-override-targets"></a></p>
+<h3>$unit-font-override-targets</h3>
+<p>target units that override font settings.
+(default: <code>&quot;icon&quot;, &quot;text&quot;, &quot;pict&quot;, &quot;button&quot;, &quot;table&quot;, &quot;document&quot;, &quot;input&quot;, &quot;toggle&quot;, &quot;select&quot;)</code>)</p>
+<p>this use if <code>$unit-font-enable-override</code> is <code>true</code></p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<p><a id="default-settings-variable-unit-font-family"></a></p>
+<h3>$unit-font-family</h3>
+<p>default font family.</p>
+<p><strong>default</strong></p>
+<ul>
+<li><code>-apple-system</code> ... use &quot;San Francisco&quot; as primary font in mac</li>
+<li><code>BlinkMacSystemFont</code> ... use &quot;San Francisco&quot; as primary in chrome on mac</li>
+<li><code>Helvetica</code> ... secondary font in mac</li>
+<li><code>Arial</code> ... secondary font in windows</li>
+<li><code>Hiragino Kaku Gothic ProN</code> ... primary japanese font in mac</li>
+<li><code>Yu Gothic Medium</code> ... primary japanese font in windows</li>
+<li><code>游ゴシック Medium</code> ... primary japanese font in ie on windows</li>
+<li><code>YuGothic</code> ... secondary japanese font in mac</li>
+<li><code>Meiryo</code> ... secondary japanese font in windows</li>
+<li><code>メイリオ</code> ... secondary japanese font in ie on windows</li>
+</ul>
+<p>this use if <code>$unit-font-enable-override</code> is <code>true</code></p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-font-family</strong> use settings of <code>font-family</code></li>
+</ul>
+<p><a id="default-settings-variable-unit-font-family-monospace"></a></p>
+<h3>$unit-font-family-monospace</h3>
+<p>default monospace font family.</p>
+<p><strong>default</strong></p>
+<ul>
+<li><code>Consolas</code> ... primary font in windows (use it as primary if installed in mac)</li>
+<li><code>Monaco</code> ... primary font in mac</li>
+<li><code>Menlo</code> ... secondary font in mac</li>
+<li><code>Courier</code> ... secondary font in windows</li>
+</ul>
+<p>this use if <code>$unit-font-enable-override</code> is <code>true</code></p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-font-family</strong> use settings of <code>font-family</code></li>
+</ul>
+<p><a id="default-settings-variable-unit-font-enable-advanced-settings"></a></p>
+<h3>$unit-font-enable-advanced-settings</h3>
+<p>enable advanced font settings.
+(default: <code>true</code>)</p>
+<p><strong>features</strong></p>
+<ul>
+<li><code>font-feature-settings: &quot;palt&quot;;</code> ... disable when browser is ie 10-11</li>
+</ul>
+<p>this use if <code>$unit-font-enable-override</code> is <code>true</code></p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/booleans">Boolean</a></strong></p>
+<p><a id="default-settings-variable-unit-font-enable-relative-size"></a></p>
+<h3>$unit-font-enable-relative-size</h3>
+<p>enable relative font-size specify.
+override base size settings of font
+(default: <code>true</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/booleans">Boolean</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-font-size</strong> use settings of font-size</li>
+</ul>
+<p><a id="default-settings-variable-unit-font-base-size"></a></p>
+<h3>$unit-font-base-size</h3>
+<p>default base font size.
+(default: <code>16px</code>)
+this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@function px-to-rem</strong> convert px to rem</li>
+</ul>
+<p><a id="default-settings-variable-unit-font-size"></a></p>
+<h3>$unit-font-size</h3>
+<p>default font size
+(default: <code>14px</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-font-size</strong> use settings of font-size</li>
+</ul>
+<p><a id="default-settings-variable-unit-letter-spacing"></a></p>
+<h3>$unit-letter-spacing</h3>
+<p>default letter-spacing
+(default: <code>0.04em</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-text-base</strong> use settings of initialized text</li>
+</ul>
+<p><a id="default-settings-variable-unit-line-height"></a></p>
+<h3>$unit-line-height</h3>
+<p>default line-height
+(default: <code>1.5</code>)</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></p>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-text-base</strong> use settings of initialized text</li>
+</ul>
+<p><a id="default-settings-variable-unit-builtin-themes"></a></p>
+<h3>$unit-builtin-themes</h3>
+<p>default builtin theme</p>
+<ul>
+<li><strong>Group:</strong> Default settings</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></p>
+<h4>Properties</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>light</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></td>
+<td style="text-align:left">values of light theme</td>
+<td style="text-align:left"><code>(...)</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>dark</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></td>
+<td style="text-align:left">values of dark theme</td>
+<td style="text-align:left"><code>(...)</code></td>
+</tr>
+</tbody>
+</table>
+<p><a id="features-variable-_unit-defineded-placeholders"></a></p>
+<h3>$_unit-defineded-placeholders</h3>
+<p>defineded placeholders.</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> private</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<p><a id="features-function-merge-state-selectors"></a></p>
+<h3>@function merge-state-selectors</h3>
+<p>return merged state selectors</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$type</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">type of state (one of <code>&quot;link&quot;</code>, <code>&quot;focus&quot;</code>, <code>&quot;selected&quot;</code>, <code>&quot;disabled&quot;</code> or <code>&quot;current&quot;</code>)</td>
+<td style="text-align:left"><code>&quot;link&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$additional-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">additional selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-variable">$merged-focus-selectors</span>: merge-state-selectors(<span class="hljs-string">"link"</span>); <span class="hljs-comment">// -&gt; (":link", ":visited")</span>
+</code></pre>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin on-current</strong> wrappper of <code>.is-current</code></li>
+<li><strong>@mixin on-disabled</strong> wrappper of <code>:disabled</code></li>
+<li><strong>@mixin on-focus</strong> wrappper of <code>:hover</code> and <code>:focus</code></li>
+<li><strong>@mixin on-link</strong> wrappper of <code>:link</code> and <code>:visited</code></li>
+</ul>
+<p><a id="features-function-px-to-rem"></a></p>
+<h3>@function px-to-rem</h3>
+<p>convert px to rem</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$size</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">font size</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$base-size</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">base font size</td>
+<td style="text-align:left"><code>$unit-font-base-size</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong> rem value</p>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">font-size</span>: px-to-rem(<span class="hljs-number">14px</span>, <span class="hljs-number">16px</span>);
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.875rem</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#default-settings-variable-unit-font-base-size">$unit-font-base-size</a></strong></li>
+</ul>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin use-font-size</strong> use settings of font-size</li>
+</ul>
+<p><a id="features-function-ununit"></a></p>
+<h3>@function ununit</h3>
+<p>return number without unit</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$number</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">number with unit</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong> number without unit</p>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-variable">$pure-number</span>: ununit(<span class="hljs-number">14px</span>); <span class="hljs-comment">// -&gt; 14</span>
+</code></pre>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin define-sizes-in-direction-groups</strong> define sizes in direction groups</li>
+<li><strong>@mixin define-sizes-in-directions</strong> define sizes in directions</li>
+<li><strong>@mixin define-sizes</strong> define sizes</li>
+</ul>
+<p><a id="features-mixin-define-breakpoint"></a></p>
+<h3>@mixin define-breakpoint</h3>
+<p>define breakepoint</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$from</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/null">Null</a></strong></td>
+<td style="text-align:left">starting point of breakpoint</td>
+<td style="text-align:left"><code>null</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$until</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/null">Null</a></strong></td>
+<td style="text-align:left">ending point of breakpoint</td>
+<td style="text-align:left"><code>null</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$options</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></td>
+<td style="text-align:left">options</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$options.media</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">custom media name</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> define-breakpoint(<span class="hljs-variable">$from</span>: <span class="hljs-string">"mobile"</span>, <span class="hljs-variable">$until</span>: <span class="hljs-string">"desktop"</span>) {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css">@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">667px</span>) and (max-width: <span class="hljs-number">1023px</span>) {
+  <span class="hljs-selector-class">.selector</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#default-settings-variable-unit-breakpoints">$unit-breakpoints</a></strong></li>
+</ul>
+<p><a id="features-mixin-define-placeholder"></a></p>
+<h3>@mixin define-placeholder</h3>
+<p>define placeholder class.</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$name</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">name of placeholder class</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-variable">$name</span>: unique-id();
+
+  @<span class="hljs-keyword">include</span> define-placeholder(<span class="hljs-variable">$name</span>: <span class="hljs-variable">$name</span>) {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+
+  &amp;__child-1 {
+    @<span class="hljs-keyword">extend</span> %#{<span class="hljs-variable">$name</span>};
+  }
+
+  &amp;__child-2 {
+    @<span class="hljs-keyword">extend</span> %#{<span class="hljs-variable">$name</span>};
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector__child-1</span>, <span class="hljs-selector-class">.selector__child-2</span> {
+   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin on</strong> wrappper of pseudo class like <code>:hover</code></li>
+</ul>
+<p><a id="features-mixin-define-sizes-in-direction-groups"></a></p>
+<h3>@mixin define-sizes-in-direction-groups</h3>
+<p>define sizes in direction groups</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$type</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">type of options (one of <code>&quot;margin&quot;</code>, <code>&quot;padding&quot;</code>, <code>&quot;position&quot;</code> or <code>&quot;border&quot;</code>)</td>
+<td style="text-align:left"><code>&quot;margin&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$values</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of value</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> define-sizes-in-direction-groups(<span class="hljs-variable">$type</span>: <span class="hljs-string">"margin"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">5px</span>, -5px))
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector-vertical-5</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-vertical-5-</span> {
+  <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-bottom</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-horizontal-5</span> {
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-horizontal-5-</span> {
+  <span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-all-5</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-all-5-</span> {
+  <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-bottom</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">5em</span> <span class="hljs-meta">!important</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-function-ununit">@function ununit</a></strong></li>
+</ul>
+<p><a id="features-mixin-define-sizes-in-directions"></a></p>
+<h3>@mixin define-sizes-in-directions</h3>
+<p>define sizes in directions</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$type</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">type of options (one of <code>&quot;margin&quot;</code>, <code>&quot;padding&quot;</code>, <code>&quot;position&quot;</code> or <code>&quot;border&quot;</code>)</td>
+<td style="text-align:left"><code>&quot;margin&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$values</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of value</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> define-sizes-in-directions(<span class="hljs-variable">$type</span>: <span class="hljs-string">"margin"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">5px</span>, -5px))
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector-top-5</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-top-5-</span> {
+  <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-right-5</span> {
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-right-5-</span> {
+  <span class="hljs-attribute">margin-right</span>: -<span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-bottom-5</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-bottom-5-</span> {
+  <span class="hljs-attribute">margin-bottom</span>: -<span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-left-5</span> {
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-left-5-</span> {
+  <span class="hljs-attribute">margin-left</span>: -<span class="hljs-number">5px</span> <span class="hljs-meta">!important</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-function-ununit">@function ununit</a></strong></li>
+</ul>
+<p><a id="features-mixin-define-sizes"></a></p>
+<h3>@mixin define-sizes</h3>
+<p>define sizes</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$type</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">type of options (one of <code>&quot;width&quot;</code>, <code>&quot;height&quot;</code> or <code>&quot;z-index&quot;</code>)</td>
+<td style="text-align:left"><code>&quot;width&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$values</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of value</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> define-sizes(<span class="hljs-variable">$type</span>: <span class="hljs-string">"width"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">10px</span>))
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector-10</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">10px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-min-10</span> {
+  <span class="hljs-attribute">min-width</span>: <span class="hljs-number">10px</span> <span class="hljs-meta">!important</span>;
+}
+<span class="hljs-selector-class">.selector-max-10</span> {
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">10px</span> <span class="hljs-meta">!important</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-function-ununit">@function ununit</a></strong></li>
+</ul>
+<p><a id="features-mixin-on-current"></a></p>
+<h3>@mixin on-current</h3>
+<p>wrappper of <code>.is-current</code></p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$additional-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of additional selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$capturing-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">capturing parent selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> on-current() {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-class">.is-current</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-function-merge-state-selectors">@function merge-state-selectors</a></strong></li>
+<li><strong><a href="#features-mixin-on">@mixin on</a></strong></li>
+</ul>
+<p><a id="features-mixin-on-disabled"></a></p>
+<h3>@mixin on-disabled</h3>
+<p>wrappper of <code>:disabled</code></p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$additional-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of additional selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$capturing-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">capturing parent selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> on-disabled() {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:disabled</span>, <span class="hljs-selector-class">.selector</span><span class="hljs-selector-class">.is-disabled</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-function-merge-state-selectors">@function merge-state-selectors</a></strong></li>
+<li><strong><a href="#features-mixin-on">@mixin on</a></strong></li>
+</ul>
+<p><a id="features-mixin-on-focus"></a></p>
+<h3>@mixin on-focus</h3>
+<p>wrappper of <code>:hover</code> and <code>:focus</code></p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$additional-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of additional selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$capturing-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">capturing parent selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> on-focus() {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:focus</span>, <span class="hljs-selector-class">.selector</span><span class="hljs-selector-class">.is-focus</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-function-merge-state-selectors">@function merge-state-selectors</a></strong></li>
+<li><strong><a href="#features-mixin-on">@mixin on</a></strong></li>
+</ul>
+<p><a id="features-mixin-on-link"></a></p>
+<h3>@mixin on-link</h3>
+<p>wrappper of <code>:link</code> and <code>:visited</code></p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$additional-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of additional selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$capturing-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">capturing parent selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> on-link() {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:link</span>, <span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:visited</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-function-merge-state-selectors">@function merge-state-selectors</a></strong></li>
+<li><strong><a href="#features-mixin-on">@mixin on</a></strong></li>
+</ul>
+<p><a id="features-mixin-on-placeholder"></a></p>
+<h3>@mixin on-placeholder</h3>
+<p>wrappper of <code>:placeholder-shown</code></p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> on-placeholder() {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">::-webkit-input-placeholder</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+<span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">::-moz-placeholder</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+<span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:-ms-input-placeholder</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+<span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:placeholder-shown</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<p><a id="features-mixin-on"></a></p>
+<h3>@mixin on</h3>
+<p>wrappper of pseudo class like <code>:hover</code></p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">list of selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$capturing-selectors</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">capturing parent selectors</td>
+<td style="text-align:left"><code>()</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> on((<span class="hljs-string">":hover"</span>, <span class="hljs-string">":focus"</span>)) {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span>:hover,
+<span class="hljs-selector-class">.selector</span>:focus {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#features-mixin-define-placeholder">@mixin define-placeholder</a></strong></li>
+</ul>
+<h4>Dependents</h4>
+<ul>
+<li><strong>@mixin on-current</strong> wrappper of <code>.is-current</code></li>
+<li><strong>@mixin on-disabled</strong> wrappper of <code>:disabled</code></li>
+<li><strong>@mixin on-focus</strong> wrappper of <code>:hover</code> and <code>:focus</code></li>
+<li><strong>@mixin on-link</strong> wrappper of <code>:link</code> and <code>:visited</code></li>
+</ul>
+<p><a id="features-mixin-use-box-aspect-ratio"></a></p>
+<h3>@mixin use-box-aspect-ratio</h3>
+<p>use settings of aspect ratio box</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$width</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">width</td>
+<td style="text-align:left"><code>16</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$height</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">height</td>
+<td style="text-align:left"><code>9</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-box-aspect-ratio(<span class="hljs-variable">$width</span>: 16, <span class="hljs-variable">$height</span>: 9);
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">56.25%</span>;
+}
+</code></pre>
+<p><a id="features-mixin-use-box-base"></a></p>
+<h3>@mixin use-box-base</h3>
+<p>use settings of initialized box</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$display</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>display</code></td>
+<td style="text-align:left"><code>&quot;block&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$overflow</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>overflow</code></td>
+<td style="text-align:left"><code>null</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$box-sizing</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>box-sizing</code></td>
+<td style="text-align:left"><code>&quot;content-box&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$position</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>position</code></td>
+<td style="text-align:left"><code>&quot;relative&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$list-style</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>list-style</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$margin</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">setting for <code>margin</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$padding</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">setting for <code>padding</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$border</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">setting for <code>border</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-box-base();
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">box-sizing</span>: content-box;
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">list-style</span>: none;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+}
+</code></pre>
+<p><a id="features-mixin-use-clearfix"></a></p>
+<h3>@mixin use-clearfix</h3>
+<p>use clearfix</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-clearfix();
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">::before</span>, <span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">""</span>;
+  <span class="hljs-attribute">display</span>: table;
+}
+<span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">clear</span>: both;
+}
+</code></pre>
+<p><a id="features-mixin-use-font-advanced-settings"></a></p>
+<h3>@mixin use-font-advanced-settings</h3>
+<p>use advanced settings of font</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$feature-settings</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>font-feature-settings</code></td>
+<td style="text-align:left"><code>&quot;palt&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-font-advanced-settings();
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">font-feature-settings</span>: <span class="hljs-string">"palt"</span>;
+  <span class="hljs-attribute">-ms-font-feature-settings</span>: normal;
+}
+</code></pre>
+<p><a id="features-mixin-use-font-base"></a></p>
+<h3>@mixin use-font-base</h3>
+<p>use settings of initialized font</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$style</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>font-style</code></td>
+<td style="text-align:left"><code>&quot;normal&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$weight</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">setting for <code>font-weight</code></td>
+<td style="text-align:left"><code>&quot;normal&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-font-base();
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">font-style</span>: normal;
+  <span class="hljs-attribute">font-weight</span>: normal;
+}
+</code></pre>
+<p><a id="features-mixin-use-font-family"></a></p>
+<h3>@mixin use-font-family</h3>
+<p>use settings of <code>font-family</code></p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$value</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>font-family</code> (one of <code>&quot;default&quot;</code>, <code>&quot;monospace&quot;</code> or <code>(...)</code>)</td>
+<td style="text-align:left"><code>null</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$important</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/booleans">Boolean</a></strong></td>
+<td style="text-align:left">set <code>!important</code> or not</td>
+<td style="text-align:left"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-font-family(<span class="hljs-variable">$value</span>: <span class="hljs-string">"default"</span>, <span class="hljs-variable">$important</span>: true);
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">font-family</span>: -apple-system, BlinkMacSystemFont, Helvetica, Arial, <span class="hljs-string">"Hiragino Kaku Gothic ProN"</span>, <span class="hljs-string">"Yu Gothic Medium"</span>, <span class="hljs-string">"游ゴシック Medium"</span>, YuGothic, Meiryo, <span class="hljs-string">"メイリオ"</span>, sans-serif <span class="hljs-meta">!important</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#default-settings-variable-unit-font-enable-override">$unit-font-enable-override</a></strong></li>
+<li><strong><a href="#default-settings-variable-unit-font-family">$unit-font-family</a></strong></li>
+<li><strong><a href="#default-settings-variable-unit-font-family-monospace">$unit-font-family-monospace</a></strong></li>
+</ul>
+<p><a id="features-mixin-use-font-size"></a></p>
+<h3>@mixin use-font-size</h3>
+<p>use settings of font-size</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$value</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">value of font-size (one of <code>&quot;xsmall&quot;</code>, <code>&quot;small&quot;</code>, <code>&quot;medium&quot;</code>, <code>&quot;large&quot;</code>, <code>&quot;xlarge&quot;</code>, <code>&quot;2xlarge&quot;</code>, <code>&quot;3xlarge&quot;</code>, <code>&quot;4xlarge&quot;</code> or number)</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$monospace</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/booleans">Boolean</a></strong></td>
+<td style="text-align:left">font-family is monospace or not</td>
+<td style="text-align:left"><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$important</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/booleans">Boolean</a></strong></td>
+<td style="text-align:left">set !important or not</td>
+<td style="text-align:left"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-font-size(<span class="hljs-variable">$value</span>: <span class="hljs-string">"medium"</span>, <span class="hljs-variable">$important</span>: true);
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span> <span class="hljs-meta">!important</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.875rem</span> <span class="hljs-meta">!important</span>;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#default-settings-variable-unit-font-size">$unit-font-size</a></strong></li>
+<li><strong><a href="#default-settings-variable-unit-font-enable-relative-size">$unit-font-enable-relative-size</a></strong></li>
+<li><strong><a href="#features-function-px-to-rem">@function px-to-rem</a></strong></li>
+</ul>
+<p><a id="features-mixin-use-table-base"></a></p>
+<h3>@mixin use-table-base</h3>
+<p>use settings of initialized table</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$width</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>width</code></td>
+<td style="text-align:left"><code>&quot;auto&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$margin</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">setting for <code>margin</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$padding</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">setting for <code>padding</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$border-style</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>border-style</code></td>
+<td style="text-align:left"><code>&quot;solid&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$border-width</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">setting for <code>border-width</code></td>
+<td style="text-align:left"><code>1px</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-table-base();
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">display</span>: table;
+  <span class="hljs-attribute">width</span>: auto;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">border-collapse</span>: collapse;
+  <span class="hljs-attribute">border-style</span>: solid;
+  <span class="hljs-attribute">border-width</span>: <span class="hljs-number">1px</span>;
+}
+</code></pre>
+<p><a id="features-mixin-use-table-column-base"></a></p>
+<h3>@mixin use-table-column-base</h3>
+<p>use settings of initialized table column</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$margin</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">setting for <code>margin</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$padding</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></td>
+<td style="text-align:left">setting for <code>padding</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$border-style</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>border-style</code></td>
+<td style="text-align:left"><code>&quot;solid&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$border-width</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">setting for <code>border-width</code></td>
+<td style="text-align:left"><code>1px</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-table-column-base();
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">display</span>: table-cell;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">vertical-align</span>: middle;
+  <span class="hljs-attribute">border-style</span>: solid;
+  <span class="hljs-attribute">border-width</span>: <span class="hljs-number">1px</span>;
+}
+</code></pre>
+<p><a id="features-mixin-use-text-base"></a></p>
+<h3>@mixin use-text-base</h3>
+<p>use settings of initialized text</p>
+<ul>
+<li><strong>Group:</strong> Features</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$letter-spacing</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">setting for <code>letter-spacing</code></td>
+<td style="text-align:left"><code>$unit-letter-spacing</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$line-height</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong>, <strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>line-height</code></td>
+<td style="text-align:left"><code>$unit-line-height</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$text-align</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>text-align</code></td>
+<td style="text-align:left"><code>&quot;left&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$text-decoration</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>text-decoration</code></td>
+<td style="text-align:left"><code>&quot;none&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$text-indent</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">setting for <code>text-indent</code></td>
+<td style="text-align:left"><code>0</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$white-space</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>white-space</code></td>
+<td style="text-align:left"><code>&quot;normal&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$word-break</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>word-break</code></td>
+<td style="text-align:left"><code>&quot;break-all&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$word-wrap</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">setting for <code>word-wrap</code></td>
+<td style="text-align:left"><code>&quot;break-word&quot;</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  @<span class="hljs-keyword">include</span> use-text-base();
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">letter-spacing</span>: <span class="hljs-number">0.04em</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5</span>;
+  <span class="hljs-attribute">text-align</span>: left;
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">text-indent</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">white-space</span>: normal;
+  <span class="hljs-attribute">word-break</span>: break-all;
+  <span class="hljs-attribute">word-wrap</span>: break-word;
+}
+</code></pre>
+<h4>Dependencies</h4>
+<ul>
+<li><strong><a href="#default-settings-variable-unit-letter-spacing">$unit-letter-spacing</a></strong></li>
+<li><strong><a href="#default-settings-variable-unit-line-height">$unit-line-height</a></strong></li>
+</ul>
+<h2>Test</h2>
+<pre class="hljs"><code class="language-sh">$ yarn <span class="hljs-built_in">test</span>
+</code></pre>
+<h2>License</h2>
+<p>MIT</p>
+
+    </div>
+  </div>
+</article>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="kss-assets/js/main.min.js" defer></script>
+
+  
+
+</body>
+</html>

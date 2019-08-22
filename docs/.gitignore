@@ -1,0 +1,7 @@
+# documents
+**/*.md
+**/*.psd
+**/kss-assets/**/*.css
+!**/kss-assets/**/*.min.css
+**/kss-assets/**/*.js
+!**/kss-assets/**/*.min.js

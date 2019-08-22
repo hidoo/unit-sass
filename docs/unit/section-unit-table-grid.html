@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <title>Style Guide - @hidoo/unit (v0.3.0)</title>
+  <meta name="description" content="Sass based css framework." />
+  <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="kss-assets/images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="192x192" href="kss-assets/images/touchicon.png" />
+  <meta name="apple-mobile-web-app-title" content="@hidoo/unit" />
+
+  <link rel="stylesheet" href="kss-assets/css/main.min.css" />
+
+  <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body class="kss-document  is-theme-light  is-example-theme-light">
+
+<div class="kss-layout-drawer-a-a  kss-unit-box  js-kss-styleguide-drawer">
+  <div class="kss-layout-drawer-a-a__container  kss-unit-box__container">
+    <div class="kss-layout-drawer-a-a__contents  kss-unit-box  kss-unit-box--theme-a-a-a  js-kss-styleguide-drawer-container">
+
+      <nav class="kss-block-bar-a-a  kss-unit-box  kss-unit-box--theme-a-a-a" rol="navigation" id="js-kss-tool-bar">
+        <div class="kss-block-bar-a-a__container  kss-unit-box__container">
+          <div class="kss-block-bar-a-a__grid  kss-unit-table-grid">
+            <div class="kss-block-bar-a-a__grid__button-drawer  kss-unit-table-grid__column">
+              <a class="kss-block-bar-a-a__button-drawer  kss-unit-button  js-kss-styleguide-drawer__toggle" href="javascript:;">
+                <span class="kss-unit-icon  kss-unit-icon--type-drawer"></span>
+              </a>
+            </div>
+            <div class="kss-block-bar-a-a__grid__tools  kss-unit-table-grid__column">
+      
+              <div class="kss-block-navi-b-a  kss-block-navi-b-a--inline-true  kss-unit-box  js-kss-theme-switcher">
+                <div class="kss-block-navi-b-a__container  kss-unit-box__container">
+                  <dl class="kss-block-navi-b-a__grid  kss-unit-table-grid">
+                    <dt class="kss-block-navi-b-a__grid__label  kss-unit-table-grid__column">
+                      <p class="kss-block-navi-b-a__label  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--truncate-true">THEME</p>
+                    </dt>
+                    <dd class="kss-block-navi-b-a__grid__list  kss-unit-table-grid__column">
+                      <ul class="kss-block-navi-b-a__list  kss-unit-table-grid">
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--light  kss-unit-button" href="javascript:;" data-kss-switch-theme="light">
+                            <span class="kss-unit-button__label  kss-unit-text">light</span>
+                          </a>
+                        </li>
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--dark  kss-unit-button" href="javascript:;" data-kss-switch-theme="dark">
+                            <span class="kss-unit-button__label  kss-unit-text">dark</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+      
+              <div class="kss-block-navi-b-a  kss-block-navi-b-a--inline-true  kss-unit-box  js-kss-example-theme-switcher kss-util--padding-left-10">
+                <div class="kss-block-navi-b-a__container  kss-unit-box__container">
+                  <dl class="kss-block-navi-b-a__grid  kss-unit-table-grid">
+                    <dt class="kss-block-navi-b-a__grid__label  kss-unit-table-grid__column">
+                      <p class="kss-block-navi-b-a__label  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--truncate-true">EXAMPLE</p>
+                    </dt>
+                    <dd class="kss-block-navi-b-a__grid__list  kss-unit-table-grid__column">
+                      <ul class="kss-block-navi-b-a__list  kss-unit-table-grid">
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--light  kss-unit-button" href="javascript:;" data-kss-switch-theme="light">
+                            <span class="kss-unit-button__label  kss-unit-text">light</span>
+                          </a>
+                        </li>
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--dark  kss-unit-button" href="javascript:;" data-kss-switch-theme="dark">
+                            <span class="kss-unit-button__label  kss-unit-text">dark</span>
+                          </a>
+                        </li>
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--light-transparent  kss-unit-button" href="javascript:;" data-kss-switch-theme="light-transparent">
+                            <span class="kss-unit-button__label  kss-unit-text">light (transparent)</span>
+                          </a>
+                        </li>
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--dark-transparent  kss-unit-button" href="javascript:;" data-kss-switch-theme="dark-transparent">
+                            <span class="kss-unit-button__label  kss-unit-text">dark (transparent)</span>
+                          </a>
+                        </li>
+                        <li class="kss-block-navi-b-a__list__item  kss-unit-table-grid__column">
+                          <a class="kss-block-navi-b-a__button  kss-block-navi-b-a__button--themeable  kss-unit-button  js-kss-example-expand" href="javascript:;">
+                            <span class="kss-unit-icon  kss-unit-icon--type-expand">expand</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="kss-layout-drawer-a-a__contents__drawer  kss-unit-box__container  js-kss-styleguide-drawer__drawer">
+
+        <header class="kss-block-heading-b-a  kss-unit-box  kss-util--padding-top-40 kss-util--padding-right-15 kss-util--padding-left-15">
+          <div class="kss-block-heading-b-a__container  kss-unit-box__container">
+            <h1 class="kss-block-heading-b-a__name  kss-unit-text  kss-unit-text--theme-a-a-e  kss-unit-text--truncate-true">@hidoo/unit</h1>
+            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.3.0</p>
+            <p class="kss-block-heading-b-a__description  kss-unit-text  kss-unit-text--theme-a-a-a">Sass based css framework.</p>
+          </div>
+        </header>
+
+<aside class="kss-block-section-b-a  kss-unit-box  kss-util--padding-top-40  kss-util--padding-horizontal-25">
+  <header class="kss-block-section-b-a__header  kss-unit-table-grid">
+    <div class="kss-block-section-b-a__header__label  kss-unit-text--theme-a-a-a  kss-unit-table-grid__column">
+      <h2 class="kss-block-section-b-a__label  kss-unit-text  kss-unit-text--truncate-true">OVERVIEW</h2>
+    </div>
+  </header>
+  <div class="kss-block-section-b-a__container  kss-unit-box__container">
+    
+                <nav class="kss-block-navi-a-a  kss-unit-box">
+                  <div class="kss-block-navi-a-a__container  kss-unit-box__container">
+                    <ul class="kss-block-navi-a-a__list  kss-unit-list">
+                      <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                        <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">0</span>
+                        <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a" href="./index.html">README.md</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+    
+  </div>
+</aside>
+
+<aside class="kss-block-section-b-a  kss-unit-box  kss-util--padding-top-40  kss-util--padding-bottom-40  kss-util--padding-horizontal-25">
+  <header class="kss-block-section-b-a__header  kss-unit-table-grid">
+    <div class="kss-block-section-b-a__header__label  kss-unit-text--theme-a-a-a  kss-unit-table-grid__column">
+      <h2 class="kss-block-section-b-a__label  kss-unit-text  kss-unit-text--truncate-true">COMPONENTS</h2>
+    </div>
+  </header>
+  <div class="kss-block-section-b-a__container  kss-unit-box__container">
+    
+              <nav class="kss-block-navi-a-a  kss-unit-box  kss-util--padding-bottom-40">
+                <div class="kss-block-navi-a-a__container  kss-unit-box__container">
+                  <ul class="kss-block-navi-a-a__list  kss-unit-list">
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">1</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-icon.html">unit-icon</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">2</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-text.html">unit-text</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">3</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-list.html">unit-list</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">4</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-pict.html">unit-pict</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">5</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-button.html">unit-button</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">6</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-table.html">unit-table</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">7</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-document.html">unit-document</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">8</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-input.html">unit-input</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">9</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-toggle.html">unit-toggle</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">10</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-select.html">unit-select</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">11</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-box.html">unit-box</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block  is-current">12</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-table-grid.html">unit-table-grid</a>
+                      
+                      
+                        <nav class="kss-block-navi-a-a  kss-unit-box">
+                          <div class="kss-block-navi-a-a__container  kss-unit-box__container">
+                            <ul class="kss-block-navi-a-a__list  kss-unit-list">
+                              <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                                <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">12.1</span>
+                                <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-table-grid.html#kss-section-unit-table-grid-core">core</a>
+                                
+                                
+                              </li>
+                              <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                                <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">12.2</span>
+                                <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-table-grid.html#kss-section-unit-table-grid-break">break</a>
+                                
+                                
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">13</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-unit-flex-grid.html">unit-flex-grid</a>
+                      
+                      
+                    </li>
+                    <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
+                      <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block">14</span>
+                      <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="section-util.html">util</a>
+                      
+                      
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+    
+  </div>
+</aside>
+
+      </div>
+      <div class="kss-layout-drawer-a-a__contents__main  kss-unit-box__container">
+
+
+
+            <header class="kss-block-heading-a-a  kss-block-heading-a-a--depth-1  kss-unit-box  true" id="kss-section-unit-table-grid">
+              <div class="kss-block-heading-a-a__container  kss-unit-box__container">
+                <div class="kss-block-heading-a-a__header  kss-unit-table-grid">
+                  <div class="kss-block-heading-a-a__header__reference  kss-unit-table-grid__column">
+                    <p class="kss-block-heading-a-a__reference  kss-unit-text  kss-unit-text--theme-a-a-b">12</p>
+                  </div>
+                  <div class="kss-block-heading-a-a__header__label  kss-unit-table-grid__column">
+                    <h1 class="kss-block-heading-a-a__label  kss-unit-text">
+                      <a class="kss-block-heading-a-a__label__link  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="#kss-section-unit-table-grid">unit-table-grid</a>
+                    </h1>
+                  </div>
+                </div>
+                <div class="kss-block-heading-a-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
+                  <p>component for table-grid.</p>
+            
+                </div>
+              </div>
+            </header>
+
+
+
+
+
+
+            <header class="kss-block-heading-a-a  kss-block-heading-a-a--depth-2  kss-unit-box  kss-util--margin-top-60" id="kss-section-unit-table-grid-core">
+              <div class="kss-block-heading-a-a__container  kss-unit-box__container">
+                <div class="kss-block-heading-a-a__header  kss-unit-table-grid">
+                  <div class="kss-block-heading-a-a__header__reference  kss-unit-table-grid__column">
+                    <p class="kss-block-heading-a-a__reference  kss-unit-text  kss-unit-text--theme-a-a-b">12.1</p>
+                  </div>
+                  <div class="kss-block-heading-a-a__header__label  kss-unit-table-grid__column">
+                    <h2 class="kss-block-heading-a-a__label  kss-unit-text">
+                      <a class="kss-block-heading-a-a__label__link  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="#kss-section-unit-table-grid-core">core</a>
+                    </h2>
+                  </div>
+                </div>
+                <div class="kss-block-heading-a-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
+                  <p>core module of unit-table-grid</p>
+            
+                </div>
+              </div>
+            </header>
+
+
+
+
+
+<article class="kss-block-section-a-a  kss-unit-box  kss-util--margin-top-40 kss-util--padding-top-40 kss-util--border-top-a-a-a">
+  <div class="kss-block-section-a-a__container  kss-unit-box__container">
+    <header class="kss-block-heading-a-a  kss-block-heading-a-a--depth-3  kss-unit-box" id="kss-section-unit-table-grid-core-base">
+      <div class="kss-block-heading-a-a__container  kss-unit-box__container">
+        <div class="kss-block-heading-a-a__header  kss-unit-table-grid">
+          <div class="kss-block-heading-a-a__header__reference  kss-unit-table-grid__column">
+            <p class="kss-block-heading-a-a__reference  kss-unit-text  kss-unit-text--theme-a-a-b">12.1.1</p>
+          </div>
+          <div class="kss-block-heading-a-a__header__label  kss-unit-table-grid__column">
+            <h3 class="kss-block-heading-a-a__label  kss-unit-text">
+              <a class="kss-block-heading-a-a__label__link  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="#kss-section-unit-table-grid-core-base">default style</a>
+            </h3>
+          </div>
+        </div>
+        <div class="kss-block-heading-a-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
+          <p>default style of unit-table-grid</p>
+    
+        </div>
+      </div>
+    </header>
+
+
+<div class="kss-block-example-b-a  kss-unit-box  kss-util--margin-top-30">
+  <div class="kss-block-example-b-a__container-header  kss-unit-box__container">
+    <div class="kss-block-example-b-a__header  kss-unit-table-grid">
+      <div class="kss-block-example-b-a__header__name  kss-unit-table-grid__column">
+        <code class="kss-block-example-b-a__name  kss-unit-text  kss-unit-text--theme-b-a-a">default</code>
+      </div>
+    </div>
+  </div>
+  <div class="kss-block-example-b-a__container-canvas  kss-unit-box__container">
+    <div class="kss-block-example-b-a__canvas  kss-unit-box  kss-unit-box--texture-transparent">
+      <div class="kss-block-example-b-a__canvas__container  kss-unit-box__container">
+        <div class="unit-table-grid">
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="kss-block-example-a-a  kss-unit-box  kss-util--margin-top-30">
+  <div class="kss-block-example-a-a__container  kss-unit-box__container">
+    <pre><code class="hljs handlebars html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-table-grid"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-table-grid__column"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-text"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict  unit-pict--fit-max-width  util--float-left"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict__src"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/200/150/?grayscale&amp;amp;blur=10"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"150"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-text"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-table-grid__column"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict  unit-pict--fit-max-width  util--float-left"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict__src"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/200/150/?grayscale&amp;amp;blur=10"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"150"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-text"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+  </div>
+</div>
+
+  </div>
+</article>
+
+
+
+
+
+            <header class="kss-block-heading-a-a  kss-block-heading-a-a--depth-2  kss-unit-box  kss-util--margin-top-60" id="kss-section-unit-table-grid-break">
+              <div class="kss-block-heading-a-a__container  kss-unit-box__container">
+                <div class="kss-block-heading-a-a__header  kss-unit-table-grid">
+                  <div class="kss-block-heading-a-a__header__reference  kss-unit-table-grid__column">
+                    <p class="kss-block-heading-a-a__reference  kss-unit-text  kss-unit-text--theme-a-a-b">12.2</p>
+                  </div>
+                  <div class="kss-block-heading-a-a__header__label  kss-unit-table-grid__column">
+                    <h2 class="kss-block-heading-a-a__label  kss-unit-text">
+                      <a class="kss-block-heading-a-a__label__link  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="#kss-section-unit-table-grid-break">break</a>
+                    </h2>
+                  </div>
+                </div>
+                <div class="kss-block-heading-a-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
+                  <p>break modifiers of unit-table-grid</p>
+            
+                </div>
+              </div>
+            </header>
+
+
+
+
+
+<article class="kss-block-section-a-a  kss-unit-box  kss-util--margin-top-40 kss-util--padding-top-40 kss-util--border-top-a-a-a">
+  <div class="kss-block-section-a-a__container  kss-unit-box__container">
+    <header class="kss-block-heading-a-a  kss-block-heading-a-a--depth-3  kss-unit-box" id="kss-section-unit-table-grid-break-builtin">
+      <div class="kss-block-heading-a-a__container  kss-unit-box__container">
+        <div class="kss-block-heading-a-a__header  kss-unit-table-grid">
+          <div class="kss-block-heading-a-a__header__reference  kss-unit-table-grid__column">
+            <p class="kss-block-heading-a-a__reference  kss-unit-text  kss-unit-text--theme-a-a-b">12.2.1</p>
+          </div>
+          <div class="kss-block-heading-a-a__header__label  kss-unit-table-grid__column">
+            <h3 class="kss-block-heading-a-a__label  kss-unit-text">
+              <a class="kss-block-heading-a-a__label__link  kss-unit-text__link  kss-unit-text__link--theme-a-a-a  js-kss-smooth-scroll" href="#kss-section-unit-table-grid-break-builtin">modifiers: break</a>
+            </h3>
+          </div>
+        </div>
+        <div class="kss-block-heading-a-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
+          <p>builtin modifiers of break for unit-table-grid</p>
+    
+        </div>
+      </div>
+    </header>
+
+
+<div class="kss-block-example-b-a  kss-unit-box  kss-util--margin-top-30">
+  <div class="kss-block-example-b-a__container-header  kss-unit-box__container">
+    <div class="kss-block-example-b-a__header  kss-unit-table-grid">
+      <div class="kss-block-example-b-a__header__name  kss-unit-table-grid__column">
+        <code class="kss-block-example-b-a__name  kss-unit-text  kss-unit-text--theme-b-a-a">default</code>
+      </div>
+    </div>
+  </div>
+  <div class="kss-block-example-b-a__container-canvas  kss-unit-box__container">
+    <div class="kss-block-example-b-a__canvas  kss-unit-box  kss-unit-box--texture-transparent">
+      <div class="kss-block-example-b-a__canvas__container  kss-unit-box__container">
+        <div class="unit-table-grid  {{modifier_class}}">
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="kss-block-example-b-a  kss-unit-box  kss-util--margin-top-30">
+  <div class="kss-block-example-b-a__container-header  kss-unit-box__container">
+    <div class="kss-block-example-b-a__header  kss-unit-table-grid">
+      <div class="kss-block-example-b-a__header__name  kss-unit-table-grid__column">
+        <code class="kss-block-example-b-a__name  kss-unit-text  kss-unit-text--theme-b-a-a">unit-table-grid--break-if-mobile</code>
+      </div>
+      <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
+        <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
+          break column if mobile viewport
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="kss-block-example-b-a__container-canvas  kss-unit-box__container">
+    <div class="kss-block-example-b-a__canvas  kss-unit-box  kss-unit-box--texture-transparent">
+      <div class="kss-block-example-b-a__canvas__container  kss-unit-box__container">
+        <div class="unit-table-grid  unit-table-grid--break-if-mobile">
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="kss-block-example-b-a  kss-unit-box  kss-util--margin-top-30">
+  <div class="kss-block-example-b-a__container-header  kss-unit-box__container">
+    <div class="kss-block-example-b-a__header  kss-unit-table-grid">
+      <div class="kss-block-example-b-a__header__name  kss-unit-table-grid__column">
+        <code class="kss-block-example-b-a__name  kss-unit-text  kss-unit-text--theme-b-a-a">unit-table-grid--break-if-not-mobile</code>
+      </div>
+      <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
+        <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
+          break column if not mobile viewport
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="kss-block-example-b-a__container-canvas  kss-unit-box__container">
+    <div class="kss-block-example-b-a__canvas  kss-unit-box  kss-unit-box--texture-transparent">
+      <div class="kss-block-example-b-a__canvas__container  kss-unit-box__container">
+        <div class="unit-table-grid  unit-table-grid--break-if-not-mobile">
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+  <div class="unit-table-grid__column">
+    <!-- some unit -->
+    <figure class="unit-pict  unit-pict--fit-max-width  util--float-left">
+      <img class="unit-pict__src" src="https://picsum.photos/200/150/?grayscale&amp;blur=10" alt="" width="200" height="150" />
+    </figure>
+    <p class="unit-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <!-- some unit -->
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="kss-block-example-a-a  kss-unit-box  kss-util--margin-top-30">
+  <div class="kss-block-example-a-a__container  kss-unit-box__container">
+    <pre><code class="hljs handlebars html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-table-grid  </span></span></span><span class="hljs-template-variable">{{modifier_class}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-table-grid__column"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-text"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict  unit-pict--fit-max-width  util--float-left"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict__src"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/200/150/?grayscale&amp;amp;blur=10"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"150"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-text"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-table-grid__column"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict  unit-pict--fit-max-width  util--float-left"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-pict__src"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://picsum.photos/200/150/?grayscale&amp;amp;blur=10"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"200"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"150"</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"unit-text"</span>&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- some unit --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+  </div>
+</div>
+
+  </div>
+</article>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="kss-assets/js/main.min.js" defer></script>
+
+  
+
+</body>
+</html>
