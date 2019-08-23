@@ -894,10 +894,10 @@
   resolved "https://registry.yarnpkg.com/@hidoo/eslint-config/-/eslint-config-0.1.4.tgz#0752a3ee266d0398be45ae905d1e8ececa882d81"
   integrity sha512-p3YvRupYiLwbHdarhvzHZwkRbwLnngGfXb3lSYsu3ocwf6Jn74IGh5vRvFm+nuH6UpLyzrAQfU6TVyqduY4exQ==
 
-"@hidoo/gulp-plugin-image-evenizer@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-plugin-image-evenizer/-/gulp-plugin-image-evenizer-0.12.0.tgz#d6cd9df6e7603001afcd3e87bd005079735eb187"
-  integrity sha512-zeggvc7KgsI+BrOWZASLLzqc4/oMp+Er+lf/+1NMgdnf0hiFgmjBy95YCyXHYiPeZGRcx2gEIpTyA//HV3PalQ==
+"@hidoo/gulp-plugin-image-evenizer@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-plugin-image-evenizer/-/gulp-plugin-image-evenizer-0.13.0.tgz#0c44ea2e4f0405c5658dbdfb9f742bdb84059f59"
+  integrity sha512-d4Szo/jUP5jeBepQNpXoPiZssGc6hQ3DAHhKjeDNUrONzhxTTSOzLGiciWwdqtf97qhiSeCLM3XX4bE8UdXZVQ==
   dependencies:
     fancy-log "^1.3.3"
     file-type "^12.0.0"
@@ -910,10 +910,10 @@
     save-pixels "^2.3.4"
     through2 "^3.0.1"
 
-"@hidoo/gulp-plugin-svg-sprite@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-plugin-svg-sprite/-/gulp-plugin-svg-sprite-0.12.0.tgz#4ddea1b2f8321d30ddcc2a9fb1b243ed4ebeeeb2"
-  integrity sha512-3BZ0+aHCSGRi+DW/tjqGM/28FS75RozQDLQMDi6sGOPmbdKP51BigIpQRLVMpNP4ukYV7eUY9dgCSgTK5mswpg==
+"@hidoo/gulp-plugin-svg-sprite@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-plugin-svg-sprite/-/gulp-plugin-svg-sprite-0.13.0.tgz#4e2ae30ac9aff8e098f6fc52221f58734bf907a7"
+  integrity sha512-J9rj6I8N6peuLkKegmQBhMWt9vFboifyy7aSjPqFjzsQFiBqcGziHe15SbZQY+OWE+OwC3BssRc3mnUeHymEGg==
   dependencies:
     cheerio "^1.0.0-rc.2"
     cssom "^0.4.1"
@@ -924,12 +924,12 @@
     through2 "^3.0.1"
     vinyl "^2.2.0"
 
-"@hidoo/gulp-task-build-css-sass@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-css-sass/-/gulp-task-build-css-sass-0.12.0.tgz#f3e3811333231f3e8dfcbeb43a4518faba1916fe"
-  integrity sha512-2d4Uk+q4cmRUt6uFRP0a3verO6PmgnFF7xXWrhczXKKPr2LI4ztgLtLFxzMBhDSsuBjHdA8NNqz2zWFF38kdeQ==
+"@hidoo/gulp-task-build-css-sass@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-css-sass/-/gulp-task-build-css-sass-0.13.0.tgz#58f850c01f64f9216211620781e2ca8df6e1db47"
+  integrity sha512-RAsm4HJ86vUuyYcNIEjwTTJQnYiKzYsfRxsxw8wu01kXmYekmzegeYE3faSs5kOYvLuJSlv/sNzI1eR0UQGz9w==
   dependencies:
-    "@hidoo/gulp-util-error-handler" "^0.12.0"
+    "@hidoo/gulp-util-error-handler" "^0.13.0"
     autoprefixer "^9.6.1"
     css-mqpacker "^7.0.0"
     fancy-log "^1.3.3"
@@ -946,13 +946,13 @@
     postcss-url "^8.0.0"
     uncss "^0.17.0"
 
-"@hidoo/gulp-task-build-js-rollup@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-js-rollup/-/gulp-task-build-js-rollup-0.12.0.tgz#e64cf36abd495da4262dec206c675193bdf7edd7"
-  integrity sha512-scMW0tFPWOAiPqy0QUS9M5eFm2Rp1OMqRFzwlpZFfThuzKuguO5xfOeXXsB4tAMEz3e3GMNYyM4JMfHjbD31CQ==
+"@hidoo/gulp-task-build-js-rollup@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-js-rollup/-/gulp-task-build-js-rollup-0.13.0.tgz#07987997b4f7e0727d648c47c39111f2ffd29cb5"
+  integrity sha512-8W8q7QuMA53fuYBWjFHnwlHvAwAbQwZ6h3wS93Wp3mFgKaEgKvUYFESeA8itRAXacMTAZzeHsRH62J6w5IuJ/Q==
   dependencies:
-    "@hidoo/gulp-util-error-handler" "^0.12.0"
-    "@hidoo/util-merge-babelrc" "^0.12.0"
+    "@hidoo/gulp-util-error-handler" "^0.13.0"
+    "@hidoo/util-merge-babelrc" "^0.13.0"
     fancy-log "^1.3.3"
     gulp-gzip "^1.4.2"
     gulp-if "^3.0.0"
@@ -961,21 +961,21 @@
     rollup "^1.16.2"
     rollup-plugin-babel "^4.3.2"
     rollup-plugin-commonjs "^10.0.0"
-    rollup-plugin-license "^0.10.0"
+    rollup-plugin-license "^0.12.1"
     rollup-plugin-node-resolve "^5.0.1"
     rollup-plugin-replace "^2.1.0"
     through2 "^3.0.1"
     vinyl-buffer "^1.0.1"
     vinyl-source-stream "^2.0.0"
 
-"@hidoo/gulp-task-build-sprite-image@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-sprite-image/-/gulp-task-build-sprite-image-0.12.0.tgz#74ddf0c0f687a5d4b654e7a342767213802a91db"
-  integrity sha512-GKI94aLxUsl7YvXZWTOGFKah36GmjJnWiV9zqHD6x+PrNgfAkDrg91wnPmY9ZGG8lm6bApYcOdJY8ix6h5LS6A==
+"@hidoo/gulp-task-build-sprite-image@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-sprite-image/-/gulp-task-build-sprite-image-0.13.0.tgz#594d00c1d38546f76a982b0dbf5a43b82832ce56"
+  integrity sha512-XwGj2F9qQ6YBInHL6OUz60Srctm5/uAMemczOxVzmT5ObSz+ClVrnBU8j0uTtGcrlJT2cePXN0ilfCb3jtIJ6g==
   dependencies:
-    "@hidoo/gulp-plugin-image-evenizer" "^0.12.0"
-    "@hidoo/gulp-util-error-handler" "^0.12.0"
-    "@hidoo/handlebars-helpers" "^0.5.1"
+    "@hidoo/gulp-plugin-image-evenizer" "^0.13.0"
+    "@hidoo/gulp-util-error-handler" "^0.13.0"
+    "@hidoo/handlebars-helpers" "^0.6.0"
     gulp-if "^3.0.0"
     gulp-imagemin "^6.0.0"
     gulp-plumber "^1.2.1"
@@ -985,14 +985,14 @@
     merge-stream "^2.0.0"
     vinyl-buffer "^1.0.1"
 
-"@hidoo/gulp-task-build-sprite-svg@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-sprite-svg/-/gulp-task-build-sprite-svg-0.12.0.tgz#7e2d11fb2ce33125469860c29425f55946803889"
-  integrity sha512-3WRziNPey8aDKniVhDxO2an2kfyaweaEMKMwrTKpuVU8ZQPcdeKFofRuk1ld6W/d3ySUHrIolOJgDx0f/L+YLQ==
+"@hidoo/gulp-task-build-sprite-svg@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-sprite-svg/-/gulp-task-build-sprite-svg-0.13.0.tgz#34757c7fca08a18e66bf3bcb38b9cdfee49f8a94"
+  integrity sha512-/o1/m2OD2wI8iAExeq54o4VtMRwLrSJxjsxPd0pczbbvR8FFZ+4Q0zZs8qHMRrthfXL28Di8x0RXo3O1DKHKZw==
   dependencies:
-    "@hidoo/gulp-plugin-svg-sprite" "^0.12.0"
-    "@hidoo/gulp-util-error-handler" "^0.12.0"
-    "@hidoo/handlebars-helpers" "^0.5.1"
+    "@hidoo/gulp-plugin-svg-sprite" "^0.13.0"
+    "@hidoo/gulp-util-error-handler" "^0.13.0"
+    "@hidoo/handlebars-helpers" "^0.6.0"
     gulp-gzip "^1.4.2"
     gulp-if "^3.0.0"
     gulp-imagemin "^6.0.0"
@@ -1000,33 +1000,33 @@
     merge-stream "^2.0.0"
     vinyl-buffer "^1.0.1"
 
-"@hidoo/gulp-task-build-styleguide-kss@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-styleguide-kss/-/gulp-task-build-styleguide-kss-0.12.0.tgz#be831a7309b9e11c54b04b60d9bb93e9e8ff3da2"
-  integrity sha512-usajhEc5PCKaDh5wlt7Qe7BipwnwseYGikyI5Wbd2aOI2xgz+S3E2uoObf0OX07UU2t2M6cQZWaoSVSe1Oj73A==
+"@hidoo/gulp-task-build-styleguide-kss@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-build-styleguide-kss/-/gulp-task-build-styleguide-kss-0.13.0.tgz#aaa96a0996798555e6aa883ec32585ddd7d9ff5b"
+  integrity sha512-A5kCBtb6BF2i2KAjvtQUS5HFt8jXUkMn9KKCTD8W/SI2T2BhXqW8HT83ANnqSNPApNnfiBr6JvdeQTKcWY2x0A==
   dependencies:
-    "@hidoo/gulp-util-error-handler" "^0.12.0"
-    "@hidoo/handlebars-helpers" "^0.5.1"
+    "@hidoo/gulp-util-error-handler" "^0.13.0"
+    "@hidoo/handlebars-helpers" "^0.6.0"
     handlebars "^4.1.2"
     kss "3.0.0-beta.25"
 
-"@hidoo/gulp-task-copy@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-copy/-/gulp-task-copy-0.12.0.tgz#8c0f05c34ed2c2b44e78b2be59f7cebf8bd9c29c"
-  integrity sha512-utqMBrF3MjA4f/PFbV8ErNuWJGKE9szQxiCsQ/Qa1yiKyJmwxD8YgYZi6XEP0SMyAODYzAgniaDJ6Y6CXb4LUw==
+"@hidoo/gulp-task-copy@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-task-copy/-/gulp-task-copy-0.13.0.tgz#b2538b1df262a161c1c86435b53d36f252ea553d"
+  integrity sha512-sQNvRaMBxsNqFP0M3uOuvq+wjoOcxJ2arhX4qGmA/xwAgliEmpZATpFLCa4PfuqjnAMZhFk/TWlufWvBKxLY2Q==
   dependencies:
-    "@hidoo/gulp-util-error-handler" "^0.12.0"
+    "@hidoo/gulp-util-error-handler" "^0.13.0"
     gulp-plumber "^1.2.1"
 
-"@hidoo/gulp-util-error-handler@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/gulp-util-error-handler/-/gulp-util-error-handler-0.12.0.tgz#c0bac4c6e5d3a11d414b5b121795307c2fff2434"
-  integrity sha512-3etwdgYY27a2RHhK8489i98SiCsUsvaGhp8jKyaNN4gLBGt+ixNbsmlnfqywe3vUuNmdf7imFutRsA90r5gkUg==
+"@hidoo/gulp-util-error-handler@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/gulp-util-error-handler/-/gulp-util-error-handler-0.13.0.tgz#a92c09612e7e6e7dad2d0bbcb19ec96860361516"
+  integrity sha512-JcnLCt3VGTJOCjLim17Q9pqz9J5AQukUuNToG02lvVtsRA+fS5miY9NKfxNhC8m4Q37V2zOtAhFQEv2BRueI/A==
   dependencies:
     chalk "^2.4.2"
     fancy-log "^1.3.3"
 
-"@hidoo/handlebars-helpers@0.6.0":
+"@hidoo/handlebars-helpers@0.6.0", "@hidoo/handlebars-helpers@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@hidoo/handlebars-helpers/-/handlebars-helpers-0.6.0.tgz#fd614c1b6af2a77103e164152955e75b9b637d97"
   integrity sha512-xYcd3dLiDfhQ3k9xk5woguo8XTa5BuxVX0AUDQztn+pZoyKUqdlFyM76EgfurDfC8KPffGILjpPn23puCwePlQ==
@@ -1035,26 +1035,17 @@
     marked "0.7.0"
     path-browserify "1.0.0"
 
-"@hidoo/handlebars-helpers@^0.5.1":
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/@hidoo/handlebars-helpers/-/handlebars-helpers-0.5.1.tgz#3dd756b112e78e44499a79bd8c5218b33c213d11"
-  integrity sha512-gHrvZh7tbMUwJXlCNAYdDLLijsnVGRKyfy59TNMD6I6jVlzQawnNDRCFmWR5NJ8Q13Ch/ZvVeg136xaeAvyWcw==
-  dependencies:
-    highlight.js "^9.15.8"
-    marked "^0.6.2"
-    path-browserify "^1.0.0"
-
-"@hidoo/util-fancy-print@0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/util-fancy-print/-/util-fancy-print-0.12.0.tgz#bdad68a4fb4458a98450f2099af496bde29ac10a"
-  integrity sha512-+65PzoGjypiqYG2ZeeJjuddIzBU9shuZ1ImK8T3uOLEWRXflh0ZAg+CtYdT9bAoJOEMQ2oGAa3sKTYWWTzSLPA==
+"@hidoo/util-fancy-print@0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/util-fancy-print/-/util-fancy-print-0.13.0.tgz#6d773581b187176274f36bf3d6c0efa01100cbd0"
+  integrity sha512-4YU19/53PAmtdivqRZV3i+6u8LUmPXBBkpbusc6N1KHjtYIVQhm0a0XuDGdrdXYFoXY4lHh9Hxno77h0olya6Q==
   dependencies:
     chalk "^2.4.2"
 
-"@hidoo/util-merge-babelrc@^0.12.0":
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/@hidoo/util-merge-babelrc/-/util-merge-babelrc-0.12.0.tgz#50af9aa8eddf4ced4a9cd243103acefb7dd1e019"
-  integrity sha512-hkg+6TYwWDuSnfHsLcffAncv0RrnDWy9tjNllVizrJ/Ze8DZgN1o5xyAYgraBjT2HaLav17YzV4UGZozQRiMXw==
+"@hidoo/util-merge-babelrc@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/util-merge-babelrc/-/util-merge-babelrc-0.13.0.tgz#118d33163f21b25c487ec6bb771bfb6e8ecd2c1d"
+  integrity sha512-+MaWRloZkpR4N+4aoThiy32wXXqH2Em9qX1vEyTR7d9SQOgQ05YGFQUFRCl8EMZnNxnSS62mKAfDZm5mEw5Fhg==
   dependencies:
     fancy-log "^1.3.3"
     lodash.merge "^4.6.1"
@@ -6712,7 +6703,7 @@ highlight.js@9.15.8:
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.8.tgz#f344fda123f36f1a65490e932cf90569e4999971"
   integrity sha512-RrapkKQWwE+wKdF73VsOa2RQdIoO3mxwJ4P8mhbI6KYJUraUHRKM5w5zQQKXNk0xNL4UVRdulV9SBJcmzJNzVA==
 
-highlight.js@^9.12.0, highlight.js@^9.15.8:
+highlight.js@^9.12.0:
   version "9.15.9"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.9.tgz#865257da1dbb4a58c4552d46c4b3854f77f0e6d5"
   integrity sha512-M0zZvfLr5p0keDMCAhNBp03XJbKBxUx5AfyfufMdFMEP4N/Xj6dh0IqC75ys7BAzceR34NgcvXjupRVaHBPPVQ==
@@ -10394,7 +10385,7 @@ pascalcase@^0.1.1:
   resolved "https://registry.yarnpkg.com/pascalcase/-/pascalcase-0.1.1.tgz#b363e55e8006ca6fe21784d2db22bd15d7917f14"
   integrity sha1-s2PlXoAGym/iF4TS2yK9FdeRfxQ=
 
-path-browserify@1.0.0, path-browserify@^1.0.0:
+path-browserify@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-1.0.0.tgz#40702a97af46ae00b0ea6fa8998c0b03c0af160d"
   integrity sha512-Hkavx/nY4/plImrZPHRk2CL9vpOymZLgEbMNX1U0bjcBL7QN9wODxyx0yaMZURSQaUtSEvDrfAvxa9oPb0at9g==
@@ -11780,12 +11771,13 @@ rollup-plugin-commonjs@^10.0.0:
     resolve "^1.11.0"
     rollup-pluginutils "^2.8.1"
 
-rollup-plugin-license@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-license/-/rollup-plugin-license-0.10.0.tgz#2060e31938cfbb3ce7db0a74a4dee57946d5a7fb"
-  integrity sha512-DjoT3eQbTfTbRn1iobWjXZjDGpSGLQRXUNgxiIg5HZ4WvH4Z9eX4dR40k/Y2uHO/MJAebYh0QaZiyqHQyYHSJg==
+rollup-plugin-license@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-license/-/rollup-plugin-license-0.12.1.tgz#7e74b76f1167ab10a3f86870c97c0762b86187a6"
+  integrity sha512-zT8UO+Tc+DAVQHM5qeX4jnuHzTtDUYJ/8AHzUgVgqYrx5Wj5kHlvoZNaQqg7hOQbjSuHuJFlQGZmxxSQq2WMqA==
   dependencies:
     commenting "1.1.0"
+    glob "7.1.4"
     lodash "4.17.15"
     magic-string "0.25.3"
     mkdirp "0.5.1"
