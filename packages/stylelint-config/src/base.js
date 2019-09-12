@@ -1,5 +1,6 @@
 /**
  * properties order settings
+ *
  * @type {Object}
  */
 const order = {
@@ -17,6 +18,7 @@ const order = {
 
 /**
  * return flatten array
+ *
  * @param {Array} arr array
  * @return {Array}
  */
@@ -25,10 +27,10 @@ function flatten(arr = []) {
 }
 
 module.exports = {
-  extends: [
+  'extends': [
     'stylelint-config-standard'
   ],
-  plugins: [
+  'plugins': [
     'stylelint-a11y',
     'stylelint-declaration-block-no-ignored-properties',
     'stylelint-high-performance-animation',
@@ -36,7 +38,7 @@ module.exports = {
     'stylelint-order',
     'stylelint-selector-tag-no-without-class'
   ],
-  rules: {
+  'rules': {
     // stylelint
     'at-rule-semicolon-space-before': 'never',
     // 'unicode-bom': 'never',

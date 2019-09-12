@@ -2,6 +2,7 @@ const existOrEmptyString = require('./existOrEmptyString');
 
 /**
  * default options
+ *
  * @type {Object}
  */
 const defaultOptions = {
@@ -25,6 +26,7 @@ const defaultOptions = {
 
 /**
  * mapping key to sass variable
+ *
  * @type {Object}
  */
 const mappingKeyToSassVariable = new Map(
@@ -50,6 +52,7 @@ const mappingKeyToSassVariable = new Map(
 
 /**
  * return global settings
+ *
  * @param {Object} options global settings
  *   @param {String} options.prefix value of $unit-prefix
  *   @param {String} options.utilPrefix value of $unit-util-prefix
