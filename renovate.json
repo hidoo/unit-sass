@@ -38,6 +38,16 @@
         "^@hidoo/handlebars-"
       ],
       "automerge": true
+    },
+    {
+      "groupName": "stylelint packages",
+      "groupSlug": "stylelint",
+      "packageNames": [
+        "stylelint"
+      ],
+      "packagePatterns": [
+        "^stylelint-"
+      ]
     }
   ]
 }
