@@ -1,11 +1,11 @@
 module.exports = {
-  extends: [
+  'extends': [
     './src/base.js'
   ],
-  plugins: [
+  'plugins': [
     'stylelint-scss'
   ],
-  rules: {
+  'rules': {
     // stylelint
     'at-rule-no-unknown': null,
     'at-rule-empty-line-before': ['always', {

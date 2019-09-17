@@ -1,9 +1,9 @@
-/* eslint max-len: 0, no-magic-numbers: 0 */
+/* eslint max-len: off, no-magic-numbers: off, no-sync: off */
 
 import assert from 'assert';
 import fs from 'fs';
 import stylelint from 'stylelint';
-import config from '../';
+import config from '..';
 
 const invalidCss = fs.readFileSync(`${__dirname}/fixture/invalid.css`, 'utf-8');
 

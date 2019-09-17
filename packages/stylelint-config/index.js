@@ -1,12 +1,12 @@
 module.exports = {
-  extends: [
+  'extends': [
     './src/base.js'
   ],
-  plugins: [
+  'plugins': [
     'stylelint-group-selectors',
     'stylelint-selector-no-empty'
   ],
-  rules: {
+  'rules': {
     // plugin/stylelint-group-selectors
     'plugin/stylelint-group-selectors': true,
 
