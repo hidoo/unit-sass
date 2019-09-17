@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/hidoo/unit-sass/compare/v0.3.1...v0.4.0) (2019-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency handlebars to v4.2.0 ([8b56846](https://github.com/hidoo/unit-sass/commit/8b56846))
+* **deps:** update dependency highlight.js to v9.15.10 ([5ffeb77](https://github.com/hidoo/unit-sass/commit/5ffeb77))
+* **deps:** update dependency sassdoc to v2.7.1 ([d4c460d](https://github.com/hidoo/unit-sass/commit/d4c460d))
+* **stylelint-config:** change required stylelint version to 10.1.0+ ([7938d9e](https://github.com/hidoo/unit-sass/commit/7938d9e))
+* **stylelint-config:** disabled unicode-bom ([6903eb0](https://github.com/hidoo/unit-sass/commit/6903eb0))
+
+
+### Features
+
+* **stylelint-config:** add rules that added in stylelint-scss ([94fbc0a](https://github.com/hidoo/unit-sass/commit/94fbc0a))
+* **stylelint-config:** add unicode-bom rule ([502b29b](https://github.com/hidoo/unit-sass/commit/502b29b))
+
+
+
+
+
 ## [0.3.1](https://github.com/hidoo/unit-sass/compare/v0.3.0...v0.3.1) (2019-08-21)
 
 
