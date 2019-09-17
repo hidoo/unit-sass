@@ -39,6 +39,7 @@ module.exports = {
   rules: {
     // stylelint
     'at-rule-semicolon-space-before': 'never',
+    'unicode-bom': 'never',
 
     // a11y/stylelint-a11y
     'a11y/no-display-none': true,
