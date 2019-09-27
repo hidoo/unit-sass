@@ -30,7 +30,7 @@
     "stylelint-order": "3.1.1",
     "stylelint-scss": "3.11.1",
     "stylelint-selector-no-empty": "1.0.7",
-    "stylelint-selector-tag-no-without-class": "2.0.1"
+    "stylelint-selector-tag-no-without-class": "2.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.6.2",
