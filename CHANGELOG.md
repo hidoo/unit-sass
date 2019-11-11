@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/hidoo/unit-sass/compare/v0.4.0...v0.4.1) (2019-11-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency glob to v7.1.5 ([f06e880](https://github.com/hidoo/unit-sass/commit/f06e880))
+* **deps:** update dependency glob to v7.1.6 ([78ddc32](https://github.com/hidoo/unit-sass/commit/78ddc32))
+* **deps:** update dependency handlebars to v4.2.1 ([6ff4556](https://github.com/hidoo/unit-sass/commit/6ff4556))
+* **deps:** update dependency handlebars to v4.3.4 ([ed996b3](https://github.com/hidoo/unit-sass/commit/ed996b3))
+* **deps:** update dependency handlebars to v4.4.0 ([3e85ecd](https://github.com/hidoo/unit-sass/commit/3e85ecd))
+* **deps:** update dependency handlebars to v4.4.2 ([7937ced](https://github.com/hidoo/unit-sass/commit/7937ced))
+* **deps:** update dependency handlebars to v4.4.3 ([72d6aaa](https://github.com/hidoo/unit-sass/commit/72d6aaa))
+* **deps:** update dependency handlebars to v4.4.5 ([4893c3c](https://github.com/hidoo/unit-sass/commit/4893c3c))
+* **deps:** update dependency handlebars to v4.5.1 ([5298f1a](https://github.com/hidoo/unit-sass/commit/5298f1a))
+* **deps:** update dependency highlight.js to v9.16.2 ([f4f4666](https://github.com/hidoo/unit-sass/commit/f4f4666))
+* **deps:** update dependency remark to v11.0.2 ([95ca4b7](https://github.com/hidoo/unit-sass/commit/95ca4b7))
+* **deps:** update dependency stylelint-a11y to v1.2.2 ([7759fa4](https://github.com/hidoo/unit-sass/commit/7759fa4))
+* **deps:** update dependency stylelint-high-performance-animation to v1.3.0 ([d6d23ea](https://github.com/hidoo/unit-sass/commit/d6d23ea))
+* **deps:** update dependency stylelint-no-unsupported-browser-features to v4 ([c0f5f8f](https://github.com/hidoo/unit-sass/commit/c0f5f8f))
+* **deps:** update dependency stylelint-order to v3.1.1 ([cd15f08](https://github.com/hidoo/unit-sass/commit/cd15f08))
+* **deps:** update dependency stylelint-scss to v3.11.1 ([5f5ff2e](https://github.com/hidoo/unit-sass/commit/5f5ff2e))
+* **deps:** update dependency stylelint-scss to v3.12.1 ([1271d3b](https://github.com/hidoo/unit-sass/commit/1271d3b))
+* **deps:** update dependency stylelint-selector-tag-no-without-class to v2.0.2 ([363938e](https://github.com/hidoo/unit-sass/commit/363938e))
+
+
+
+
+
 # [0.4.0](https://github.com/hidoo/unit-sass/compare/v0.3.1...v0.4.0) (2019-09-17)
 
 
