@@ -7,6 +7,7 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "build:document": "lerna run build:document",
+    "build:website": "lerna run build:website",
     "dev:start": "lerna exec 'yarn start' --no-private --ignore @hidoo/stylelint-config --ignore @hidoo/sassdoc-to-markdown",
     "dev:test": "lerna exec 'yarn test --watch' --no-private --ignore @hidoo/kss-builder",
     "lint": "npm-run-all -s lint:*",
@@ -17,6 +18,7 @@
     "test:packages": "lerna run test --no-private",
     "preversionup": "npm-run-all -s build test",
     "versionup": "lerna version --no-push",
+    "postversionup": "npm-run-all -s build:website",
     "release": "lerna publish from-package"
   },
   "author": "hidoo",
