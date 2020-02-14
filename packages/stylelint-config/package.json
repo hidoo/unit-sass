@@ -21,7 +21,7 @@
   "author": "hidoo",
   "license": "MIT",
   "dependencies": {
-    "stylelint-a11y": "1.2.2",
+    "stylelint-a11y": "1.2.3",
     "stylelint-config-standard": "19.0.0",
     "stylelint-declaration-block-no-ignored-properties": "2.2.0",
     "stylelint-group-selectors": "1.0.7",
