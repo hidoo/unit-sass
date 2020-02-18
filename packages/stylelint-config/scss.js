@@ -20,6 +20,10 @@ module.exports = {
         'else'
       ]
     }],
+    'value-keyword-case': ['lower', {
+      // for sass variable
+      ignoreProperties: [/^\$.+/]
+    }],
 
     // stylelint-scss
     'scss/at-each-key-value-single-line': true,
