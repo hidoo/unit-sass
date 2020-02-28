@@ -13602,10 +13602,10 @@ stylelint-selector-no-empty@1.0.7:
   dependencies:
     stylelint "^9.2.1"
 
-stylelint-selector-tag-no-without-class@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/stylelint-selector-tag-no-without-class/-/stylelint-selector-tag-no-without-class-2.0.2.tgz#376a2a71d414cbb88b975311478549f6690b0c0f"
-  integrity sha512-W7fXf+ndNNSH3fu83hQQCQlMRhswNLDETaxXoUKLzm8pQ/tmMgGoD+YbMw9t2uaf1SGfBsSKoYdi2gz0Fq0YwA==
+stylelint-selector-tag-no-without-class@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/stylelint-selector-tag-no-without-class/-/stylelint-selector-tag-no-without-class-2.0.3.tgz#5780ed14eb9b8104c6fa8ff540b2b667497a001a"
+  integrity sha512-gHbjM34FQ2hmgjMdyU4JMtUHsuC76gcaVyak6x8wY/FaUyvV9jcX60a/0pWBNZbo6pYHTcy0FS/3UY4BVv/Pkg==
   dependencies:
     lodash "^4.17.5"
 
