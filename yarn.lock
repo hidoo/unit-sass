@@ -11374,7 +11374,7 @@ postcss@^6.0.14, postcss@^6.0.22:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.13, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.4, postcss@^7.0.7:
+postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.13, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.4, postcss@^7.0.7:
   version "7.0.27"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.27.tgz#cc67cdc6b0daa375105b7c424a85567345fc54d9"
   integrity sha512-WuQETPMcW9Uf1/22HWUWP9lgsIC+KEHg2kozMflKjbeUtw9ujvFX6QmIfozaErDkmLWS9WEnEdEe6Uo9/BNTdQ==
@@ -13594,12 +13594,12 @@ stylelint-config-standard@20.0.0:
   dependencies:
     stylelint-config-recommended "^3.0.0"
 
-stylelint-declaration-block-no-ignored-properties@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/stylelint-declaration-block-no-ignored-properties/-/stylelint-declaration-block-no-ignored-properties-2.2.0.tgz#fdde13fdd53b2f7e8930e5986e768f41649a576e"
-  integrity sha512-SUq40z02Cu0SHF7tY4TLQG88qSPE55R2AZlczHOt/j6IEN8vk2o1mEr+HIWVqOS31sK2JtdvCQzvGSM7R5nOWw==
+stylelint-declaration-block-no-ignored-properties@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/stylelint-declaration-block-no-ignored-properties/-/stylelint-declaration-block-no-ignored-properties-2.3.0.tgz#98a641a137bf057c97ef3d3c4a848cd339e736da"
+  integrity sha512-0Ly/mKc3prAhxBSY5TbmMMDAkUHYMOxdmUu/mNcFvB6A53C24x5Rsu1Vtrik9bKPKwgd75sZUhV9ZsWerPbuJQ==
   dependencies:
-    postcss "^7.0.17"
+    postcss "^7.0.27"
 
 stylelint-group-selectors@1.0.7:
   version "1.0.7"
@@ -13610,10 +13610,10 @@ stylelint-group-selectors@1.0.7:
     postcss "^6.0.22"
     stylelint "^9.2.1"
 
-stylelint-high-performance-animation@1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.4.0.tgz#4130d78b432b83bf8fb39813a144d6d0cf2a9236"
-  integrity sha512-GFJXlilgB8wK3tQl8fvCjHW++N1uRQ3GaJ5UtKWoyjPTjOi9efZQN0L1kIcQ1PNUIfQunB5RfuVc6PTkl6LLRA==
+stylelint-high-performance-animation@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.5.0.tgz#63aea9f175a0dbd3b18556e9927a6504fbdab74b"
+  integrity sha512-WvMm8IO2fxUK2vWDQCOhTWBbV9iolQBkXL+mnVEGO62pTa2GuzHQTAoNl1oGrYzOMYlhAwDjIa9JYX+xt0UiQw==
 
 stylelint-no-unsupported-browser-features@4.0.0:
   version "4.0.0"
