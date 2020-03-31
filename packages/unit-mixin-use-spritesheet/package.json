@@ -27,9 +27,9 @@
   "author": "hidoo",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.8.7",
-    "@babel/preset-env": "7.8.7",
-    "@babel/register": "7.8.6",
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@babel/register": "7.9.0",
     "@hidoo/gulp-task-build-css-sass": "0.15.0",
     "@hidoo/gulp-task-build-sprite-image": "0.15.0",
     "@hidoo/gulp-task-build-sprite-svg": "0.15.0",
