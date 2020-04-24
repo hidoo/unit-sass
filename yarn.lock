@@ -13977,10 +13977,10 @@ stylelint-group-selectors@1.0.7:
     postcss "^6.0.22"
     stylelint "^9.2.1"
 
-stylelint-high-performance-animation@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.5.0.tgz#63aea9f175a0dbd3b18556e9927a6504fbdab74b"
-  integrity sha512-WvMm8IO2fxUK2vWDQCOhTWBbV9iolQBkXL+mnVEGO62pTa2GuzHQTAoNl1oGrYzOMYlhAwDjIa9JYX+xt0UiQw==
+stylelint-high-performance-animation@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.5.1.tgz#055e66d4618d8f6b731d595e338df68a5fb92418"
+  integrity sha512-HLG+fx5JV6VBVVmvXUoKL5rYiHAom7AaDKCu4WcxtX0eeAZ1SUL7p+RPYd8LD+2PMp2kqyTb3R59KSlUrwA70g==
 
 stylelint-no-unsupported-browser-features@4.0.0:
   version "4.0.0"
@@ -14025,10 +14025,10 @@ stylelint-selector-tag-no-without-class@2.0.3:
   dependencies:
     lodash "^4.17.5"
 
-stylelint@13.3.2:
-  version "13.3.2"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.3.2.tgz#fbcb69a2452bc35de3eedd95b443449f92ab4107"
-  integrity sha512-kpO3/Gz2ZY40EWUwFYYkgpzhf8ZDUyKpcui5+pS0XKJBj/EMYmZpOJoL8IFAz2yApYeg91NVy5yAjE39hDzWvQ==
+stylelint@13.3.3:
+  version "13.3.3"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-13.3.3.tgz#e267a628ebfc1adad6f5a1fe818724c34171402b"
+  integrity sha512-j8Oio2T1YNiJc6iXDaPYd74Jg4zOa1bByNm/g9/Nvnq4tDPsIjMi46jhRZyPPktGPwjJ5FwcmCqIRlH6PVP8mA==
   dependencies:
     "@stylelint/postcss-css-in-js" "^0.37.1"
     "@stylelint/postcss-markdown" "^0.36.1"
