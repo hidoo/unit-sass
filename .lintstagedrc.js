@@ -3,6 +3,6 @@ module.exports = {
     'eslint'
   ],
   '**/*.scss': [
-    'stylelint --syntax scss'
+    'stylelint --syntax scss --allow-empty-input'
   ]
 };
