@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-  <title>Style Guide - @hidoo/unit (v0.4.1)</title>
+  <title>Style Guide - @hidoo/unit (v0.4.2)</title>
   <meta name="description" content="Sass based css framework." />
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="kss-assets/images/favicon.ico" />
   <link rel="apple-touch-icon" sizes="192x192" href="kss-assets/images/touchicon.png" />
@@ -14,7 +14,7 @@
 
   <link rel="stylesheet" href="kss-assets/css/main.min.css" />
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css"/>
 
 
 </head>
@@ -69,7 +69,7 @@
         <header class="kss-block-heading-b-a  kss-unit-box  kss-util--padding-top-40 kss-util--padding-right-15 kss-util--padding-left-15">
           <div class="kss-block-heading-b-a__container  kss-unit-box__container">
             <h1 class="kss-block-heading-b-a__name  kss-unit-text  kss-unit-text--theme-a-a-e  kss-unit-text--truncate-true">@hidoo/unit</h1>
-            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.4.1</p>
+            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.4.2</p>
             <p class="kss-block-heading-b-a__description  kss-unit-text  kss-unit-text--theme-a-a-a">Sass based css framework.</p>
           </div>
         </header>
@@ -87,7 +87,7 @@
                     <ul class="kss-block-navi-a-a__list  kss-unit-list">
                       <li class="kss-block-navi-a-a__list__item  kss-unit-list__item  kss-unit-text  kss-unit-text--truncate-true">
                         <span class="kss-block-navi-a-a__list__item__reference  kss-unit-text  kss-unit-text--theme-a-a-b  kss-unit-text--inline-block  is-current">0</span>
-                        <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a" href="./index.html">README.md</a>
+                        <a class="kss-block-navi-a-a__list__item__name  kss-unit-text__link  kss-unit-text__link--theme-a-a-a" href="./index.html">/Users/marunaga/Works/packages/unit-sass/packages/unit/README.md</a>
                       </li>
                     </ul>
                   </div>
@@ -215,29 +215,29 @@
 <pre class="hljs"><code class="language-sh">$ npm install @hidoo/unit
 </code></pre>
 <h2>Usage</h2>
-<pre class="hljs"><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/index.scss"</span>;
+<pre class="hljs"><code class="language-scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/index.scss"</span>;
 </code></pre>
 <h3>Import with <a href="https://github.com/maoberlehner/node-sass-magic-importer">node-sass-magic-importer</a></h3>
-<pre class="hljs"><code class="language-scss">@<span class="hljs-keyword">import</span> <span class="hljs-string">"~@hidoo/unit"</span>;
+<pre class="hljs"><code class="language-scss"><span class="hljs-keyword">@import</span> <span class="hljs-string">"~@hidoo/unit"</span>;
 </code></pre>
 <h3>Usage with custom settings</h3>
 <pre class="hljs"><code class="language-scss"><span class="hljs-comment">// import variables in advance</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"settings"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"settings"</span>;
 
 <span class="hljs-comment">// import this package</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/index.scss"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/index.scss"</span>;
 </code></pre>
 <h3>Usage only the required units</h3>
 <pre class="hljs"><code class="language-scss"><span class="hljs-comment">// import dependent files</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/settings"</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/lib"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/settings"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/lib"</span>;
 
 <span class="hljs-comment">// import all of text unit</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/text"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/text"</span>;
 
 <span class="hljs-comment">// import part of button unit</span>
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/button/core"</span>;
-@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/button/inline"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/button/core"</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">"node_modules/@hidoo/unit/src/unit/button/inline"</span>;
 </code></pre>
 <h3>Hook mixins</h3>
 <p>You can use some hook mixins that called if defined.<br>
@@ -809,13 +809,13 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> define-breakpoint(<span class="hljs-variable">$from</span>: <span class="hljs-string">"mobile"</span>, <span class="hljs-variable">$until</span>: <span class="hljs-string">"desktop"</span>) {
+  <span class="hljs-keyword">@include</span> define-breakpoint(<span class="hljs-variable">$from</span>: <span class="hljs-string">"mobile"</span>, <span class="hljs-variable">$until</span>: <span class="hljs-string">"desktop"</span>) {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 }
 </code></pre>
 <p>css outputs</p>
-<pre class="hljs"><code class="language-css">@<span class="hljs-keyword">media</span> only screen and (min-width: <span class="hljs-number">667px</span>) and (max-width: <span class="hljs-number">1023px</span>) {
+<pre class="hljs"><code class="language-css"><span class="hljs-keyword">@media</span> <span class="hljs-keyword">only</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width:</span> <span class="hljs-number">667px</span>) <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width:</span> <span class="hljs-number">1023px</span>) {
   <span class="hljs-selector-class">.selector</span> {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
@@ -856,16 +856,16 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
   <span class="hljs-variable">$name</span>: unique-id();
 
-  @<span class="hljs-keyword">include</span> define-placeholder(<span class="hljs-variable">$name</span>: <span class="hljs-variable">$name</span>) {
+  <span class="hljs-keyword">@include</span> define-placeholder(<span class="hljs-variable">$name</span>: <span class="hljs-variable">$name</span>) {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 
   &amp;__child-1 {
-    @<span class="hljs-keyword">extend</span> %#{<span class="hljs-variable">$name</span>};
+    <span class="hljs-keyword">@extend</span> %#{<span class="hljs-variable">$name</span>};
   }
 
   &amp;__child-2 {
-    @<span class="hljs-keyword">extend</span> %#{<span class="hljs-variable">$name</span>};
+    <span class="hljs-keyword">@extend</span> %#{<span class="hljs-variable">$name</span>};
   }
 }
 </code></pre>
@@ -913,7 +913,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> define-sizes-in-direction-groups(<span class="hljs-variable">$type</span>: <span class="hljs-string">"margin"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">5px</span>, -5px))
+  <span class="hljs-keyword">@include</span> define-sizes-in-direction-groups(<span class="hljs-variable">$type</span>: <span class="hljs-string">"margin"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">5px</span>, -<span class="hljs-number">5px</span>))
 }
 </code></pre>
 <p>css outputs</p>
@@ -985,7 +985,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> define-sizes-in-directions(<span class="hljs-variable">$type</span>: <span class="hljs-string">"margin"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">5px</span>, -5px))
+  <span class="hljs-keyword">@include</span> define-sizes-in-directions(<span class="hljs-variable">$type</span>: <span class="hljs-string">"margin"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">5px</span>, -<span class="hljs-number">5px</span>))
 }
 </code></pre>
 <p>css outputs</p>
@@ -1053,7 +1053,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> define-sizes(<span class="hljs-variable">$type</span>: <span class="hljs-string">"width"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">10px</span>))
+  <span class="hljs-keyword">@include</span> define-sizes(<span class="hljs-variable">$type</span>: <span class="hljs-string">"width"</span>, <span class="hljs-variable">$values</span>: (<span class="hljs-number">10px</span>))
 }
 </code></pre>
 <p>css outputs</p>
@@ -1106,7 +1106,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> on-current() {
+  <span class="hljs-keyword">@include</span> on-current() {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 }
@@ -1156,7 +1156,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> on-disabled() {
+  <span class="hljs-keyword">@include</span> on-disabled() {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 }
@@ -1206,7 +1206,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> on-focus() {
+  <span class="hljs-keyword">@include</span> on-focus() {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 }
@@ -1256,7 +1256,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> on-link() {
+  <span class="hljs-keyword">@include</span> on-link() {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 }
@@ -1281,7 +1281,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> on-placeholder() {
+  <span class="hljs-keyword">@include</span> on-placeholder() {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 }
@@ -1335,14 +1335,14 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> on((<span class="hljs-string">":hover"</span>, <span class="hljs-string">":focus"</span>)) {
+  <span class="hljs-keyword">@include</span> on((<span class="hljs-string">":hover"</span>, <span class="hljs-string">":focus"</span>)) {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
   }
 }
 </code></pre>
 <p>css outputs</p>
-<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span>:hover,
-<span class="hljs-selector-class">.selector</span>:focus {
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:hover</span>,
+<span class="hljs-selector-class">.selector</span><span class="hljs-selector-pseudo">:focus</span> {
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
 }
 </code></pre>
@@ -1392,7 +1392,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-box-aspect-ratio(<span class="hljs-variable">$width</span>: 16, <span class="hljs-variable">$height</span>: 9);
+  <span class="hljs-keyword">@include</span> use-box-aspect-ratio(<span class="hljs-variable">$width</span>: <span class="hljs-number">16</span>, <span class="hljs-variable">$height</span>: <span class="hljs-number">9</span>);
 }
 </code></pre>
 <p>css outputs</p>
@@ -1475,7 +1475,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-box-base();
+  <span class="hljs-keyword">@include</span> use-box-base();
 }
 </code></pre>
 <p>css outputs</p>
@@ -1499,7 +1499,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-clearfix();
+  <span class="hljs-keyword">@include</span> use-clearfix();
 }
 </code></pre>
 <p>css outputs</p>
@@ -1540,7 +1540,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-font-advanced-settings();
+  <span class="hljs-keyword">@include</span> use-font-advanced-settings();
 }
 </code></pre>
 <p>css outputs</p>
@@ -1584,7 +1584,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-font-base();
+  <span class="hljs-keyword">@include</span> use-font-base();
 }
 </code></pre>
 <p>css outputs</p>
@@ -1628,7 +1628,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-font-family(<span class="hljs-variable">$value</span>: <span class="hljs-string">"default"</span>, <span class="hljs-variable">$important</span>: true);
+  <span class="hljs-keyword">@include</span> use-font-family(<span class="hljs-variable">$value</span>: <span class="hljs-string">"default"</span>, <span class="hljs-variable">$important</span>: true);
 }
 </code></pre>
 <p>css outputs</p>
@@ -1683,7 +1683,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-font-size(<span class="hljs-variable">$value</span>: <span class="hljs-string">"medium"</span>, <span class="hljs-variable">$important</span>: true);
+  <span class="hljs-keyword">@include</span> use-font-size(<span class="hljs-variable">$value</span>: <span class="hljs-string">"medium"</span>, <span class="hljs-variable">$important</span>: true);
 }
 </code></pre>
 <p>css outputs</p>
@@ -1751,7 +1751,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-table-base();
+  <span class="hljs-keyword">@include</span> use-table-base();
 }
 </code></pre>
 <p>css outputs</p>
@@ -1812,7 +1812,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-table-column-base();
+  <span class="hljs-keyword">@include</span> use-table-column-base();
 }
 </code></pre>
 <p>css outputs</p>
@@ -1896,7 +1896,7 @@ this use if <code>$unit-font-enable-relative-size</code> is <code>true</code></p
 <h4>Examples</h4>
 <p>scss inputs</p>
 <pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
-  @<span class="hljs-keyword">include</span> use-text-base();
+  <span class="hljs-keyword">@include</span> use-text-base();
 }
 </code></pre>
 <p>css outputs</p>
