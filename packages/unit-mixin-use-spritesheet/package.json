@@ -34,7 +34,6 @@
     "@hidoo/gulp-task-build-sprite-image": "0.15.0",
     "@hidoo/gulp-task-build-sprite-svg": "0.15.0",
     "@hidoo/gulp-task-build-styleguide-kss": "0.15.0",
-    "@hidoo/gulp-task-copy": "0.15.0",
     "@hidoo/sassdoc-to-markdown": "^0.4.1",
     "@hidoo/util-fancy-print": "0.15.0",
     "babel-preset-power-assert": "3.0.0",
