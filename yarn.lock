@@ -13941,10 +13941,10 @@ stylelint-group-selectors@1.0.7:
     postcss "^6.0.22"
     stylelint "^9.2.1"
 
-stylelint-high-performance-animation@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.5.1.tgz#055e66d4618d8f6b731d595e338df68a5fb92418"
-  integrity sha512-HLG+fx5JV6VBVVmvXUoKL5rYiHAom7AaDKCu4WcxtX0eeAZ1SUL7p+RPYd8LD+2PMp2kqyTb3R59KSlUrwA70g==
+stylelint-high-performance-animation@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.5.2.tgz#c77f9cac5c1ea60ad97806a041b97a248c596e2f"
+  integrity sha512-6LQek7kSBt288ks4ygUUTq+jhm4N2o+MW9HIU1ZL0v0+12fQD2F4nc4nfwhbwk33Ge8lu8dbT4G7+ksp/DgPNw==
 
 stylelint-no-unsupported-browser-features@4.0.0:
   version "4.0.0"
