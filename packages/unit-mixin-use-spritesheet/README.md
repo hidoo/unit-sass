@@ -143,10 +143,10 @@ get sheet by type from values of spritesheets
 
 #### Parameters
 
-| Name            | Type                                                             | Description          | Default |
-| :-------------- | :--------------------------------------------------------------- | :------------------- | :------ |
-| `$type`         | **[String](https://sass-lang.com/documentation/values/strings)** | type of spritesheet  | -       |
-| `$spritesheets` | **[Map](https://sass-lang.com/documentation/values/maps)**       | data of spritesheets | `()`    |
+|Name|Type|Description|Default|
+|:--|:--|:--|:--|
+|`$type`|**[String](https://sass-lang.com/documentation/values/strings)**|type of spritesheet|-|
+|`$spritesheets`|**[Map](https://sass-lang.com/documentation/values/maps)**|data of spritesheets|`()`|
 
 #### Returns
 
@@ -184,15 +184,15 @@ define responsive item
 
 #### Parameters
 
-| Name       | Type                                                             | Description              | Default |
-| :--------- | :--------------------------------------------------------------- | :----------------------- | :------ |
-| `$name`    | **[String](https://sass-lang.com/documentation/values/strings)** | name of spritesheet item | -       |
-| `$items`   | **[Map](https://sass-lang.com/documentation/values/maps)**       | spritesheet items        | `()`    |
-| `$options` | **[Map](https://sass-lang.com/documentation/values/maps)**       | options                  | `()`    |
+|Name|Type|Description|Default|
+|:--|:--|:--|:--|
+|`$name`|**[String](https://sass-lang.com/documentation/values/strings)**|name of spritesheet item|-|
+|`$items`|**[Map](https://sass-lang.com/documentation/values/maps)**|spritesheet items|`()`|
+|`$options`|**[Map](https://sass-lang.com/documentation/values/maps)**|options|`()`|
 
 #### Dependencies
 
-+ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-_use-spritesheet-set-properties)**
++ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-\_use-spritesheet-set-properties)**
 
 #### Dependents
 
@@ -209,15 +209,15 @@ define responsive toggle item
 
 #### Parameters
 
-| Name       | Type                                                             | Description              | Default |
-| :--------- | :--------------------------------------------------------------- | :----------------------- | :------ |
-| `$name`    | **[String](https://sass-lang.com/documentation/values/strings)** | name of spritesheet item | -       |
-| `$items`   | **[Map](https://sass-lang.com/documentation/values/maps)**       | spritesheet items        | `()`    |
-| `$options` | **[Map](https://sass-lang.com/documentation/values/maps)**       | options                  | `()`    |
+|Name|Type|Description|Default|
+|:--|:--|:--|:--|
+|`$name`|**[String](https://sass-lang.com/documentation/values/strings)**|name of spritesheet item|-|
+|`$items`|**[Map](https://sass-lang.com/documentation/values/maps)**|spritesheet items|`()`|
+|`$options`|**[Map](https://sass-lang.com/documentation/values/maps)**|options|`()`|
 
 #### Dependencies
 
-+ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-_use-spritesheet-set-properties)**
++ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-\_use-spritesheet-set-properties)**
 
 #### Dependents
 
@@ -234,15 +234,15 @@ define toggle item
 
 #### Parameters
 
-| Name       | Type                                                             | Description              | Default |
-| :--------- | :--------------------------------------------------------------- | :----------------------- | :------ |
-| `$name`    | **[String](https://sass-lang.com/documentation/values/strings)** | name of spritesheet item | -       |
-| `$items`   | **[Map](https://sass-lang.com/documentation/values/maps)**       | spritesheet items        | `()`    |
-| `$options` | **[Map](https://sass-lang.com/documentation/values/maps)**       | options                  | `()`    |
+|Name|Type|Description|Default|
+|:--|:--|:--|:--|
+|`$name`|**[String](https://sass-lang.com/documentation/values/strings)**|name of spritesheet item|-|
+|`$items`|**[Map](https://sass-lang.com/documentation/values/maps)**|spritesheet items|`()`|
+|`$options`|**[Map](https://sass-lang.com/documentation/values/maps)**|options|`()`|
 
 #### Dependencies
 
-+ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-_use-spritesheet-set-properties)**
++ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-\_use-spritesheet-set-properties)**
 
 #### Dependents
 
@@ -259,15 +259,15 @@ define item
 
 #### Parameters
 
-| Name       | Type                                                             | Description              | Default |
-| :--------- | :--------------------------------------------------------------- | :----------------------- | :------ |
-| `$name`    | **[String](https://sass-lang.com/documentation/values/strings)** | name of spritesheet item | -       |
-| `$items`   | **[Map](https://sass-lang.com/documentation/values/maps)**       | spritesheet items        | `()`    |
-| `$options` | **[Map](https://sass-lang.com/documentation/values/maps)**       | options                  | `()`    |
+|Name|Type|Description|Default|
+|:--|:--|:--|:--|
+|`$name`|**[String](https://sass-lang.com/documentation/values/strings)**|name of spritesheet item|-|
+|`$items`|**[Map](https://sass-lang.com/documentation/values/maps)**|spritesheet items|`()`|
+|`$options`|**[Map](https://sass-lang.com/documentation/values/maps)**|options|`()`|
 
 #### Dependencies
 
-+ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-_use-spritesheet-set-properties)**
++ **[@mixin \_use-spritesheet-set-properties](#spritesheets-mixin-\_use-spritesheet-set-properties)**
 
 #### Dependents
 
@@ -284,10 +284,10 @@ set properties
 
 #### Parameters
 
-| Name      | Type                                                               | Description         | Default |
-| :-------- | :----------------------------------------------------------------- | :------------------ | :------ |
-| `$values` | **[Map](https://sass-lang.com/documentation/values/maps)**         | values of item      | `()`    |
-| `$use2x`  | **[Boolean](https://sass-lang.com/documentation/values/booleans)** | use 2x image or not | `false` |
+|Name|Type|Description|Default|
+|:--|:--|:--|:--|
+|`$values`|**[Map](https://sass-lang.com/documentation/values/maps)**|values of item|`()`|
+|`$use2x`|**[Boolean](https://sass-lang.com/documentation/values/booleans)**|use 2x image or not|`false`|
 
 #### Dependents
 
@@ -307,15 +307,15 @@ use spritesheet settings
 
 #### Parameters
 
-| Name                           | Type                                                               | Description                                               | Default           |
-| :----------------------------- | :----------------------------------------------------------------- | :-------------------------------------------------------- | :---------------- |
-| `$type`                        | **[String](https://sass-lang.com/documentation/values/strings)**   | type of spritesheet                                       | -                 |
-| `$name`                        | **[String](https://sass-lang.com/documentation/values/strings)**   | name of spritesheet item                                  | -                 |
-| `$options`                     | **[Map](https://sass-lang.com/documentation/values/maps)**         | options                                                   | `()`              |
-| `$options.use2x`               | **[Boolean](https://sass-lang.com/documentation/values/booleans)** | use 2x image or (one of `true`, `false` or `"if-mobile"`) | `false`           |
-| `$options.responsive`          | **[Boolean](https://sass-lang.com/documentation/values/booleans)** | responsive or not                                         | `false`           |
-| `$options.toggle`              | **[Boolean](https://sass-lang.com/documentation/values/booleans)** | toggle or not                                             | `false`           |
-| `$options.capturing-selectors` | **[List](https://sass-lang.com/documentation/values/lists)**       | capturing parent selectors                                | `("a", "button")` |
+|Name|Type|Description|Default|
+|:--|:--|:--|:--|
+|`$type`|**[String](https://sass-lang.com/documentation/values/strings)**|type of spritesheet|-|
+|`$name`|**[String](https://sass-lang.com/documentation/values/strings)**|name of spritesheet item|-|
+|`$options`|**[Map](https://sass-lang.com/documentation/values/maps)**|options|`()`|
+|`$options.use2x`|**[Boolean](https://sass-lang.com/documentation/values/booleans)**|use 2x image or (one of `true`, `false` or `"if-mobile"`)|`false`|
+|`$options.responsive`|**[Boolean](https://sass-lang.com/documentation/values/booleans)**|responsive or not|`false`|
+|`$options.toggle`|**[Boolean](https://sass-lang.com/documentation/values/booleans)**|toggle or not|`false`|
+|`$options.capturing-selectors`|**[List](https://sass-lang.com/documentation/values/lists)**|capturing parent selectors|`("a", "button")`|
 
 #### Examples
 
@@ -368,12 +368,12 @@ css outputs
 
 #### Dependencies
 
-+ **[@function \_use-spritesheet-resolve-spritesheets](#spritesheets-function-_use-spritesheet-resolve-spritesheets)**
-+ **[@function \_use-spritesheet-get-sheet-by-type](#spritesheets-function-_use-spritesheet-get-sheet-by-type)**
-+ **[@mixin \_use-spritesheet-define](#spritesheets-mixin-_use-spritesheet-define)**
-+ **[@mixin \_use-spritesheet-define-responsive](#spritesheets-mixin-_use-spritesheet-define-responsive)**
-+ **[@mixin \_use-spritesheet-define-toggle](#spritesheets-mixin-_use-spritesheet-define-toggle)**
-+ **[@mixin \_use-spritesheet-define-toggle-responsive](#spritesheets-mixin-_use-spritesheet-define-toggle-responsive)**
++ **[@function \_use-spritesheet-resolve-spritesheets](#spritesheets-function-\_use-spritesheet-resolve-spritesheets)**
++ **[@function \_use-spritesheet-get-sheet-by-type](#spritesheets-function-\_use-spritesheet-get-sheet-by-type)**
++ **[@mixin \_use-spritesheet-define](#spritesheets-mixin-\_use-spritesheet-define)**
++ **[@mixin \_use-spritesheet-define-responsive](#spritesheets-mixin-\_use-spritesheet-define-responsive)**
++ **[@mixin \_use-spritesheet-define-toggle](#spritesheets-mixin-\_use-spritesheet-define-toggle)**
++ **[@mixin \_use-spritesheet-define-toggle-responsive](#spritesheets-mixin-\_use-spritesheet-define-toggle-responsive)**
 
 ## Test
 
