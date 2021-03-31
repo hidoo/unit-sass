@@ -1198,7 +1198,6 @@ Style guide: unit-button.core.base
 
 button.unit-button {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   cursor: pointer;
 }
@@ -2467,7 +2466,6 @@ Style guide: unit-input.core.base
   border-radius: 0;
   outline: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 
@@ -3061,7 +3059,6 @@ Style guide: unit-select.core.base
   border-radius: 0;
   outline: 0;
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
   cursor: pointer;
 }
@@ -7206,7 +7203,6 @@ html {
           font-feature-settings: "palt";
   -ms-font-feature-settings: normal;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
 }
 
