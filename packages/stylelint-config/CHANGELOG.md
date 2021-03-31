@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/hidoo/unit-sass/compare/v0.4.2...v0.4.3) (2021-03-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency stylelint-config-standard to v21 ([0a4f9e7](https://github.com/hidoo/unit-sass/commit/0a4f9e749593c64f45b862181046d7897e9a7ad8))
+* **deps:** update dependency stylelint-group-selectors to v1.0.8 ([6b0a8cb](https://github.com/hidoo/unit-sass/commit/6b0a8cb3b0f994296b0333805e2c0334e27da157))
+* **deps:** update dependency stylelint-high-performance-animation to v1.5.2 ([81348c9](https://github.com/hidoo/unit-sass/commit/81348c9ba984f622653e32aa6575615e3227a71e))
+* **deps:** update dependency stylelint-scss to v3.17.2 ([353a0e1](https://github.com/hidoo/unit-sass/commit/353a0e19c44012ac79d8cf2bdf3ed4df6886d43b))
+
+
+
+
+
 ## [0.4.2](https://github.com/hidoo/unit-sass/compare/v0.4.1...v0.4.2) (2020-05-08)
 
 
