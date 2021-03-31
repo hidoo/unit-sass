@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/hidoo/unit-sass/compare/v0.4.2...v0.4.4) (2021-03-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @hidoo/handlebars-helpers to v0.8.0 ([dbf4884](https://github.com/hidoo/unit-sass/commit/dbf4884422adc724102f0286f6e02a680b2f561c))
+* **deps:** update dependency fs-extra to v9.0.1 ([f72413e](https://github.com/hidoo/unit-sass/commit/f72413eeeb821834c1e5eea42b71fca78ed97ccb))
+* **deps:** update dependency fs-extra to v9.1.0 ([ae51160](https://github.com/hidoo/unit-sass/commit/ae51160326cd5ab4edd3aff0902b9ffc28e3fa5d))
+* **deps:** update dependency handlebars to v4.7.7 ([ddabfd4](https://github.com/hidoo/unit-sass/commit/ddabfd498cd0d9e9278669b04d6dde86f5c9ab4b))
+* **deps:** update dependency highlight.js to v10.0.2 ([ba197e3](https://github.com/hidoo/unit-sass/commit/ba197e3a5c90ca9ccc18c2a7ec7a86dbecd084ab))
+* **deps:** update dependency highlight.js to v10.0.3 ([34b4467](https://github.com/hidoo/unit-sass/commit/34b44676282d19b31ca44759f9704a34a15787f0))
+* **deps:** update dependency highlight.js to v10.4.1 [security] ([947b759](https://github.com/hidoo/unit-sass/commit/947b759a2cda589f616d8e6200e0b0a39321224c))
+* **deps:** update dependency highlight.js to v10.7.1 ([0e05b3f](https://github.com/hidoo/unit-sass/commit/0e05b3f7dc88f4958bd5522c28f830ba5acb7064))
+* **deps:** update dependency meow to v7 ([eb41854](https://github.com/hidoo/unit-sass/commit/eb4185423ecec6392a9c5451f67b7039e2a68e1e))
+* **deps:** update dependency meow to v7.0.1 ([2b90cf7](https://github.com/hidoo/unit-sass/commit/2b90cf764a203a1e9c157aef1a028cd1d102b29a))
+* **deps:** update dependency meow to v9 ([8e5825d](https://github.com/hidoo/unit-sass/commit/8e5825d2ef438777e0ca3ef1d34470378f0ccb2c))
+* **deps:** update dependency remark to v12.0.1 ([e66822a](https://github.com/hidoo/unit-sass/commit/e66822ab2d01bb273c74f4bc6a58f0c9443e1d03))
+* **deps:** update dependency remark to v13 ([ad1add2](https://github.com/hidoo/unit-sass/commit/ad1add26c6f673fc3ff4f9f523bcc913b67a279f))
+* **deps:** update dependency sassdoc to v2.7.2 ([7633742](https://github.com/hidoo/unit-sass/commit/76337427c587b7759182b65d1fbf7f810c6650eb))
+* **deps:** update dependency sassdoc to v2.7.3 ([e8cafd7](https://github.com/hidoo/unit-sass/commit/e8cafd7fa7070d79828e4a235fd6fe67c16d68f8))
+* **deps:** update dependency stylelint-config-standard to v21 ([0a4f9e7](https://github.com/hidoo/unit-sass/commit/0a4f9e749593c64f45b862181046d7897e9a7ad8))
+* **deps:** update dependency stylelint-group-selectors to v1.0.8 ([6b0a8cb](https://github.com/hidoo/unit-sass/commit/6b0a8cb3b0f994296b0333805e2c0334e27da157))
+* **deps:** update dependency stylelint-high-performance-animation to v1.5.2 ([81348c9](https://github.com/hidoo/unit-sass/commit/81348c9ba984f622653e32aa6575615e3227a71e))
+* **deps:** update dependency stylelint-scss to v3.17.2 ([353a0e1](https://github.com/hidoo/unit-sass/commit/353a0e19c44012ac79d8cf2bdf3ed4df6886d43b))
+* **generator:** fixed in response to changes of commander ([0454249](https://github.com/hidoo/unit-sass/commit/045424935b894adab654c849efd66ee7e5353ded))
+* **kss-builder:** strip path from overview when homepage set local path ([c3bb518](https://github.com/hidoo/unit-sass/commit/c3bb5186a7f8b7806a53bf17d1bb80cf02deb638))
+
+
+
+
+
 ## [0.4.3](https://github.com/hidoo/unit-sass/compare/v0.4.2...v0.4.3) (2021-03-31)
 
 
