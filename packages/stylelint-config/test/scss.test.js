@@ -30,6 +30,7 @@ describe('@hidoo/stylint-config/scss', () => {
     'scss/function-quote-no-quoted-strings-inside',
     'scss/function-unquote-no-unquoted-strings-inside',
     'scss/map-keys-quotes',
+    'scss/no-global-function-names',
     'scss/operator-no-newline-after',
     'scss/operator-no-newline-before',
     'scss/operator-no-unspaced',
@@ -63,7 +64,9 @@ describe('@hidoo/stylint-config/scss', () => {
           assert.deepStrictEqual(invalidOptionWarnings, []);
           assert.deepStrictEqual(parseErrors, []);
 
-          warnings.forEach(({rule, severity}) => {
+          warnings.forEach((warning) => {
+            const {rule, severity} = warning;
+
             assert(rules.includes(rule));
             assert.deepStrictEqual(severity, 'error');
           });

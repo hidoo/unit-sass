@@ -4,6 +4,7 @@
 $at-each-key-value-single-line: ("key": "value") !default;
 
 @each $key in map-keys($at-each-key-value-single-line) {
+  // scss/no-global-function-names
   $value: map-get($map, $key);
 }
 
@@ -98,11 +99,13 @@ $dollar-variable-empty-line-before: "invalid" !default;
 
 // scss/function-quote-no-quoted-strings-inside
 .function-quote-no-quoted-strings-inside {
+  // scss/no-global-function-names
   $invalid: quote("function-quote-no-quoted-strings-inside");
 }
 
 // scss/function-unquote-no-unquoted-strings-inside
 .function-unquote-no-unquoted-strings-inside {
+  // scss/no-global-function-names
   $invalid: unquote(function-quote-no-quoted-strings-inside);
 }
 
