@@ -19,7 +19,8 @@
     "preversionup": "npm-run-all -s build test",
     "versionup": "lerna version --no-push",
     "postversionup": "npm-run-all -s build:website",
-    "release": "lerna publish from-package"
+    "release": "lerna publish from-package",
+    "prepare": "husky install"
   },
   "author": "hidoo",
   "license": "MIT",
