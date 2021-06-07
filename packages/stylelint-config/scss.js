@@ -20,6 +20,7 @@ module.exports = {
         'else'
       ]
     }],
+    'no-invalid-position-at-import-rule': null,
     'value-keyword-case': ['lower', {
       // for sass variable
       ignoreProperties: [/^\$.+/]
