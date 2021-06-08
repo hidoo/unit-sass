@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/hidoo/unit-sass/compare/v0.4.4...v0.5.0) (2021-06-08)
+
+
+### Bug Fixes
+
+* **deps:** update stylelint packages ([cfadd5a](https://github.com/hidoo/unit-sass/commit/cfadd5a940453c9ce4fc69156056ed6e4b798881))
+* **stylelint-config:** disable no-invalid-position-at-import-rule in sass config ([44b809e](https://github.com/hidoo/unit-sass/commit/44b809edaced4455ccaadb208b7c78cdab263ea6))
+
+
+
+
+
 ## [0.4.4](https://github.com/hidoo/unit-sass/compare/v0.4.2...v0.4.4) (2021-03-31)
 
 

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/hidoo/unit-sass/compare/v0.4.4...v0.5.0) (2021-06-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v10 ([db930a5](https://github.com/hidoo/unit-sass/commit/db930a58f63db1913698fe31d753a6ef97a87ede))
+* **deps:** update dependency glob to v7.1.7 ([ee0999e](https://github.com/hidoo/unit-sass/commit/ee0999e8e366b128c9111c4121398abbf9918530))
+* **deps:** update dependency highlight.js to v10.7.2 ([f69b7d9](https://github.com/hidoo/unit-sass/commit/f69b7d932b3188959b58f225137952a6a77a6106))
+* **deps:** update dependency highlight.js to v10.7.3 ([61cb7c5](https://github.com/hidoo/unit-sass/commit/61cb7c5826eb6c8e7232b57b59e2310ceec03cad))
+* **deps:** update dependency highlight.js to v11 ([554b990](https://github.com/hidoo/unit-sass/commit/554b99020c3e15ddf11097c47947fa124ae58e1d))
+* **deps:** update stylelint packages ([cfadd5a](https://github.com/hidoo/unit-sass/commit/cfadd5a940453c9ce4fc69156056ed6e4b798881))
+* **kss-builder:** tweaks code element style of highlight.js ([6fcbd63](https://github.com/hidoo/unit-sass/commit/6fcbd63161c0aade3531b460974813ff89c2571e))
+* **stylelint-config:** disable no-invalid-position-at-import-rule in sass config ([44b809e](https://github.com/hidoo/unit-sass/commit/44b809edaced4455ccaadb208b7c78cdab263ea6))
+
+
+### Features
+
+* **sass-importer:** add custom sass importer ([2a38273](https://github.com/hidoo/unit-sass/commit/2a38273504483fdcc588eae116cdbeb009dbf27d))
+* **sass-importer:** adjust and update test cases ([a1fdd67](https://github.com/hidoo/unit-sass/commit/a1fdd67fb6133df96cc12cb14fbae173a4c44106))
+
+
+
+
+
 ## [0.4.4](https://github.com/hidoo/unit-sass/compare/v0.4.2...v0.4.4) (2021-03-31)
 
 
