@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/hidoo/unit-sass/compare/v0.5.0...v0.6.0) (2021-06-09)
+
+
+### Features
+
+* **stylelint-config:** enable scss/no-global-function-names rule ([d8dbc4e](https://github.com/hidoo/unit-sass/commit/d8dbc4e763189828e6db1c4a69848d9c5897adef))
+
+
+
+
+
 # [0.5.0](https://github.com/hidoo/unit-sass/compare/v0.4.4...v0.5.0) (2021-06-08)
 
 
