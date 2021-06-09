@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* pre-import-lib */
-/* pre-import-unit */
 /*
 unit-icon
 
@@ -823,7 +821,7 @@ Weight: -100
 
 Markup: <!-- image element -->
 <figure class="unit-pict">
-  <img class="unit-pict__src" src="//placehold.it/400x300.png" alt="" width="400" height="300" />
+  <img class="unit-pict__src" src="https://via.placeholder.com/400x300" alt="" width="400" height="300" />
 </figure>
 <!-- image element (breaking) -->
 <figure class="unit-pict">
@@ -904,7 +902,7 @@ Weight: -100
 
 Markup: <!-- image element -->
 <figure class="unit-pict  {{modifier_class}}">
-  <img class="unit-pict__src" src="https://placehold.it/400x300.png" alt="" width="400" height="300" />
+  <img class="unit-pict__src" src="https://via.placeholder.com/400x300" alt="" width="400" height="300" />
 </figure>
 <!-- image element (breaking) -->
 <figure class="unit-pict  {{modifier_class}}">
@@ -949,7 +947,7 @@ Weight: -100
 
 Markup: <!-- image element -->
 <figure class="unit-pict  {{modifier_class}}">
-  <img class="unit-pict__src" src="https://placehold.it/400x300.png" alt="" width="400" height="300" />
+  <img class="unit-pict__src" src="https://via.placeholder.com/400x300" alt="" width="400" height="300" />
 </figure>
 <!-- image element (breaking) -->
 <figure class="unit-pict  {{modifier_class}}">
@@ -961,21 +959,29 @@ Markup: <!-- image element -->
 </figure>
 
 unit-pict--aspect-ratio-none - not set (**default**)
+unit-pict--aspect-ratio-1-1 - enable 1:1
 unit-pict--aspect-ratio-4-3 - enable 4:3
 unit-pict--aspect-ratio-16-9 - enable 16:9
 
 Style guide: unit-pict.aspect-ratio.builtin
 */
-.unit-pict--aspect-ratio-4-3, .unit-pict--aspect-ratio-16-9 {
+.unit-pict--aspect-ratio-1-1, .unit-pict--aspect-ratio-4-3, .unit-pict--aspect-ratio-16-9 {
   max-width: 100%;
 }
-.unit-pict--aspect-ratio-4-3 > .unit-pict__src, .unit-pict--aspect-ratio-16-9 > .unit-pict__src {
+.unit-pict--aspect-ratio-1-1 > .unit-pict__src, .unit-pict--aspect-ratio-4-3 > .unit-pict__src, .unit-pict--aspect-ratio-16-9 > .unit-pict__src {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+.unit-pict--aspect-ratio-1-1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
 }
 .unit-pict--aspect-ratio-4-3::before {
   content: "";
@@ -1010,7 +1016,7 @@ Weight: -100
 
 Markup: <!-- image element -->
 <figure class="unit-pict  {{modifier_class}}">
-  <img class="unit-pict__src" src="https://placehold.it/400x300.png" alt="" width="400" height="300" />
+  <img class="unit-pict__src" src="https://via.placeholder.com/400x300" alt="" width="400" height="300" />
 </figure>
 <!-- image element (breaking) -->
 <figure class="unit-pict  {{modifier_class}}">
@@ -1056,7 +1062,7 @@ Weight: -100
 
 Markup: <!-- image element -->
 <figure class="unit-pict  {{modifier_class}}">
-  <img class="unit-pict__src" src="https://placehold.it/400x300.png" alt="" width="400" height="300" />
+  <img class="unit-pict__src" src="https://via.placeholder.com/400x300" alt="" width="400" height="300" />
 </figure>
 <!-- image element (breaking) -->
 <figure class="unit-pict  {{modifier_class}}">
@@ -3777,16 +3783,6 @@ Style guide: unit-flex-grid.wrap.builtin
       flex-wrap: wrap;
 }
 
-/* pre-import-util */
-/*
-util
-
-utilities
-
-Weight: 10000
-
-Style guide: util
-*/
 /*
 hidden
 
@@ -3803,10 +3799,8 @@ builtin modifiers of hidden
 
 Weight: -100
 
-Markup: <div style="display:table;">
-  <div class="{{modifier_class}}" style="display:table-cell; height:100px; font-size:0;">
-    <div style="display:inline-block; position:relative; width:50px; height:50px; background:#999;"></div>
-  </div>
+Markup: <div style="position:relative; padding:50px;">
+  <div class="{{modifier_class}}" style="position:relative; width:50px; height:50px; background:#999;"></div>
 </div>
 
 util--hidden-if-mobile - hidden if mobile
@@ -3870,13 +3864,13 @@ Markup: <div style="position:relative; padding:50px;">
 
 util--width-0 - 0px width
 util--width-min-0 - 0px min width
-util--width-max-0 - 0px min width
+util--width-max-0 - 0px max width
 util--width-1000 - 1000px width
 util--width-min-1000 - 1000px min width
-util--width-max-1000 - 1000px min width
+util--width-max-1000 - 1000px max width
 util--width-fit - 100% width
 util--width-min-fit - 100% min width
-util--width-max-fit - 100% min width
+util--width-max-fit - 100% max width
 util--width-auto - auto width
 
 Style guide: util.width.builtin
@@ -4088,13 +4082,13 @@ Markup: <div style="position:relative; padding:50px;">
 
 util--height-0 - 0px height
 util--height-min-0 - 0px min height
-util--height-max-0 - 0px min height
+util--height-max-0 - 0px max height
 util--height-1000 - 1000px height
 util--height-min-1000 - 1000px min height
-util--height-max-1000 - 1000px min height
+util--height-max-1000 - 1000px max height
 util--height-fit - 100% height
 util--height-min-fit - 100% min height
-util--height-max-fit - 100% min height
+util--height-max-fit - 100% max height
 util--height-auto - auto height
 
 Style guide: util.height.builtin
@@ -6430,7 +6424,15 @@ Style guide: util.font-size.builtin
   font-size: 1.5rem !important;
 }
 
-/* pre-import-override */
+/*
+util
+
+utilities
+
+Weight: 10000
+
+Style guide: util
+*/
 html {
   font-size: 16px;
 }

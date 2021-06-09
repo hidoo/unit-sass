@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-  <title>Style Guide - @hidoo/unit (v0.5.0)</title>
+  <title>Style Guide - @hidoo/unit (v0.6.0)</title>
   <meta name="description" content="Sass based css framework." />
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="kss-assets/images/favicon.ico" />
   <link rel="apple-touch-icon" sizes="192x192" href="kss-assets/images/touchicon.png" />
@@ -107,7 +107,7 @@
         <header class="kss-block-heading-b-a  kss-unit-box  kss-util--padding-top-40 kss-util--padding-right-15 kss-util--padding-left-15">
           <div class="kss-block-heading-b-a__container  kss-unit-box__container">
             <h1 class="kss-block-heading-b-a__name  kss-unit-text  kss-unit-text--theme-a-a-e  kss-unit-text--truncate-true">@hidoo/unit</h1>
-            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.5.0</p>
+            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.6.0</p>
             <p class="kss-block-heading-b-a__description  kss-unit-text  kss-unit-text--theme-a-a-a">Sass based css framework.</p>
           </div>
         </header>
@@ -411,10 +411,8 @@
   <div class="kss-block-example-b-a__container-canvas  kss-unit-box__container">
     <div class="kss-block-example-b-a__canvas  kss-unit-box  kss-unit-box--texture-transparent">
       <div class="kss-block-example-b-a__canvas__container  kss-unit-box__container">
-        <div style="display:table;">
-  <div class="{{modifier_class}}" style="display:table-cell; height:100px; font-size:0;">
-    <div style="display:inline-block; position:relative; width:50px; height:50px; background:#999;"></div>
-  </div>
+        <div style="position:relative; padding:50px;">
+  <div class="{{modifier_class}}" style="position:relative; width:50px; height:50px; background:#999;"></div>
 </div>
       </div>
     </div>
@@ -437,10 +435,8 @@
   <div class="kss-block-example-b-a__container-canvas  kss-unit-box__container">
     <div class="kss-block-example-b-a__canvas  kss-unit-box  kss-unit-box--texture-transparent">
       <div class="kss-block-example-b-a__canvas__container  kss-unit-box__container">
-        <div style="display:table;">
-  <div class="util--hidden-if-mobile" style="display:table-cell; height:100px; font-size:0;">
-    <div style="display:inline-block; position:relative; width:50px; height:50px; background:#999;"></div>
-  </div>
+        <div style="position:relative; padding:50px;">
+  <div class="util--hidden-if-mobile" style="position:relative; width:50px; height:50px; background:#999;"></div>
 </div>
       </div>
     </div>
@@ -462,10 +458,8 @@
   <div class="kss-block-example-b-a__container-canvas  kss-unit-box__container">
     <div class="kss-block-example-b-a__canvas  kss-unit-box  kss-unit-box--texture-transparent">
       <div class="kss-block-example-b-a__canvas__container  kss-unit-box__container">
-        <div style="display:table;">
-  <div class="util--hidden-if-not-mobile" style="display:table-cell; height:100px; font-size:0;">
-    <div style="display:inline-block; position:relative; width:50px; height:50px; background:#999;"></div>
-  </div>
+        <div style="position:relative; padding:50px;">
+  <div class="util--hidden-if-not-mobile" style="position:relative; width:50px; height:50px; background:#999;"></div>
 </div>
       </div>
     </div>
@@ -474,10 +468,8 @@
 
 <div class="kss-block-example-a-a  kss-unit-box  kss-util--margin-top-30">
   <div class="kss-block-example-a-a__container  kss-unit-box__container">
-    <pre><code class="hljs handlebars html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:table;&quot;</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">modifier_class</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:table-cell; height:100px; font-size:0;&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;display:inline-block; position:relative; width:50px; height:50px; background:#999;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <pre><code class="hljs handlebars html"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;position:relative; padding:50px;&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">modifier_class</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;position:relative; width:50px; height:50px; background:#999;&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
   </div>
 </div>
@@ -734,7 +726,7 @@
       </div>
       <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
         <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
-          0px min width
+          0px max width
         </div>
       </div>
     </div>
@@ -803,7 +795,7 @@
       </div>
       <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
         <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
-          1000px min width
+          1000px max width
         </div>
       </div>
     </div>
@@ -872,7 +864,7 @@
       </div>
       <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
         <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
-          100% min width
+          100% max width
         </div>
       </div>
     </div>
@@ -1045,7 +1037,7 @@
       </div>
       <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
         <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
-          0px min height
+          0px max height
         </div>
       </div>
     </div>
@@ -1114,7 +1106,7 @@
       </div>
       <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
         <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
-          1000px min height
+          1000px max height
         </div>
       </div>
     </div>
@@ -1183,7 +1175,7 @@
       </div>
       <div class="kss-block-example-b-a__header__description  kss-unit-table-grid__column">
         <div class="kss-block-example-b-a__description  kss-unit-document  kss-unit-document--theme-a-a-a">
-          100% min height
+          100% max height
         </div>
       </div>
     </div>
