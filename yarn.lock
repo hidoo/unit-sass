@@ -1732,6 +1732,13 @@
     marked "2.0.7"
     path-browserify "1.0.1"
 
+"@hidoo/sass-importer@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/sass-importer/-/sass-importer-0.5.0.tgz#95bc54900a8ea819eeb00906a6d6edf19b348590"
+  integrity sha512-1EI7dXZgfMQ1YbOLph8hTO38VTbL37S9v73Mx2oRBp4ur7KQbUHg0+MsfDl+LyujWSat0utIosSyRI6zHPF+6Q==
+  dependencies:
+    resolve "1.20.0"
+
 "@hidoo/util-fancy-print@0.19.0":
   version "0.19.0"
   resolved "https://registry.yarnpkg.com/@hidoo/util-fancy-print/-/util-fancy-print-0.19.0.tgz#2d10df93e253fbbc9b65f44020a3e8b566bebc0f"
@@ -5932,7 +5939,7 @@ es6-promise@^3.0.2:
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"
   integrity sha1-oIzd6EzNvzTQJ6FFG8kdS80ophM=
 
-es6-promise@^4.0.3, es6-promise@^4.2.5, es6-promise@^4.2.6:
+es6-promise@^4.0.3, es6-promise@^4.2.6:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
   integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
@@ -9301,11 +9308,9 @@ locate-path@^6.0.0:
     p-locate "^5.0.0"
 
 locutus@^2.0.11:
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.14.tgz#53d259ac7200b0621ed4e5604b6c49993415a455"
-  integrity sha512-0H1o1iHNEp3kJ5rW57bT/CAP5g6Qm0Zd817Wcx2+rOMTYyIJoc482Ja1v9dB6IUjwvWKcBNdYi7x2lRXtlJ3bA==
-  dependencies:
-    es6-promise "^4.2.5"
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/locutus/-/locutus-2.0.15.tgz#d75b9100713aaaf30be8b38ed6543910498c0db0"
+  integrity sha512-2xWC4RkoAoCVXEb/stzEgG1TNgd+mrkLBj6TuEDNyUoKeQ2XzDTyJUC23sMiqbL6zJmJSP3w59OZo+zc4IBOmA==
 
 lodash._arraymap@^3.0.0:
   version "3.0.0"
