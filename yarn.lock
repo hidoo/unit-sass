@@ -1714,15 +1714,6 @@
     chalk "4.1.1"
     fancy-log "1.3.3"
 
-"@hidoo/handlebars-helpers@0.8.1":
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/@hidoo/handlebars-helpers/-/handlebars-helpers-0.8.1.tgz#a08bfd01b8c0a14b4c429bf00243316b6dc82c2b"
-  integrity sha512-+cuOuVRjSmqqwzinpplCrnWOxKQEVvpZCQaq3BtyqNhigDAnFABYvuKp/yFUjJQYCpFL2VcvoX54rLoakL13+A==
-  dependencies:
-    highlight.js "10.4.1"
-    marked "2.0.1"
-    path-browserify "1.0.1"
-
 "@hidoo/handlebars-helpers@0.8.2":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@hidoo/handlebars-helpers/-/handlebars-helpers-0.8.2.tgz#ef97934cd16c1fd0c2e0873b52b9bcf640cb20f2"
@@ -1731,6 +1722,13 @@
     highlight.js "11.0.1"
     marked "2.0.7"
     path-browserify "1.0.1"
+
+"@hidoo/sass-importer@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@hidoo/sass-importer/-/sass-importer-0.5.0.tgz#95bc54900a8ea819eeb00906a6d6edf19b348590"
+  integrity sha512-1EI7dXZgfMQ1YbOLph8hTO38VTbL37S9v73Mx2oRBp4ur7KQbUHg0+MsfDl+LyujWSat0utIosSyRI6zHPF+6Q==
+  dependencies:
+    resolve "1.20.0"
 
 "@hidoo/util-fancy-print@0.19.0":
   version "0.19.0"
@@ -7777,11 +7775,6 @@ header-case@^1.0.0:
     no-case "^2.2.0"
     upper-case "^1.1.3"
 
-highlight.js@10.4.1:
-  version "10.4.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.4.1.tgz#d48fbcf4a9971c4361b3f95f302747afe19dbad0"
-  integrity sha512-yR5lWvNz7c85OhVAEAeFhVCc/GV4C30Fjzc/rCP0aCWzc1UUOPUk55dK/qdwTZHBvMZo+eZ2jpk62ndX/xMFlg==
-
 highlight.js@11.0.1:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.0.1.tgz#a78bafccd9aa297978799fe5eed9beb7ee1ef887"
@@ -9858,11 +9851,6 @@ markdown-it@^10.0.0:
     linkify-it "^2.0.0"
     mdurl "^1.0.1"
     uc.micro "^1.0.5"
-
-marked@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-2.0.1.tgz#5e7ed7009bfa5c95182e4eb696f85e948cefcee3"
-  integrity sha512-5+/fKgMv2hARmMW7DOpykr2iLhl0NgjyELk5yn92iE7z8Se1IS9n3UsFm86hFXIkvMBmVxki8+ckcpjBeyo/hw==
 
 marked@2.0.7:
   version "2.0.7"
