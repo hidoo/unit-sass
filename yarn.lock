@@ -11095,7 +11095,7 @@ postcss@^6.0.14, postcss@^6.0.22:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^7.0.0, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.31, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0.6:
+postcss@^7.0.0, postcss@^7.0.14, postcss@^7.0.17, postcss@^7.0.2, postcss@^7.0.21, postcss@^7.0.26, postcss@^7.0.31, postcss@^7.0.32, postcss@^7.0.35, postcss@^7.0.6:
   version "7.0.36"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
   integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
@@ -13208,12 +13208,10 @@ stylelint-config-standard@22.0.0:
   dependencies:
     stylelint-config-recommended "^5.0.0"
 
-stylelint-declaration-block-no-ignored-properties@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/stylelint-declaration-block-no-ignored-properties/-/stylelint-declaration-block-no-ignored-properties-2.3.0.tgz#98a641a137bf057c97ef3d3c4a848cd339e736da"
-  integrity sha512-0Ly/mKc3prAhxBSY5TbmMMDAkUHYMOxdmUu/mNcFvB6A53C24x5Rsu1Vtrik9bKPKwgd75sZUhV9ZsWerPbuJQ==
-  dependencies:
-    postcss "^7.0.27"
+stylelint-declaration-block-no-ignored-properties@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/stylelint-declaration-block-no-ignored-properties/-/stylelint-declaration-block-no-ignored-properties-2.4.0.tgz#767f05aaa15353354f280d6e3245c76bff511010"
+  integrity sha512-ffAvq8GaXHL8rz0Qo+4gr3vqcau4pz/Z6WF9TJr4yG6WY5Vbqa6RPechgqv/izZu5trOKwJgnznOzO8VvhIKlw==
 
 stylelint-group-selectors@1.0.8:
   version "1.0.8"
@@ -13247,10 +13245,10 @@ stylelint-order@4.1.0:
     postcss "^7.0.31"
     postcss-sorting "^5.0.1"
 
-stylelint-scss@3.19.0:
-  version "3.19.0"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.19.0.tgz#528006d5a4c5a0f1f4d709b02fd3f626ed66d742"
-  integrity sha512-Ic5bsmpS4wVucOw44doC1Yi9f5qbeVL4wPFiEOaUElgsOuLEN6Ofn/krKI8BeNL2gAn53Zu+IcVV4E345r6rBw==
+stylelint-scss@3.20.1:
+  version "3.20.1"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-3.20.1.tgz#88f175d9cfe1c81a72858bd0d3550cf61530e212"
+  integrity sha512-OTd55O1TTAC5nGKkVmUDLpz53LlK39R3MImv1CfuvsK7/qugktqiZAeQLuuC4UBhzxCnsc7fp9u/gfRZwFAIkA==
   dependencies:
     lodash "^4.17.15"
     postcss-media-query-parser "^0.2.3"
