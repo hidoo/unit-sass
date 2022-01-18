@@ -3,6 +3,39 @@
 /* at-rule-semicolon-space-before */
 @import "at-rule-semicolon-space-before.css" ;
 
+/* alpha-value-notation */
+.alpha-value-notation {
+  opacity: 80%;
+}
+
+/* color-function-notation */
+.color-function-notation {
+  color: rgba(255 255 255);
+}
+
+/* max-line-length */
+.max-line-length-ok {
+  /* this comment is ok, long long long long long long long long long long long long long long long long long long long long long comment */
+  content: "https://example.com/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/long/url/";
+}
+
+.max-line-length-ng-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long-long {
+  /* error case */
+}
+
+/* selector-class-pattern */
+.selector-class-pattern-ok {
+  /* kebab-case */
+}
+
+.selector-class-pattern__bem--ok {
+  /* bem style */
+}
+
+.selector-class-pattern_Ng {
+  /* error case */
+}
+
 /* a11y/no-display-none */
 .no-display-none {
   display: none;
@@ -70,7 +103,7 @@ blink.no-obsolete-element {
 }
 
 /* plugin/no-low-performance-animation-properties */
-@keyframes myAnimation {
+@keyframes my-animation {
   50% {
     top: 5px;
   }

@@ -10,6 +10,10 @@ const invalidCss = fs.readFileSync(`${__dirname}/fixture/invalid.css`, 'utf-8');
 describe('@hidoo/stylint-config', () => {
   const rules = [
     'at-rule-semicolon-space-before',
+    'alpha-value-notation',
+    'color-function-notation',
+    'max-line-length',
+    'selector-class-pattern',
     'selector-list-comma-space-before',
     'a11y/no-display-none',
     'a11y/no-obsolete-attribute',

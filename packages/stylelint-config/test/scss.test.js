@@ -42,8 +42,7 @@ describe('@hidoo/stylint-config/scss', () => {
     const results = stylelint.lint({
       code: invalidScss,
       config,
-      ignoreDisables: true,
-      syntax: 'scss'
+      ignoreDisables: true
     });
 
     await results

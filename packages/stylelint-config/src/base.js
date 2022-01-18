@@ -41,6 +41,21 @@ module.exports = {
   'rules': {
     // stylelint
     'at-rule-semicolon-space-before': 'never',
+    'alpha-value-notation': 'number',
+    'color-function-notation': 'legacy',
+    'declaration-block-no-redundant-longhand-properties': null,
+    'max-line-length': [120, { // eslint-disable-line no-magic-numbers
+      ignore: ['comments'],
+      ignorePattern: [
+        '/^@import\\s+/',
+        '/^@use\\s+/',
+        '/https?://[0-9,a-z]*.*/'
+      ]
+    }],
+    'selector-class-pattern': ['^([a-z][a-z0-9]*)((-|__|--)[a-z0-9]+)*$', {
+      message: 'Expected class selector to be kebab-case (includes BEM)',
+      resolveNestedSelectors: true
+    }],
     // 'unicode-bom': 'never',
 
     // a11y/stylelint-a11y
