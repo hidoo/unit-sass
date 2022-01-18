@@ -1,4 +1,5 @@
 module.exports = {
+  'customSyntax': require('postcss-scss'),
   'extends': [
     './src/base.js'
   ],
@@ -32,7 +33,9 @@ module.exports = {
     'scss/at-else-if-parentheses-space-before': 'always',
     'scss/at-rule-conditional-no-parentheses': null,
     'scss/at-extend-no-missing-placeholder': true,
-    'scss/at-function-named-arguments': 'never',
+    'scss/at-function-named-arguments': ['never', {
+      ignoreFunctions: ['color.adjust']
+    }],
     'scss/at-if-no-null': true,
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension': null,
