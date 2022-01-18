@@ -23,14 +23,14 @@
   "dependencies": {
     "stylelint-a11y": "1.2.3",
     "stylelint-config-standard": "22.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.4.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.5.0",
     "stylelint-group-selectors": "1.0.8",
-    "stylelint-high-performance-animation": "1.5.2",
-    "stylelint-no-unsupported-browser-features": "5.0.1",
+    "stylelint-high-performance-animation": "1.6.0",
+    "stylelint-no-unsupported-browser-features": "5.0.2",
     "stylelint-order": "4.1.0",
-    "stylelint-scss": "3.20.1",
+    "stylelint-scss": "3.21.0",
     "stylelint-selector-no-empty": "1.0.8",
-    "stylelint-selector-tag-no-without-class": "2.0.4"
+    "stylelint-selector-tag-no-without-class": "2.0.5"
   },
   "devDependencies": {
     "@babel/core": "7.16.7",
