@@ -3,16 +3,14 @@
 /// @group features
 ////
 
-@use "sass:map";
-@use "sass:math";
-@use "sass:meta";
-@use "../function";
-@use "../../settings";
+@use "./font";
 
 /// use settings of font-size
 /// @param {String|Number} $value value of font-size (one of `"xsmall"`, `"small"`, `"medium"`, `"large"`, `"xlarge"`, `"2xlarge"`, `"3xlarge"`, `"4xlarge"` or number)
 /// @param {Boolean} $monospace [false] - font-family is monospace or not
 /// @param {Boolean} $important [false] - set !important or not
+///
+/// @deprecated
 ///
 /// @example scss - scss inputs
 ///   .selector {
@@ -25,38 +23,8 @@
 ///     font-size: 0.875rem !important;
 ///   }
 ///
-@mixin use-font-size(
-  $value,
-  $monospace: false,
-  $important: false
-) {
-  @if meta.type-of(settings.$font-size-presets) != "map" {
-    @error "@mixin use-font-size: settings.$font-size-presets must be map.";
-  }
+@mixin use-font-size($args...) {
+  @warn "[DEPRECATED] mixin.use-font-size is deprecated. Use instead mixin.font-apply-size.";
 
-  @if meta.type-of($value) == "string" and map.has-key(settings.$font-size-presets, $value) {
-    @if meta.type-of(settings.$font-size) != "number" {
-      @error "@mixin use-font-size: settings.$font-size must be number.";
-    }
-
-    $value: math.floor(settings.$font-size * map.get(settings.$font-size-presets, $value));
-  }
-
-  @if meta.type-of($value) != "number" {
-    $presets: meta.inspect(map.keys(settings.$font-size-presets));
-
-    @error "@mixin use-font-size: Argument $value must be number or one of #{$presets}.";
-  }
-
-  // adjust smaller than default
-  @if ($monospace) {
-    $value: math.floor($value * 0.9);
-  }
-
-  font-size: $value if($important, !important, null);
-
-  // override font-size to rem value
-  @if ($value > 0 and settings.$font-enable-relative-size) {
-    font-size: function.px-to-rem($value) if($important, !important, null);
-  }
+  @include font.apply-size($args...);
 }

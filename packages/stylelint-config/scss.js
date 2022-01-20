@@ -34,7 +34,13 @@ module.exports = {
     'scss/at-rule-conditional-no-parentheses': null,
     'scss/at-extend-no-missing-placeholder': true,
     'scss/at-function-named-arguments': ['never', {
-      ignoreFunctions: ['color.adjust']
+      ignoreFunctions: [
+        'color.adjust',
+        'meta.function-exists',
+        'meta.get-function',
+        'meta.global-variable-exists',
+        'meta.mixin-exists'
+      ]
     }],
     'scss/at-if-no-null': true,
     'scss/at-import-no-partial-leading-underscore': true,

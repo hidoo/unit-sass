@@ -17,9 +17,9 @@
 /// @param {Map} $options [()] options
 ///
 @mixin define-toggle-item($name, $items: (), $options: ()) {
-  $selectors-focus: unit-function.merge-state-selectors("focus");
-  $selectors-disabled: unit-function.merge-state-selectors("disabled");
-  $selectors-selected: unit-function.merge-state-selectors("selected");
+  $selectors-focus: unit-function.selector-merge-state("focus");
+  $selectors-disabled: unit-function.selector-merge-state("disabled");
+  $selectors-selected: unit-function.selector-merge-state("selected");
 
   @if map.has-key($items, $name) {
     $up: map.get($items, $name);
@@ -48,7 +48,7 @@
       @if $focus {
         $selector: string.unique-id();
 
-        @include unit-mixin.define-placeholder($name: $selector) {
+        @include unit-mixin.placeholder-define($name: $selector) {
           @include mixin.set-properties(
             $values: (
               "offset-x": map.get($focus, "offset-x"),
@@ -71,7 +71,7 @@
       @if $disabled {
         $selector: string.unique-id();
 
-        @include unit-mixin.define-placeholder($name: $selector) {
+        @include unit-mixin.placeholder-define($name: $selector) {
           @include mixin.set-properties(
             $values: (
               "offset-x": map.get($disabled, "offset-x"),
@@ -94,7 +94,7 @@
       @if $selected {
         $selector: string.unique-id();
 
-        @include unit-mixin.define-placeholder($name: $selector) {
+        @include unit-mixin.placeholder-define($name: $selector) {
           @include mixin.set-properties(
             $values: (
               "offset-x": map.get($selected, "offset-x"),
@@ -117,7 +117,7 @@
       @if $selected--focus {
         $selector: string.unique-id();
 
-        @include unit-mixin.define-placeholder($name: $selector) {
+        @include unit-mixin.placeholder-define($name: $selector) {
           @include mixin.set-properties(
             $values: (
               "offset-x": map.get($selected--focus, "offset-x"),
@@ -142,7 +142,7 @@
       @if $selected--disabled {
         $selector: string.unique-id();
 
-        @include unit-mixin.define-placeholder($name: $selector) {
+        @include unit-mixin.placeholder-define($name: $selector) {
           @include mixin.set-properties(
             $values: (
               "offset-x": map.get($selected--disabled, "offset-x"),

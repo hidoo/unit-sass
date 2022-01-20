@@ -6,100 +6,26 @@ import {eachTestCases, useSettingsWith} from '../util';
 /**
  * wrapper
  *
- * @param {Array} args arguments
  * @param {Array} settings settings of defaults
  * @return {String}
  */
-const wrapper = (args = [], settings = []) => `
+const wrapper = (settings = []) => `
 ${useSettingsWith(settings)}
+@use "sass:meta";
 @use "src/lib/function";
 
 .selector {
-  content: function.ununit(${args.filter((arg) => arg !== false).join(', ')});
+  content: meta.function-exists("ununit", "function");
 }
 `;
 
-describe('@function ununit($number)', () => {
+describe('[DEPRECATED] @function ununit($number)', () => {
 
-  it('should throw error if argument "$number" is not valid.', async () => {
-    const cases = [
-      {params: [[]]},
-      {params: [['$number: null']]},
-      {params: [['$number: false']]},
-      {params: [['$number: #000']]}
-    ];
-
-    await eachTestCases(cases, wrapper, ({error}, {resolve}) => {
-      assert(error instanceof Error);
-      return resolve();
-    });
-  });
-
-  it('should return as it if argument "$number" is number without unit.', async () => {
+  it('should exists.', async () => {
     const cases = [
       {
-        params: [
-          [
-            '$number: 0'
-          ]
-        ],
-        expected: '.selector{content:0}'
-      },
-      {
-        params: [
-          [
-            '$number: 7'
-          ]
-        ],
-        expected: '.selector{content:7}'
-      },
-      {
-        params: [
-          [
-            '$number: 14'
-          ]
-        ],
-        expected: '.selector{content:14}'
-      }
-    ];
-
-    await eachTestCases(cases, wrapper, ({error, result, expected}, {resolve, reject}) => {
-      if (error) {
-        return reject(error);
-      }
-
-      const actual = result.css.toString().trim();
-
-      assert(actual === expected);
-      return resolve();
-    });
-  });
-
-  it('should return number without unit if argument "$number" is number with unit.', async () => {
-    const cases = [
-      {
-        params: [
-          [
-            '$number: 0px'
-          ]
-        ],
-        expected: '.selector{content:0}'
-      },
-      {
-        params: [
-          [
-            '$number: 7px'
-          ]
-        ],
-        expected: '.selector{content:7}'
-      },
-      {
-        params: [
-          [
-            '$number: 14rem'
-          ]
-        ],
-        expected: '.selector{content:14}'
+        params: [[]],
+        expected: '.selector{content:true}'
       }
     ];
 
