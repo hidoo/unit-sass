@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/hidoo/unit-sass/compare/v0.6.0...v0.7.0) (2022-01-20)
+
+
+### Bug Fixes
+
+* **deps:** update stylelint packages ([63e9911](https://github.com/hidoo/unit-sass/commit/63e991177c46ee9e26f1cfe344eb3a920ff04c58))
+* **deps:** update stylelint packages ([4812d22](https://github.com/hidoo/unit-sass/commit/4812d22700ef812dad07418cb20b39d1957ba024))
+* **deps:** update stylelint packages and update rules ([0331e7e](https://github.com/hidoo/unit-sass/commit/0331e7e860bb7ab2980602c8f23f355f371d0d22))
+
+
+### Features
+
+* **stylelint-config:** update options of scss/at-function-named-arguments ([35cee26](https://github.com/hidoo/unit-sass/commit/35cee26a3a1727ca2359b3e7b6a14f45dfaf21fe))
+
+
+
+
+
 # [0.6.0](https://github.com/hidoo/unit-sass/compare/v0.5.0...v0.6.0) (2021-06-09)
 
 
