@@ -37,7 +37,7 @@
     "stylelint": "14.2.0"
   },
   "resolutions": {
-    "axios": "^0.21.2",
+    "axios": "^0.25.0",
     "glob-parent": "^6.0.0",
     "marked": "^4.0.10",
     "tar": "^6.1.9",
