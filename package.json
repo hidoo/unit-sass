@@ -41,7 +41,7 @@
     "glob-parent": "^6.0.0",
     "marked": "^4.0.10",
     "tar": "^6.1.9",
-    "trim-newlines": "^3.0.1"
+    "trim-newlines": "^4.0.0"
   },
   "workspaces": [
     "packages/*"
