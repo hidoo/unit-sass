@@ -35,7 +35,7 @@
     "stylelint-selector-tag-no-without-class": "2.0.5"
   },
   "devDependencies": {
-    "@babel/core": "7.16.10",
+    "@babel/core": "7.16.12",
     "@babel/preset-env": "7.16.11",
     "@babel/register": "7.16.9",
     "babel-preset-power-assert": "3.0.0",
