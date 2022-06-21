@@ -44,6 +44,7 @@ module.exports = {
     'alpha-value-notation': 'number',
     'color-function-notation': 'legacy',
     'declaration-block-no-redundant-longhand-properties': null,
+    'keyframe-block-no-duplicate-selectors': true,
     'max-line-length': [120, { // eslint-disable-line no-magic-numbers
       ignore: ['comments'],
       ignorePattern: [

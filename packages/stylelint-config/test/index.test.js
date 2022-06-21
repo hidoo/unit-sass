@@ -12,6 +12,7 @@ describe('@hidoo/stylint-config', () => {
     'at-rule-semicolon-space-before',
     'alpha-value-notation',
     'color-function-notation',
+    'keyframe-block-no-duplicate-selectors',
     'max-line-length',
     'selector-class-pattern',
     'selector-list-comma-space-before',
