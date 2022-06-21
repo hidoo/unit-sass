@@ -13,6 +13,17 @@
   color: rgba(255 255 255);
 }
 
+/* keyframe-block-no-duplicate-selectors */
+@keyframes keyframe-block-no-duplicate-selectors {
+  from {
+    opacity: 0;
+  }
+
+  from {
+    opacity: 0;
+  }
+}
+
 /* max-line-length */
 .max-line-length-ok {
   /* this comment is ok, long long long long long long long long long long long long long long long long long long long long long comment */
