@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "postcss": "8.4.14",
-    "postcss-scss": "4.0.3",
+    "postcss-scss": "4.0.4",
     "stylelint-a11y": "1.2.3",
     "stylelint-config-standard": "24.0.0",
     "stylelint-declaration-block-no-ignored-properties": "2.5.0",
