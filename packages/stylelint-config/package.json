@@ -21,7 +21,7 @@
   "author": "hidoo",
   "license": "MIT",
   "dependencies": {
-    "postcss": "8.4.5",
+    "postcss": "8.4.14",
     "postcss-scss": "4.0.3",
     "stylelint-a11y": "1.2.3",
     "stylelint-config-standard": "24.0.0",
