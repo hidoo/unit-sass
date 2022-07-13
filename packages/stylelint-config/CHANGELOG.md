@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/hidoo/unit-sass/compare/v0.7.0...v0.8.0) (2022-07-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss to v8.4.14 ([1d66b47](https://github.com/hidoo/unit-sass/commit/1d66b473507f681bc60aa132e2bfa415c76d774c))
+* **deps:** update dependency postcss-scss to v4.0.4 ([def578e](https://github.com/hidoo/unit-sass/commit/def578eb5030e7bf18420d09aff35d2b91772235))
+
+
+### Features
+
+* **stylelint-config:** enable keyframe-block-no-duplicate-selectors rules ([dbcf7c4](https://github.com/hidoo/unit-sass/commit/dbcf7c41ec4057308b7b3570d2f1a9e3dc3a9dcc))
+
+
+
+
+
 # [0.7.0](https://github.com/hidoo/unit-sass/compare/v0.6.0...v0.7.0) (2022-01-20)
 
 

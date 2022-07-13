@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/hidoo/unit-sass/compare/v0.7.0...v0.8.0) (2022-07-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency glob to v7.2.3 ([0fe028d](https://github.com/hidoo/unit-sass/commit/0fe028d939f2592945ed978a70a75279f24344dc))
+* **deps:** update dependency postcss to v8.4.14 ([1d66b47](https://github.com/hidoo/unit-sass/commit/1d66b473507f681bc60aa132e2bfa415c76d774c))
+* **deps:** update dependency postcss-scss to v4.0.4 ([def578e](https://github.com/hidoo/unit-sass/commit/def578eb5030e7bf18420d09aff35d2b91772235))
+* **deps:** update dependency resolve to v1.21.1 ([a8769ba](https://github.com/hidoo/unit-sass/commit/a8769ba8f4cd2691347ede409307826e7f2a27f9))
+* **deps:** update dependency resolve to v1.22.1 ([d8b94f6](https://github.com/hidoo/unit-sass/commit/d8b94f68acb41c18aff1630feef94f748443d3cb))
+* **deps:** update dependency sassdoc to v2.7.4 ([739ef05](https://github.com/hidoo/unit-sass/commit/739ef054615c9dd0a9a3bc28b8363a058cb54de5))
+* **unit:** fix an issue --copy-protect modifier of unit-document with images being copied on chrome ([eb9d4f5](https://github.com/hidoo/unit-sass/commit/eb9d4f506fe3eef7821de992c483c5930f4fe592))
+* **unit:** fix an issue --copy-protect modifier of unit-pict with images being copied on chrome ([c08a77b](https://github.com/hidoo/unit-sass/commit/c08a77bb55104c045234d9ba0f0c158363a9cd35))
+
+
+### Features
+
+* **stylelint-config:** enable keyframe-block-no-duplicate-selectors rules ([dbcf7c4](https://github.com/hidoo/unit-sass/commit/dbcf7c41ec4057308b7b3570d2f1a9e3dc3a9dcc))
+* **unit:** add [@function](https://github.com/function) z-index-reserve ([6cea008](https://github.com/hidoo/unit-sass/commit/6cea008a629a1cd15181a4fc17bb1d92f99df0a6))
+
+
+
+
+
 # [0.7.0](https://github.com/hidoo/unit-sass/compare/v0.6.0...v0.7.0) (2022-01-20)
 
 
