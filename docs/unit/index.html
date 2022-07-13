@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-  <title>Style Guide - @hidoo/unit (v0.7.0)</title>
+  <title>Style Guide - @hidoo/unit (v0.8.0)</title>
   <meta name="description" content="Sass based css framework." />
   <link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="kss-assets/images/favicon.ico" />
   <link rel="apple-touch-icon" sizes="192x192" href="kss-assets/images/touchicon.png" />
@@ -69,7 +69,7 @@
         <header class="kss-block-heading-b-a  kss-unit-box  kss-util--padding-top-40 kss-util--padding-right-15 kss-util--padding-left-15">
           <div class="kss-block-heading-b-a__container  kss-unit-box__container">
             <h1 class="kss-block-heading-b-a__name  kss-unit-text  kss-unit-text--theme-a-a-e  kss-unit-text--truncate-true">@hidoo/unit</h1>
-            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.7.0</p>
+            <p class="kss-block-heading-b-a__version  kss-unit-text  kss-unit-text--theme-a-a-b">v0.8.0</p>
             <p class="kss-block-heading-b-a__description  kss-unit-text  kss-unit-text--theme-a-a-a">Sass based css framework.</p>
           </div>
         </header>
@@ -4336,6 +4336,90 @@ for expressing of state like <code>is-active</code>.
   <span class="hljs-attribute">white-space</span>: normal;
   <span class="hljs-attribute">word-break</span>: break-all;
   <span class="hljs-attribute">word-wrap</span>: break-word;
+}
+</code></pre>
+<p><a id="z-index-feature-variable-_default-range"></a></p>
+<h3>$_default-range</h3>
+<p>default z-index range</p>
+<ul>
+<li><strong>Group:</strong> Z-index feature</li>
+<li><strong>Access:</strong> private</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/lists">List</a></strong></p>
+<p><a id="z-index-feature-variable-_types"></a></p>
+<h3>$_types</h3>
+<p>content types</p>
+<ul>
+<li><strong>Group:</strong> Z-index feature</li>
+<li><strong>Access:</strong> private</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></p>
+<p><a id="z-index-feature-variable-_default-options"></a></p>
+<h3>$_default-options</h3>
+<p>default options</p>
+<ul>
+<li><strong>Group:</strong> Z-index feature</li>
+<li><strong>Access:</strong> private</li>
+</ul>
+<h4>Type</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></p>
+<p><a id="z-index-feature-function-reserve"></a></p>
+<h3>@function reserve</h3>
+<p>reserve z-index value each by types</p>
+<ul>
+<li><strong>Group:</strong> Z-index feature</li>
+<li><strong>Access:</strong> public</li>
+</ul>
+<h4>Parameters</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Name</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>$type</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/strings">String</a></strong></td>
+<td style="text-align:left">content type name</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$index</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong></td>
+<td style="text-align:left">index number</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$options</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/maps">Map</a></strong></td>
+<td style="text-align:left">options</td>
+<td style="text-align:left">-</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>$options.debug</code></td>
+<td style="text-align:left"><strong><a href="https://sass-lang.com/documentation/values/booleans">Boolean</a></strong></td>
+<td style="text-align:left">debug flag</td>
+<td style="text-align:left"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h4>Returns</h4>
+<p><strong><a href="https://sass-lang.com/documentation/values/numbers">Number</a></strong> z-index value</p>
+<h4>Examples</h4>
+<p>scss inputs</p>
+<pre class="hljs"><code class="language-scss"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">content</span>: reserve(<span class="hljs-string">"floating"</span>, <span class="hljs-number">100</span>);
+}
+</code></pre>
+<p>css outputs</p>
+<pre class="hljs"><code class="language-css"><span class="hljs-selector-class">.selector</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-number">2000100</span>;
 }
 </code></pre>
 <h2>Test</h2>

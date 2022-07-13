@@ -1043,6 +1043,9 @@ Style guide: unit-pict.copy-protect.builtin
   height: 100%;
   background-color: rgba(0, 0, 0, 0.005);
 }
+.unit-pict--copy-protect-true > img.unit-pict__src {
+  pointer-events: none;
+}
 
 /*
 fit
@@ -1904,6 +1907,9 @@ p > .unit-document__pict, li > .unit-document__pict {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.005);
+}
+.unit-document__pict--copy-protect-true > img {
+  pointer-events: none;
 }
 .unit-document__pict--aspect-ratio-4-3 > img, .unit-document__pict--aspect-ratio-4-3 > iframe, .unit-document__pict--aspect-ratio-16-9 > img, .unit-document__pict--aspect-ratio-16-9 > iframe {
   position: absolute;
