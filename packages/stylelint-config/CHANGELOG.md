@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/hidoo/unit-sass/compare/v0.8.0...v0.9.0) (2023-04-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency postcss to v8.4.22 ([a92d5f2](https://github.com/hidoo/unit-sass/commit/a92d5f200373eb822d6a10ab85fd42cc44538aff))
+* **stylelint-config:** update target browsers ([a7548cc](https://github.com/hidoo/unit-sass/commit/a7548cc2ec7343e88a22c87f8ab1242210931d90))
+
+
+
+
+
 # [0.8.0](https://github.com/hidoo/unit-sass/compare/v0.7.0...v0.8.0) (2022-07-13)
 
 
