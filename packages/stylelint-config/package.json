@@ -25,12 +25,12 @@
     "postcss-scss": "4.0.4",
     "stylelint-a11y": "1.2.3",
     "stylelint-config-standard": "24.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.5.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.7.0",
     "stylelint-group-selectors": "1.0.9",
-    "stylelint-high-performance-animation": "1.6.0",
-    "stylelint-no-unsupported-browser-features": "5.0.3",
+    "stylelint-high-performance-animation": "1.8.0",
+    "stylelint-no-unsupported-browser-features": "5.0.4",
     "stylelint-order": "5.0.0",
-    "stylelint-scss": "4.2.0",
+    "stylelint-scss": "4.6.0",
     "stylelint-selector-no-empty": "1.0.9",
     "stylelint-selector-tag-no-without-class": "2.0.5"
   },
@@ -41,7 +41,7 @@
     "babel-preset-power-assert": "3.0.0",
     "mocha": "9.2.2",
     "power-assert": "1.6.1",
-    "stylelint": "14.9.1"
+    "stylelint": "14.16.1"
   },
   "peerDependencies": {
     "stylelint": ">=14.0.0"
