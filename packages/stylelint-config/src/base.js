@@ -158,9 +158,8 @@ module.exports = {
     // plugin/stylelint-no-unsupported-browser-features
     'plugin/no-unsupported-browser-features': [true, {
       browsers: [
-        '> 0.5% in JP',
-        'ie >= 10',
-        'android >= 4.4'
+        '> 0.25% in JP',
+        'not dead'
       ],
       ignore: [
         'text-size-adjust',
