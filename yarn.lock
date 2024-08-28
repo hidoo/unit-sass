@@ -13630,23 +13630,23 @@ stylelint-config-standard@24.0.0:
   dependencies:
     stylelint-config-recommended "^6.0.0"
 
-stylelint-declaration-block-no-ignored-properties@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/stylelint-declaration-block-no-ignored-properties/-/stylelint-declaration-block-no-ignored-properties-2.7.0.tgz#78a4a03a5ec74a06b4abb226a31ff8fc57782a0e"
-  integrity sha512-44SpI9+9Oc1ICuwwRfwS/3npQ2jPobDSTnwWdNgZGryGqQCp17CgEIWjCv1BgUOSzND3RqywNCNLKvO1AOxbfg==
+stylelint-declaration-block-no-ignored-properties@2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/stylelint-declaration-block-no-ignored-properties/-/stylelint-declaration-block-no-ignored-properties-2.8.0.tgz#a7bc95a46f4bc971aec0e33274bfbdecfe575435"
+  integrity sha512-Ws8Cav7Y+SPN0JsV407LrnNXWOrqGjxShf+37GBtnU/C58Syve9c0+I/xpLcFOosST3ternykn3Lp77f3ITnFw==
 
-stylelint-group-selectors@1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/stylelint-group-selectors/-/stylelint-group-selectors-1.0.9.tgz#ac4cff9573216e8a59af9a5e752c0909b33aa437"
-  integrity sha512-XwiHz2gcb+KTpwrLSL7/tJTmSjzwcN1SCnpaOTwbPjItyZC2E7hSybp5Ny1/QawHdRXF1zTiVSOms9Q+UOQ/Mw==
+stylelint-group-selectors@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/stylelint-group-selectors/-/stylelint-group-selectors-1.0.10.tgz#a9612909622284140f6e309c6275963ed899b091"
+  integrity sha512-t0FbKdKZFlbb2VFZ1cfU0+TUHlrPz0ORIuFCse1rVCvfYF0H75k4rRj544b1Lz6GTbdI3o1Yivotk8i8T6TvOA==
   dependencies:
     md5 "2.3.0"
     postcss "^8.4.14"
 
-stylelint-high-performance-animation@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.8.0.tgz#f118fbc232206f1da6a471d62ac227939d43a479"
-  integrity sha512-wxHt+F7Z54mtGZpbdMwUtpfQwr81uiml39EFCCdZAbVnEO7Wl0Mh5ncmgbxH42xpB5z79eIgHI62qtKfUmWzhg==
+stylelint-high-performance-animation@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/stylelint-high-performance-animation/-/stylelint-high-performance-animation-1.10.0.tgz#2c0b67320fc6d978ee9b532d6feffc708e86979d"
+  integrity sha512-YzNI+E6taN8pwgaM0INazRg4tw23VA17KNMKUVdOeohpnpSyJLBnLVT9NkRcaCFLodK/67smS5VZK+Qe4Ohrvw==
   dependencies:
     postcss-value-parser "^4.2.0"
 
@@ -13667,12 +13667,11 @@ stylelint-order@5.0.0:
     postcss "^8.3.11"
     postcss-sorting "^7.0.1"
 
-stylelint-scss@4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-4.6.0.tgz#f7602d6d562bb256802e38e3fd5e49c46d2e31b6"
-  integrity sha512-M+E0BQim6G4XEkaceEhfVjP/41C9Klg5/tTPTCQVlgw/jm2tvB+OXJGaU0TDP5rnTCB62aX6w+rT+gqJW/uwjA==
+stylelint-scss@4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/stylelint-scss/-/stylelint-scss-4.7.0.tgz#f986bf8c5a4b93eae2b67d3a3562eef822657908"
+  integrity sha512-TSUgIeS0H3jqDZnby1UO1Qv3poi1N8wUYIJY6D1tuUq2MN3lwp/rITVo0wD+1SWTmRm0tNmGO0b7nKInnqF6Hg==
   dependencies:
-    dlv "^1.1.3"
     postcss-media-query-parser "^0.2.3"
     postcss-resolve-nested-selector "^0.1.1"
     postcss-selector-parser "^6.0.11"
@@ -13683,10 +13682,10 @@ stylelint-selector-no-empty@1.0.9:
   resolved "https://registry.yarnpkg.com/stylelint-selector-no-empty/-/stylelint-selector-no-empty-1.0.9.tgz#e12308f918db40cfff3c98beca7c7f4274e4ea3a"
   integrity sha512-MmtOZNOj0dr/PFBxiSBZHtKq+rCTtdkU54E+AkzfHH0wegKKSihMax89PymBXGFboREHu8WaJL9xhh2ttPgkEQ==
 
-stylelint-selector-tag-no-without-class@2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/stylelint-selector-tag-no-without-class/-/stylelint-selector-tag-no-without-class-2.0.5.tgz#c0955c2d501fd60954902fafdefb4ae5fa025d4b"
-  integrity sha512-Cj8wipvI7Ofq+2Z+uq3Z9FPPp1w8VIoXf2xlOgTtExrmbg//hqkCjMpOI8QCgj/eVdrgK41RrO+THjXL/Ghhdw==
+stylelint-selector-tag-no-without-class@2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/stylelint-selector-tag-no-without-class/-/stylelint-selector-tag-no-without-class-2.0.6.tgz#0d989cecf93d18555ba5dc946013e060b0f7ecc5"
+  integrity sha512-57VJuGic5zNklj6KP8WHWQc6Ue1GrLhyrShAiptahXRY6Qzhevf3fH20rJA0f/woT37NULvndU1n+7Ju6Eg/tg==
   dependencies:
     lodash "^4.17.5"
 
