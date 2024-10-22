@@ -26,9 +26,9 @@
     "resolve": "1.22.8"
   },
   "devDependencies": {
-    "@babel/core": "7.21.4",
-    "@babel/preset-env": "7.21.4",
-    "@babel/register": "7.21.0",
+    "@babel/core": "7.25.9",
+    "@babel/preset-env": "7.25.9",
+    "@babel/register": "7.25.9",
     "@hidoo/unit": "^0.9.0",
     "babel-preset-power-assert": "3.0.0",
     "bootstrap": "5.1.3",
