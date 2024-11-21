@@ -41,7 +41,7 @@
     "babel-preset-power-assert": "3.0.0",
     "mocha": "9.2.2",
     "power-assert": "1.6.1",
-    "stylelint": "14.16.1"
+    "stylelint": "15.10.1"
   },
   "peerDependencies": {
     "stylelint": ">=14.0.0"
